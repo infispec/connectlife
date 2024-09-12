@@ -3998,3 +3998,20 @@ input, select, textarea {
 	body.is-mobile.landing #footer {
 		background-color: #1d242a;
 	}
+
+	#banner .video-container {
+		position:relative; /* Make container relative for video positioning */
+	  }
+	  
+	  #banner video {
+		position: absolute; /* Make video absolute within container */
+		top: 5%;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		object-fit: cover; /* Stretch video to fill container */
+	  }
+
+	  
+
+	  
