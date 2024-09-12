@@ -2487,7 +2487,8 @@ input, select, textarea {
 		input[type="button"].primary,
 		button.primary,
 		.button.primary {
-			background-color: #ed4933;
+			background-color: wheat;
+			color: black;
 			box-shadow: none !important;
 			color: #ffffff !important;
 		}
@@ -2497,7 +2498,7 @@ input, select, textarea {
 			input[type="button"].primary:hover,
 			button.primary:hover,
 			.button.primary:hover {
-				background-color: #ef5e4a !important;
+				background-color: whitesmoke !important;
 			}
 
 			input[type="submit"].primary:active,
