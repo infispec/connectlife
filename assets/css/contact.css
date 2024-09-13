@@ -15,6 +15,14 @@
     background-color: wheat;
 
 }
+.brown-dropdown .select2-results__option {
+    background-color: #8B4513; /* Brown background */
+    color: white;
+}
+
+.brown-dropdown .select2-results__option--highlighted {
+    background-color: #5d3a1f; /* Darker brown on hover */
+}
 
 @media (max-width: 768px) {
     .contact-us-form {
