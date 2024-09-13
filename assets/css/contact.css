@@ -1,5 +1,5 @@
 .info-item{
-    margin-left: 170px;
+    margin-left: 130px;
     box-sizing: border-box;
 }
 .contact-us-form{
@@ -18,6 +18,10 @@
 
 @media (max-width: 768px) {
     .contact-us-form {
-      width: 90%; /* Increase width for mobile view */
+      width: 90%;
+      margin-left: 6%; /* Increase width for mobile view */
+    }
+    .info-item{
+        margin-left: 30%;
     }
 }
