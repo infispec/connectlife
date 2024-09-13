@@ -4029,5 +4029,24 @@ input, select, textarea {
 		justify-content: center;
 		padding: 20px;
 	}
-	
+	/* Styles for the #cta section with background image */
+#cta.wrapper.style4 {
+    background-image: url('../../images/bg1.jpg'); /* Add your image URL here */
+    background-size: cover; /* Ensure the image covers the section */
+    background-position: center center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    padding: 20px; /* Optional: Adjust padding as needed */
+    color: white; /* Ensure text is readable on the background */
+}
+
+/* Mobile view adjustments if needed */
+@media (max-width: 768px) {
+    #cta.wrapper.style4 {
+        background-image: url('../../images/bg1.jpg'); /* Optional: Different image for mobile view */
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+}
+
 	  
