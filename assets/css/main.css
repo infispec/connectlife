@@ -4106,5 +4106,65 @@ svg {
         background-repeat: no-repeat;
     }
 }
+@-webkit-keyframes track-in-out {
+	0% {
+	  letter-spacing: 1em;
+	  opacity: 0;
+	}
+	20% {
+	  letter-spacing: normal;
+	  opacity: 1;
+	}
+	80% {
+	  letter-spacing: normal;
+	  opacity: 1;
+	}
+	100% {
+	  letter-spacing: 1em;
+	  opacity: 0;
+	}
+  }
+  
+  #myText{
+	font-size: 40px;
+	margin-top: 50px;
+	color: white;
+	word-spacing: 10px;
+	text-shadow: 2px 2px 5px grey;
+	width: 100%;
+	text-align: center;
+	font-family: 'Monoton', cursive;
+	animation-name: track-in-out;
+	animation-duration: 7s;
+	animation-iteration-count: infinite;
+  }
 
-	  
+  
+
+.text{
+	font-weight: 300;
+	font-size: 20px;
+	line-height:28px;
+	letter-spacing: 1px;
+	text-align: center;
+	text-transform: sentancecase;
+	color: transparent;
+	-webkit-background-clip: text;
+	background-clip: text;
+	background-size: 400%;
+	animation: move 5s ease infinite;
+	background-image: linear-gradient( 68.7deg, #131213 50.9%,white 50%);
+}
+
+@keyframes move {
+	0%,100%{
+		background-position: 200% 0%;
+	}
+
+	50%{
+		background-position: 0% 200%;
+	}
+}
+
+
+
