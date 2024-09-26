@@ -4053,14 +4053,14 @@ input, select, textarea {
 
 svg {
     display: block;
-    font: 10.5em 'Montserrat';
-    width: 500px;
+    font: 10.5em 'Robot';
+    width: 300px;
     height: 200px;
     margin: 0 auto;
 }
 
 .text-copy {
-    fill: none;
+    fill: black;
     stroke: white;
     stroke-dasharray: 6% 29%;
     stroke-width: 5px;
@@ -4091,6 +4091,7 @@ svg {
 .text-copy:nth-child(5){
 	stroke: black;
 	animation-delay: -5s;
+
 }
 
 @keyframes stroke-offset{
@@ -4152,7 +4153,7 @@ svg {
 	-webkit-background-clip: text;
 	background-clip: text;
 	background-size: 400%;
-	animation: move 5s ease infinite;
+	animation: move 30s ease infinite;
 	background-image: linear-gradient( 68.7deg, #131213 50.9%,white 50%);
 }
 
