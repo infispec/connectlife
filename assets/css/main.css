@@ -2803,7 +2803,29 @@ input, select, textarea {
 
 		}
 
+
+		/*particles*/
+
+		#particles-js {
+			position: absolute;
+			background-image: url('./images/home.jpg');
+			background-size: cover; /* Cover the entire container */
+			background-position: center; /* Center the image */
+			background-repeat: no-repeat;
+			width: 100%;
+			height: 100%;
+			top: 0;
+			left: 0;
+			z-index: 0; /* Set to lower than the banner content */
+		}
+		
+		#banner {
+			position: relative; /* Ensure the banner content is positioned relative to the particles */
+			z-index: 1; /* Set to higher than the particles */
+		}
+		
 /* Wrapper */
+
 
 	.wrapper {
 		padding: 6em 0 4em 0 ;
@@ -4003,12 +4025,12 @@ input, select, textarea {
 
 	body.is-mobile.landing #banner,
 	body.is-mobile.landing .wrapper.style4 {
-		background-image: -moz-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/bg1.jpg");
-		background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/bg1.jpg");
-		background-image: -ms-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/bg1.jpg");
+		/*background-image: -moz-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/bg1.jpg");
+		background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/bannerBg.jpg");
+		background-image: -ms-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/bannerBg.jpg");
 		background-image: linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/bg1.jpg");
 		background-position: center center;
-		background-repeat: no-repeat;
+		background-repeat: no-repeat;*/
 		background-size: cover;
 	}
 
@@ -4016,7 +4038,7 @@ input, select, textarea {
 		background-color: #1d242a;
 	}
 	#banner {
-		background-image: url('../../images/bg1.jpg'); /* Add your image URL */
+		/*background-image: url('../../images/bannerBg.jpg'); /* Add your image URL */
 		background-size: cover;
 		background-position: center;
 		background-repeat: no-repeat;
