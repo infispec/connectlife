@@ -2857,7 +2857,7 @@ input, select, textarea {
 		}
 
 		.wrapper.style1 {
-			background-color: #21b2a6;
+			background-color: #505393;
 			color: #c8ece9;
 		}
 
@@ -3744,6 +3744,21 @@ input, select, textarea {
 			opacity: 0;
 		}
 
+		@media (max-width: 360px) {
+			.more.scrolly {
+			  font-size: 10px; /* Smaller text for smaller screens */
+			  margin-top: 15px; /* Adjust margin for proper spacing */
+			  color: #ffffff; /* Ensure high contrast with the background */
+			  display: block; /* Ensure the button is visible */
+			  text-align: center; /* Center the text/button */
+			}
+		  
+			#banner .inner {
+			  padding: 10px; /* Adjust padding to make space for button */
+			}
+		  }
+
+
 		@media screen and (max-width: 736px) {
 
 			#banner {
@@ -4156,7 +4171,7 @@ svg {
 	text-shadow: 2px 2px 5px grey;
 	width: 100%;
 	text-align: center;
-	font-family: 'Monoton', cursive;
+	font-family: 'Monoton';
 	animation-name: track-in-out;
 	animation-duration: 7s;
 	animation-iteration-count: infinite;
@@ -4190,3 +4205,15 @@ svg {
 }
 
 
+.fade-up {
+	opacity: 0;
+	transform: translateY(20px);
+	transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  }
+  
+  .fade-up.visible {
+	opacity: 1;
+	transform: translateY(0);
+  }
+
+  
