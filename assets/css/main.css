@@ -3200,7 +3200,7 @@ input, select, textarea {
 		}
 
 			.wrapper.style5 strong, .wrapper.style5 b {
-				color: white;
+				color: black;
 				font-size: larger;
 			}
 
@@ -4277,7 +4277,7 @@ svg {
 /* Mobile view adjustments if needed */
 @media (max-width: 768px) {
     #cta.wrapper.style4 {
-        background-image: url('../../images/bg1.jpg'); /* Optional: Different image for mobile view */
+        background-color: #29375a; /* Optional: Different image for mobile view */
         background-size: cover;
         background-position: center center;
         background-repeat: no-repeat;
@@ -4522,7 +4522,7 @@ svg {
         gap: 20px; /* Increased gap for mobile view */
     }
 	.more {
-		margin-left: 25%;
+		margin-left: 35%;
 	}
 }
 
