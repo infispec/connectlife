@@ -3203,8 +3203,11 @@ input, select, textarea {
 				color: black;
 				font-size: larger;
 			}
-			.wrapper.style5 h2, .wrapper.style5 h3, .wrapper.style5 h4, .wrapper.style5 h5, .wrapper.style5 h6 {
+			.wrapper.style5 h2, .wrapper.style5 h4, .wrapper.style5 h5, .wrapper.style5 h6 {
 				color: white;
+			}
+			.wrapper.style5 h3{
+				color: black;
 			}
 
 			.wrapper.style5 hr {
@@ -4627,17 +4630,17 @@ svg {
 /*elements page rectangle box */
 
 .rotoscoping-box {
-	background-color: white; /* Light grey background */
-	color: white;
-	border: 2px solid hsl(0, 14%, 1%); /* Solid border with dark color */
-	border-radius: 1px; /* Rounded corners */
-	padding: 20px; /* Spacing inside the box */
-	width: 100%;
-	height: auto; /* Optional max width for the box */
-	margin: 20px auto; /* Center the box horizontally with some margin */
+	background-color:#141b2a; /* Light grey background */
+	 /* Adjusted text color for contrast */
+	/*border: 2px solid hsl(0, 14%, 1%); /* Dark border */
+	border-radius: 5px; /* Slightly rounded corners */
+	padding: 15px; /* Less padding to reduce overall box size */
+	max-width: 100%; /* Limit width for better fit */
+	height: 400px;
+	margin: 20px auto; /* Centered with a margin */
 	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
-  }
-  
+}
+
   .rotoscoping-box h4 {
 	color: white;
 	margin-top: 0; /* Removes extra space on top of the heading */
@@ -4648,12 +4651,14 @@ svg {
 	line-height: 1.6; /* Better readability */
   }
   .scrolling-heading {
+	color: white;
     position: relative;
     animation: scrollUp 2s ease-in-out forwards; /* Adjust duration as needed */
     opacity: 0; /* Start hidden */
 }
 
 .scrolling-paragraph {
+	color: white;
     position: relative;
     animation: scrollUp 2s ease-in-out forwards; /* Adjust duration as needed */
     animation-delay: 0.5s; /* Delay the paragraph animation */
@@ -4694,61 +4699,35 @@ svg {
 }
 
   .paint-box {
-	background-color: white; /* Light grey background */
-	border: 2px solid hsl(0, 14%, 1%); /* Solid border with dark color */
-	border-radius: 1px; /* Rounded corners */
+	background-color: #141b2a; /* Light grey background */
 	padding: 20px; /* Spacing inside the box */
 	max-width: 1000px; /* Optional max width for the box */
-	margin: 20px auto; /* Center the box horizontally with some margin */
-	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+	margin-left: 0%; /* Center the box horizontally with some margin */
+	
   }
   
-  .paint-box h4 {
-	margin-top: 0; /* Removes extra space on top of the heading */
-  }
-  
-  .paint-box p {
-	line-height: 1.6; /* Better readability */
-  }
 /*matchmove box*/
 .matchmove-box {
-	background-color: white; /* Light grey background */
-	border: 2px solid hsl(0, 14%, 1%); /* Solid border with dark color */
-	border-radius: 1px; /* Rounded corners */
+	background-color: #141b2a; /* Light grey background */
 	padding: 20px; /* Spacing inside the box */
 	max-width: 1000px; /* Optional max width for the box */
-	margin: 20px auto; /* Center the box horizontally with some margin */
-	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+	margin-left: 0%; /* Center the box horizontally with some margin */
+	
   }
   
-  .matchmove-box h4 {
-	margin-top: 0; /* Removes extra space on top of the heading */
-  }
-  
-  .matchmove-box p {
-	line-height: 1.6; /* Better readability */
-  }
-
 
   /*compo-box */
   .compo-box {
-	background-color: white; /* Light grey background */
-	/*border: 2px solid hsl(0, 14%, 1%); /* Solid border with dark color */
-	border-radius: 1px; /* Rounded corners */
+	background-color: #141b2a; /* Light grey background */
 	padding: 20px; /* Spacing inside the box */
 	max-width: 1000px; /* Optional max width for the box */
-	margin: 20px auto; /* Center the box horizontally with some margin */
-	/*box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+	margin-left: 0%; /* Center the box horizontally with some margin */
+	
   }
   
-  .compo-box h4 {
-	margin-top: 0; /* Removes extra space on top of the heading */
+  .compo-box,p{
+	margin-left: 0%;
   }
-  
-  .compo-box p {
-	line-height: 1.6; /* Better readability */
-  }
-
 
   /*css effects for elements image*/
 
