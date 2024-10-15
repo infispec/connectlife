@@ -15,6 +15,7 @@
     border-radius: 1px; /* Adjust this value as needed to round the corners */
     box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1); /* Shadow with a soft blur */
     padding: 15px;
+    text-align: justify;
  }
  
  .job2{
@@ -24,6 +25,7 @@
     border-radius: 1px; /* Adjust this value as needed to round the corners */
     box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1); /* Shadow with a soft blur */
     padding: 15px;
+    text-align: justify;
  }
 
  .job3{
@@ -33,6 +35,7 @@
     border-radius: 1px; /* Adjust this value as needed to round the corners */
     box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1); /* Shadow with a soft blur */
     padding: 15px;
+    text-align: justify;
  }
  .job4 {
     width: 100%;
@@ -42,6 +45,7 @@
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
     padding: 20px; /* Adds space inside the box */
     box-sizing: border-box; /* Ensures padding doesn’t increase the width */
+    text-align: justify;
 }
 
 .job4 button {
@@ -60,6 +64,7 @@
     border-radius: 1px; /* Adjust this value as needed to round the corners */
     box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1); /* Shadow with a soft blur */
     padding: 15px;
+    text-align: justify;
  }
 
  .job6{
@@ -69,6 +74,7 @@
     border-radius: 1px; /* Adjust this value as needed to round the corners */
     box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1); /* Shadow with a soft blur */
     padding: 15px;
+    text-align: justify;
  }
 
  .job7{
@@ -78,6 +84,7 @@
     border-radius: 1px; /* Adjust this value as needed to round the corners */
     box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1); /* Shadow with a soft blur */
     padding: 15px;
+    text-align: justify;
  }
  
  .job8{
@@ -87,6 +94,7 @@
     border-radius: 1px; /* Adjust this value as needed to round the corners */
     box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1); /* Shadow with a soft blur */
     padding: 15px;
+    text-align: justify;
  }
 
  
@@ -97,6 +105,7 @@
     border-radius: 1px; /* Adjust this value as needed to round the corners */
     box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1); /* Shadow with a soft blur */
     padding: 15px;
+    text-align: justify;
  }
 
  
@@ -113,5 +122,6 @@
     .job1, .job2 ,.job3,.job4,.job5,.job6,.job7,.job8,.job9{
         width: 95%; /* Increase width for small screens */
         padding: 5px; /* Adjust padding */
+        text-align: justify;
     }
 }

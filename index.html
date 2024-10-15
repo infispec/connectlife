@@ -21,10 +21,10 @@
 
 				<!-- Header -->
 					<header id="header" class="alt">
-						<div class="logo">
+						<!--<div class="logo">
 						<a href="index.html">
 			<img src="./assets/css/images/logo.png" alt="logo" width="100px" height="100px"></a>
-						 </div>
+						 </div>-->
 						<nav id="nav">
 							<ul>
 								<li class="special">
@@ -35,6 +35,7 @@
 											<li><a href="generic.html">Workflow</a></li>
 											<li><a href="elements.html">Our Services</a></li>
 											<li><a href="career.html">Careers</a></li>
+											<li><a href="about.html">About Us</a></li>
 											<li><a href="contact.html">Contact Us</a></li>
 											
 											
@@ -47,13 +48,17 @@
 
 					<div id="particles-js"></div>
 				<!-- Banner -->
+				<div id="loading-overlay">
+					<img src="./assets/css/images/logo.png" alt="logo" class="loading-logo" /><h2>Connect Life VFX</h2>
+					
+				  </div>
+
 				<section id="banner">
 					<div class="inner">
-			
 					      <h2>Connect Life VFX </h2>
 					 <p> We are a leading visual effects studio located<br>
 					   in Hyderabad,India, with additional offices <br>in the USA and Dubai. Our
-						 talented team harnesses <br>state-of-the-art technology to create
+						 talented team harnesses <br> state-of-the-art technology to create
 						 exceptional<br> visual experiences that redefine storytelling<br /></p>
 					  <ul class="actions special">
 						<li><a href="contact.html" class="button primary">Contact</a></li>
@@ -67,14 +72,25 @@
 						<div class="inner">
 							<header class="major">
 								<div class="container">
-									<div class="para1">
+						<div class="para1">
 										Bringing Imagination to Life,
 										One pixel at a Time
+										<div class="particles">
+											<div class="particle"></div>
+											<div class="particle"></div>
+											<div class="particle"></div>
+											<div class="particle"></div>
+											<div class="particle"></div>
+											<div class="particle"></div>
+											<div class="particle"></div>
+											<div class="particle"></div>
+										
+										</div>
 									</div>
 								  </div>
 								  <div class="container">
 									<div class="image-container">
-										<img src="./assets/css/images/home.jpg" alt="Image" class="left-image">
+					<img src="./assets/images1/into.webp" alt="Image" class="left-image">
 									</div>
 									<div class="text">		
 										At Connect Life VFX, we believe every project is an 
@@ -88,7 +104,6 @@
 										unparalleled quality.
 									</div>
 								</div>
-								
 					</header>
 					</section>
 
@@ -108,10 +123,10 @@
 							</div>
 							<div class="third-img">
 								<img src="./images1/collab.jpg" alt="collab">
-								<div class="img-text">Collaboration</div>
+								<div class="img-text">Collaboration</div>	
 							</div><br>
 						</div><br>
-						<br><button class="more"><a href="knowmore.html"> Know more</a></button><br><br>
+					<br><button class="more"><a href="knowmore.html"> Know more</a></button><br><br>
 					</header>
 				</article>
 				
@@ -311,7 +326,31 @@
 			</div>
 			</div>
 				</section>
-<!--Code for book an appointment-->
+
+				<!--Our core partner company code-->
+				<!--<article class="core-comp">
+					<section id="partner">
+						<div class="inner">
+							<div class="cli-company">
+						<br>	<center><h1><b>Our Core partner company</p></b> </center>
+							<div class="part-img">
+		<img src="./assets/images1/conn.jpg" alt="cl1" width="90px" height="90px"><br>
+		Connect Life <br>Solution<br><br>
+		<div class="cl2">
+			<img src="./assets/images1/conn1.png" alt="cl2" width="90px" height="90px"><br>
+			Connect Life<br> Foundation<br>
+		</div><br>
+		<div class="cl3">
+			<img src="./assets/images1/cl3.png" alt="cl3" width="120px" height="90px"><br>
+			CLS Global<br>
+		</div><br></div>
+							</div>
+						</div>
+					</section>
+				</article>
+			
+
+Code for book an appointment-->
 
 <section id="cta" class="wrapper style4" style="background-color:#141b2a;">
 	<div class="inner">
@@ -342,17 +381,17 @@
 			<ul style="list-style-type: none; padding: 0; text-align: center;">
 				<li><a href="generic.html">Workflow</a></li>
 				<li><a href="career.html">Career</a></li>
-				<li>About Us</li>
-				<li>Compositing</li>
+				<li><a href="about.html">About Us </a></li>
 			</ul>
 		</div>
 		
 		<div class="services">
 			<center><b class="footer-heading">Services</b></center><br>
 			<ul style="list-style-type: none; padding: 0; text-align: center;">
-				<li><a href="generic.html">Rotoscoping</li>
-				<li>Paint-box</li>
-				<li>Matchmove</li>
+				<li><a href="elements.html">Rotoscoping</li>
+				<li><a href="elements.html">Paint</a></li>
+				<li><a href="elements.html">Matchmove</a></li>
+				<li><a href="elements.html">Compositing</a></li>
 			</ul>
 		</div>
 		
@@ -491,6 +530,28 @@ document.addEventListener('DOMContentLoaded', function() {
         topPanel.style.width = event.clientX + skewHack + delta + 'px';
     });
 });
+
+
+		</script>
+
+<!--Script for loading the screen logo and heading-->
+		<script>
+			window.addEventListener('load', () => {
+  const loadingOverlay = document.getElementById('loading-overlay');
+  const banner = document.getElementById('banner');
+  
+  // Keep the loading overlay visible for a set duration (e.g., 5 seconds)
+  setTimeout(() => {
+    // Fade out the loading overlay and fade in the page content
+    loadingOverlay.style.opacity = '0';
+    banner.style.opacity = '1';
+
+    // Remove the overlay from the DOM after the transition
+    setTimeout(() => loadingOverlay.style.display = 'none', 1000); // 1000ms for fade out
+  }, 1000); // Adjust the duration here (5000ms = 5 seconds)
+});
+
+
 		</script>
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.scrollex.min.js"></script>

@@ -72,17 +72,40 @@ input, select, textarea {
 	appearance: none;
 }
 
-/*logo*/
-.logo{
-	text-decoration: none;
-	float: left;
-	margin-bottom: 20%;
-	
-}
-.logo a {
-    text-decoration: none !important; /* Removes the underline from the link */
-}
-
+/*logo and heading*/
+/* Loading Overlay effects  */
+#loading-overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #29375a;/*color for the loading bg color*/
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	z-index: 9999;
+	transition: opacity 4s ease; /* Transition for fading out the overlay */
+  }
+  
+  .loading-logo {
+	width: 100px;
+	height: 100px;
+	/*animation: fadeInOut 4s ease infinite; /* Logo animation while loading */
+  }
+  
+  @keyframes fadeInOut {
+	0%, 100% { opacity: 0; transform: scale(0.9); }
+	50% { opacity: 1; transform: scale(1); }
+  }
+  
+  /* Page Content (Hidden initially) */
+  #banner {
+	opacity: 0;
+	transition: opacity 4s ease; /* Duration for fading in the banner */
+  }
+  
 /* Basic */
 
 	@-ms-viewport {
@@ -3658,7 +3681,8 @@ input, select, textarea {
 			z-index: 1;
 		}
 
-			#banner h2:before, #banner h2:after {
+/*code for the lines before and after line of connect life*/
+		/*	#banner h2:before, #banner h2:after {
 				-moz-transition: width 0.85s ease;
 				-webkit-transition: width 0.85s ease;
 				-ms-transition: width 0.85s ease;
@@ -3673,7 +3697,7 @@ input, select, textarea {
 				height: 2px;
 				position: absolute;
 				width: 100%;
-			}
+			}*/
 
 			#banner h2:before {
 				top: 0;
@@ -3687,6 +3711,9 @@ input, select, textarea {
 
 		#banner p {
 			letter-spacing: 0.225em;
+			font-size: 1rem;
+			line-height: 1.5;
+			margin-top: 0;
 			text-transform: uppercase;
 		}
 
@@ -3843,6 +3870,7 @@ input, select, textarea {
 
 			#cta .inner header p {
 				color: inherit;
+				text-align: justify;
 			}
 
 		#cta .inner .actions {
@@ -3952,6 +3980,24 @@ input, select, textarea {
 		background-attachment: scroll;
 		background-image: url('../../images/bg.jpg');
 	}
+/*our core partner company*/
+.core-comp{
+	background-color: #29375a;
+}
+.part-img,.cl2,.cl3{
+	margin-left: 30%;
+	flex-direction: row;
+	background-color: rgb(120, 117, 117); /* Background for each member */
+    border-radius: 10px; /* Rounded corners */
+    width: 200px; /* Fixed width for team member boxes */
+    text-align: center; /* Center text */
+    color: white; /* Text color */
+    box-sizing: border-box; /* Ensures*/
+	padding: 20px;
+	
+	
+}
+
 
 /* Footer */
 /* Basic Styles */
@@ -4367,7 +4413,8 @@ svg {
   .para1{
 	color:white;
 	text-transform: uppercase;
-	font-size: larger;
+	font-size: 42px;
+	font-family: poppins sans-serif;
 	font-weight: bold; /* Make the heading bold */
 	margin-bottom: 25px; /* Space between the heading and paragraph */
 	margin-left: 25%;
@@ -4388,8 +4435,8 @@ svg {
 /*css effect for images*/
 .container {
     display: flex;
-    flex-direction: column; /* Stack children vertically on mobile */
-    align-items: center; /* Center items horizontally */
+    align-items: flex-start; /* Stack children vertically on mobile */
+    gap:20px; /* Center items horizontally */
     padding: 20px; /* Add some padding for aesthetics */
 }
 
@@ -4404,17 +4451,43 @@ svg {
     justify-content: center; /* Center the image */
     margin-bottom: 15px; /* Space below the image */
 }
+/*home page intro particles*/
 
+
+/*home page intro shake effects code*/
+.image-container:hover {
+	animation: shake 0.5s;
+	animation-iteration-count: infinite;
+  }
+
+  @keyframes shake {
+	0% { transform: translate(1px, 1px) rotate(0deg); }
+	10% { transform: translate(-1px, -2px) rotate(-1deg); }
+	20% { transform: translate(-3px, 0px) rotate(1deg); }
+	30% { transform: translate(3px, 2px) rotate(0deg); }
+	40% { transform: translate(1px, -1px) rotate(1deg); }
+	50% { transform: translate(-1px, 2px) rotate(-1deg); }
+	60% { transform: translate(-3px, 1px) rotate(0deg); }
+	70% { transform: translate(3px, 1px) rotate(-1deg); }
+	80% { transform: translate(-1px, -1px) rotate(1deg); }
+	90% { transform: translate(1px, 2px) rotate(0deg); }
+	100% { transform: translate(1px, -2px) rotate(-1deg); }
+  }
 .left-image {
-    max-width: 110%; /* Increase image size */
-    height: 120%; /* Maintain aspect ratio */
-    border-radius: 8px; /* Optional: add rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: add shadow */
+	margin-left: 5%;
+	width: 170%;
+    max-width: 1200%; /* Increase image size */
+    height: 600%; /* Maintain aspect ratio */
+    border-radius: 1px; /* Optional: add rounded corners */
+   
 }
 
 .text {
+	margin-left: 13%;
+	flex: 4;
     text-align: center; /* Center the text */
-    font-size: 1em; /* Adjust font size for mobile */
+    font-size: 1.1em; /* Adjust font size for mobile */
+	line-height: 1.6;
     padding: 0 10px; /* Add padding to the text */
 }
 
@@ -4445,23 +4518,45 @@ svg {
 
 
 .text {
-    flex: 2; /* Text takes more space compared to image */
+    flex: 3; /* Text takes more space compared to image */
     font-size: 16px; /* Adjust font size as needed */
     line-height: 1.5; /* Space between lines for readability */
 }
+
+/*para for the part 2 */
 .text{
 	font-weight: 300;
 	font-size: 20px;
+	font-family: sans-serif;
 	line-height:25px;
 	letter-spacing: 1px;
-	text-align: center;
+	text-align: justify;
 	text-transform: sentancecase;
 	color: transparent;
 	-webkit-background-clip: text;
 	background-clip: text;
 	background-size: 200%;
 	animation: move 30s ease infinite;
-	background-image: linear-gradient( 68.7deg,white 50%,#1649ff 50.9%);
+	background-image: linear-gradient( 68.7deg,white 50%,white 0.9%);
+}
+
+
+/* Mobile view styling  for intro and vision*/
+@media (max-width: 600px) {
+	.container {
+		flex-direction: column; /* Stacks image and text vertically */
+	}
+
+	.image-container {
+		order: 1; /* Image appears first on mobile */
+	}
+
+	.text {
+		order: 2; /* Text appears after the image */
+		font-size: 16px; /* Smaller font size for mobile */
+		line-height: 22px; /* Adjusted line height for readability */
+		padding: 10px; /* Adds padding for better readability */
+	}
 }
 
 @keyframes move {
@@ -4616,6 +4711,7 @@ svg {
 
 /* Set initial hidden state and animation */
 .section {
+	text-align: justify;
 	opacity: 0;
 	transform: translateY(50px);
 	transition: opacity 0.6s ease-out, transform 0.6s ease-out;
@@ -4638,7 +4734,7 @@ svg {
 	max-width: 100%; /* Limit width for better fit */
 	height: 400px;
 	margin: 20px auto; /* Centered with a margin */
-	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+	
 }
 
   .rotoscoping-box h4 {
@@ -4718,6 +4814,7 @@ svg {
 
   /*compo-box */
   .compo-box {
+	text-align: justify;
 	background-color: #141b2a; /* Light grey background */
 	padding: 20px; /* Spacing inside the box */
 	max-width: 1000px; /* Optional max width for the box */
@@ -4781,7 +4878,7 @@ svg {
     width: 100%;
     padding: 20px 0;
 }
-
+/* Container for all particles */
 .particles {
     position: absolute;
     top: 0;
@@ -4793,44 +4890,34 @@ svg {
     z-index: 1; /* Ensure particles are behind content */
 }
 
+/* Individual particle styling */
 .particle {
-    position: absolute;
-    background-color: rgba(255, 255, 255, 0.6); /* White translucent particles */
+    position: relative;
+    background-color: #1f2944; /* Blue translucent particles */
     border-radius: 50%;
-    width: 10px;
-    height: 10px;
-    animation: moveParticles 10s linear infinite;
+    width: 10px; /* Smaller particle size */
+    height: 8px;
+    animation: moveParticles 8s linear infinite;
 }
 
-.particle:nth-child(1) {
-    top: 20%;
-    left: 10%;
-    animation-duration: 12s;
+/* Particle positions and animation speeds */
+.particle:nth-child(1) { top: 20%; left: 10%; animation-duration: 8s; }
+.particle:nth-child(2) { top: 50%; left: 40%; animation-duration: 10s; }
+.particle:nth-child(3) { top: 70%; left: 80%; animation-duration: 9s; }
+.particle:nth-child(4) { top: 30%; left: 60%; animation-duration: 7s; }
+.particle:nth-child(5) { top: 80%; left: 20%; animation-duration: 9s; }
+.particle:nth-child(6) { top: 10%; left: 70%; animation-duration: 8s; }
+.particle:nth-child(7) { top: 60%; left: 15%; animation-duration: 10s; }
+.particle:nth-child(8) { top: 40%; left: 85%; animation-duration: 8s; }
+.particle:nth-child(9) { top: 15%; left: 35%; animation-duration: 7s; }
+.particle:nth-child(10) { top: 75%; left: 55%; animation-duration: 8s; }
+
+/* Particle animation */
+@keyframes moveParticles {
+    0% { transform: translateY(0) translateX(0); }
+    100% { transform: translateY(100vh) translateX(-100vw); }
 }
 
-.particle:nth-child(2) {
-    top: 50%;
-    left: 40%;
-    animation-duration: 18s;
-}
-
-.particle:nth-child(3) {
-    top: 70%;
-    left: 80%;
-    animation-duration: 15s;
-}
-
-.particle:nth-child(4) {
-    top: 30%;
-    left: 60%;
-    animation-duration: 14s;
-}
-
-.particle:nth-child(5) {
-    top: 80%;
-    left: 20%;
-    animation-duration: 16s;
-}
 
 /* You can add more particles like above */
 
@@ -4941,3 +5028,177 @@ svg {
     opacity: 1;
     transform: translateX(0); /* Slide to its normal position */
 }
+
+/*about page text and images*/
+/* Flex layout for globe container */
+.globe-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    color: white;
+    margin: 0 auto;
+    gap: 20px;
+    max-width: 900px; /* Adjust as needed for total container width */
+}
+
+/* Uniform text container styling */
+.text-container {
+    background-color: #2E3842;
+    padding: 15px;
+    border-radius: 10px;
+    width: 280px; /* Fixed width for each container */
+    height: 400px; /* Fixed height for each container */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.about{
+	text-align: justify;
+}
+/* Heading styling */
+.heading {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 10px;
+}
+
+/* Uniform image styling */
+.globe-image {
+    width: 100%;
+    height: 200px; /* Fixed height for images */
+    object-fit: cover; /* Ensures images are consistently sized */
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+/*vision & mission */
+
+        /* Fade-up animation keyframes */
+        @keyframes fadeUp {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Base styling for fade-up elements */
+        .fade-up {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+
+        /* Trigger animation when element is visible */
+        .fade-up.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Additional styling for mission and vision sections */
+        .mis-fade-up, .vision-fade-up ,.life-fade-up{
+            margin-bottom: 40px; /* Space between sections */
+        }
+
+/* Text styling */
+.text-only {
+    font-size: 0.9rem;
+    color: white;
+    margin-top: auto; /* Pushes text to the bottom if necessary */
+}
+
+.mis{
+	text-align: justify;
+}
+#team{
+	text-align: justify;
+}
+#about-us {
+    padding: 40px;
+    text-align: center;
+    font-family: sans-serif; /* Apply sans-serif font to the entire about section */
+}
+.team-container {
+    display: flex;
+    flex-wrap: wrap; /* Allows items to wrap into the next row */
+    justify-content: center; /* Center items */
+    gap: 20px; /* Space between team members */
+}
+
+.team-member {
+    background-color:  #1d263b; /* Background for each member */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px;
+    width: 200px; /* Fixed width for team member boxes */
+    text-align: center; /* Center text */
+    color: black; /* Text color */
+    box-sizing: border-box; /* Ensures padding is included in width */
+}
+/* Media query for tablets and smaller screens */
+@media (max-width: 768px) {
+    .team-member {
+        width: calc(50% - 20px); /* Adjust to fit two team members per row */
+    }
+}
+
+/* Media query for mobile phones */
+@media (max-width: 480px) {
+    .team-member {
+        width: calc(100% - 20px); /* Adjust to fit one team member per row */
+    }
+}
+
+.team-photo {
+    width: 100%; /* Makes the image fill the width of the box */
+    height: auto; /* Maintains aspect ratio for images */
+    border-radius: 5px; /* Rounded corners for the images */
+    object-fit: cover; /* Ensures images cover the area without distortion */
+}
+/* Ensure that the width allows for 3 members per row, considering the gap */
+@media (min-width: 600px) { /* Adjust as needed for larger screens */
+    .team-member {
+        flex: 1 1 calc(33.33% - 20px); /* Each member takes up 1/3 of the container */
+    }
+}
+
+.team-photo {
+    width:90%; /* Makes the image fill the width of the box */
+    height: 280px; /* Fixed height for images */
+    border-radius: 5px; /* Rounded corners for the images */
+    object-fit: cover; /* Ensures images cover the area without distortion */
+}
+
+.life{
+	text-align: justify;
+}
+.vision{
+	text-align: justify;
+}
+/*mobile view adjustments */
+@media (max-width: 768px) {
+	.globe-container {
+	  flex-direction: column;
+	  align-items: center;
+	}
+  
+	.text-container {
+	  flex: 1 1 100%; /* full width on smaller screens */
+	  padding: 15px;
+	}
+  
+	.heading {
+	  font-size: 1em;
+	}
+  
+	.globe-image {
+	  width: 90%; /* Adjust image size to fit nicely within text content */
+	}
+  
+	.text-only {
+	  font-size: 0.8em;
+	}
+  }
