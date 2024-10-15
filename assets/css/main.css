@@ -3532,10 +3532,7 @@ input, select, textarea {
 }
 
 /* Inner content styles */
-.inner {
-    max-width: 600px; /* Limit width on larger screens */
-    margin: 0 auto; /* Center the inner content */
-}
+
 
 /* Responsive adjustments */
 @media (max-width: 736px) {
