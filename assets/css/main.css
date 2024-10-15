@@ -3518,6 +3518,45 @@ input, select, textarea {
 
 /* Header */
 
+/* code for menu bar without overlap Ensure the main container doesn't overflow */
+#page-wrapper {
+    max-width: 100%; /* Prevent overflow */
+    overflow: hidden; /* Hide any overflow */
+}
+
+/* Banner styles */
+#banner {
+    padding: 20px; /* Ensure padding is appropriate */
+    box-sizing: border-box; /* Include padding in width calculations */
+    text-align: center; /* Center content */
+}
+
+/* Inner content styles */
+.inner {
+    max-width: 600px; /* Limit width on larger screens */
+    margin: 0 auto; /* Center the inner content */
+}
+
+/* Responsive adjustments */
+@media (max-width: 736px) {
+    #banner {
+        padding: 10px; /* Adjust padding for mobile */
+        font-size: 14px; /* Adjust font size if necessary */
+    }
+
+    .loading-logo {
+        width: 80%; /* Adjust logo size */
+        max-width: 150px; /* Limit maximum size */
+    }
+}
+#loading-overlay {
+    position: absolute; /* May cause issues if not positioned correctly */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust for centering */
+    overflow: hidden; /* Prevent overflow */
+}
+
 	#header {
 		-moz-transition: background-color 0.2s ease;
 		-webkit-transition: background-color 0.2s ease;
@@ -4153,9 +4192,10 @@ input, select, textarea {
 		background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/bannerBg.jpg");
 		background-image: -ms-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/bannerBg.jpg");
 		background-image: linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/bg1.jpg");
-		background-position: center center;
-		background-repeat: no-repeat;*/
-		background-size: cover;
+		background-position: center center;*/
+		background-repeat: no-repeat;
+		/*background-size: cover;*/
+		
 	}
 
 	body.is-mobile.landing #footer {
