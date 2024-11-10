@@ -20,36 +20,103 @@
 			<div id="page-wrapper">
 
 				<!-- Header -->
-					<header id="header">
-						<div class="logo">
-						
-							<img src="./assets/css/images/logo.png" alt="logo" width="40px" height="40px">
-								   </div>
-						<h1><a href="index.html">connectlifevfx</a></h1>
+				<header  class="gen-head" id="header" style="background-color: #0C0F26;padding: 33px;">
+					<div class="gen-logo">
+						<a href="index.html"><img src="./images1/nav-logo.png" alt="navlogo"></a>
+					
+									 </div>
+						 
 						<nav id="nav">
-							<ul>
-								<li class="special">
-									<a href="#menu" class="menuToggle"><span>Menu</span></a>
-									<div id="menu">
-										<ul>
-											<li><a href="index.html">Home</a></li>
-											<li><a href="generic.html">Workflow</a></li>
-											<li><a href="elements.html">Our Services</a></li>
-											<li><a href="career.html">Careers</a></li>
-											<li><a href="about.html">About Us</a></li>
-											<li><a href="contact.html">Contact Us</a></li>
-											
-										</ul>
-									</div>
+							<ul class="nav-links">
+								<li>
+									<a class="active" href="#home">What We Create</a>
+									<ul class="submenu">
+										<li><a href="index.html">Home</a></li>
+										<li><a href="generic.html">Workflow</a></li>
+										<li><a href="elements.html">Our Services</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="#news">Who We Are</a>
+									<ul class="submenu">
+										<li><a href="about.html">About-Us</a></li>
+									
+								</ul>
+								</li>
+								<li>
+									<a href="#contact">Join Our Crew</a>
+									<ul class="submenu">
+										<li><a href="career.html">Career</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="#about">Connect With Us</a>
+									<ul class="submenu">
+										<li><a href="contact.html">Contact-Us</a></li>
+									</ul>
 								</li>
 							</ul>
+							
+
+
+
+							<!-- Hamburger Menu Icon -->
+		
+	<a href="javascript:void(0);" class="menu-icon" onclick="toggleMenu()">&#9776;</a>
+<a href="javascript:void(0);" class="close-icon" style="display:none;" onclick="toggleMenu()">&times;</a>
+
 						</nav>
+						
+							
+            <!-- Hamburger Menu Icon -->
+			 
+            <a href="#menu" class="menuToggle"><span></span></a>
+            <div id="menu">
+                <ul>
+                    <li><a href="index.html">What We Create</a></li>
+                    <li><a href="generic.html">Who We are</a></li>
+                    <li><a href="elements.html">Join Our Crew</a></li>
+                    <li><a href="career.html">Connect With Us</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+                <!-- Close button for mobile menu -->
+               <span class="close-icon" onclick="toggleMenu()">&times;</span>
+            </div>
+        </li>
+    </ul>
+</nav>
+<script>
+	function toggleMenu() {
+    var links = document.querySelector(".nav-links");
+    var menuIcon = document.querySelector(".menu-icon");
+    var closeIcon = document.querySelector(".close-icon");
+
+    if (links.style.display === "flex") {
+        // Hide the menu and show the hamburger icon
+        links.style.display = "none";
+        menuIcon.style.display = "block";  // Show hamburger icon
+        closeIcon.style.display = "none";  // Hide close icon
+    } else {
+        // Show the menu and hide the hamburger icon
+        links.style.display = "flex";
+        menuIcon.style.display = "none";   // Hide hamburger icon
+        closeIcon.style.display = "block"; // Show close icon
+    }
+}
+
+
+
+
+
+</script>
 					</header>
 
 				<!-- Main -->
 					<article id="main">
-						<header class="heading">
-							<h2>Job Openings</h2>
+						<header class="jobopen">
+							<img src="assets\images1\job.png" alt="">
+							<h2  class="workflow-head">Job Openings</h2>
 							<p>"We’re hiring! Be part of something bigger and grow with us."</p>
 						</header>
 						<section class="wrapper style5">
@@ -62,28 +129,31 @@
   <div class="job1">
 
   <h3 style="color: white;">Paint and Roto Artists:</h3>
-  <p>At connectlifevfx, we are a leading visual effects studio dedicated to bringing imagination 
+  <p class="animate-on-scroll">At connectlifevfx, we are a leading visual effects studio dedicated to bringing imagination 
 	to life. We work with global clients to deliver high-quality post-production and VFX services
 	 for film, television, and commercials. Join our world-class team and contribute to creating 
 	 visually stunning effects for top-tier projects.</p>
-  <button><a href="job1.html">Apply</a></button>
+  <button class="apply"><a href="job1.html">Apply</a></button>
 </div>
 <br>
 
  <div class="job2">
- <h3 style="color: white;">Compositors </h3><br>
-	<p>	We are seeking a talented Compositor to join our creative team. As a compositor, 
-		you will play a key role in crafting the final, polished shots that captivate 
-		audiences by seamlessly blending live-action footage with computer-generated 
-		imagery (CGI). You’ll work closely with our VFX artists and filmmakers to deliver
-		 visually stunning and believable scenes that elevate our 
-		 projects to the next level.<br></p>
+ <h3 style="color: white;">Compositors </h3>
+ <p class="animate-on-scroll">
+    We are seeking a talented Compositor to join our creative team. As a compositor, 
+    you will play a key role in crafting the final, polished shots that captivate 
+    audiences by seamlessly blending live-action footage with computer-generated 
+    imagery (CGI). You’ll work closely with our VFX artists and filmmakers to deliver
+    visually stunning and believable scenes that elevate our projects to the next level.
+</p><br>
+
 <button><a href="job2.html">Apply</a></button>
 		</div> <br>	 
 
 	<div class="job3">	
    <h3 style="color: white;"> Matchmove Artists </h3><br>
-	<p>As a Matchmove Artist at connectlifevfx, you will be an integral part of our VFX team, 
+	
+   <p  class="animate-on-scroll" >As a Matchmove Artist at connectlifevfx, you will be an integral part of our VFX team, 
 	working closely with animators and visual effects artists to ensure the accurate 
 	tracking and match-moving of shots in dynamic scenes. Your expertise in matchmoving 
 	will play a critical role in creating visually stunning and believable compositions 
@@ -95,7 +165,7 @@
 
 	<div class="job4">
 		<h3 style="color: white;">3D Artists</h3>
-		<p>As a 3D Artist, you will model, texture, and animate characters, environments, and
+		<p  class="animate-on-scroll">As a 3D Artist, you will model, texture, and animate characters, environments, and
 				 visual elements, transforming creative concepts into captivating visual stories. 
 				 Working closely with design and production teams, you'll ensure that every element,
 				  from characters to backgrounds, aligns with our clients' vision. Your role combines
@@ -107,7 +177,7 @@
 	
          <div class="job5">
 			<h3 style="color: white;">FX Artists </h3>
-			<p>As an FX Artist, you will simulate and create stunning effects such as fire,
+			<p  class="animate-on-scroll">As an FX Artist, you will simulate and create stunning effects such as fire,
 				 water, destruction, and magical phenomena for feature films, TV series, and 
 				 commercials. Your expertise in visual effects will be crucial in enhancing 
 				 the narrative and emotional impact of each project. Working collaboratively 
@@ -121,7 +191,7 @@
         <br>
 		<div class="job6">
            <h3 style="color: white;">Production Coordinators</h3>
-		   <p>
+		   <p  class="animate-on-scroll">
 			Production Coordinators play a pivotal role in the filmmaking, television, and 
 			animation industries, serving as the backbone of the production process. They
 			 are responsible for overseeing the logistical aspects of a project, ensuring
@@ -135,7 +205,7 @@
         <br>
 		  <div class="job7">
 			<h3 style="color: white;">VFX QC (Quality Control) </h3>
-			<p>
+			<p  class="animate-on-scroll">
 	The VFX QC Specialist plays a critical role in ensuring the highest quality standards in 
 	visual effects production. Responsible for meticulously reviewing, testing, and validating 
 	visual effects content, the VFX QC Specialist identifies technical and visual inconsistencies
@@ -147,7 +217,7 @@
 <br>
 		  <div class="job8">
 			<h3 style="color: white;">Team Leads</h3>
-			<p>
+			<p  class="animate-on-scroll">
 				As a VFX Team Leader and Mentor, your primary responsibility is to foster
 				 a collaborative and efficient environment across multiple departments within 
 				 the VFX production pipeline. You’ll lead and guide artists through technical 
@@ -162,7 +232,7 @@
          <br><br>
 		 <div class="job9">
                 <h3 style="color: white;">Line Producers </h3>
-				<p>
+				<p  class="animate-on-scroll">
 	In this role, you’ll coordinate all aspects of VFX production, from tracking progress
 	 to balancing priorities, ensuring that each project phase aligns with the overall
 	  schedule and budget constraints. This includes forecasting resource needs, 
@@ -189,7 +259,7 @@
 		<div class="contact">
 			<center><b class="footer-heading">Contact Us</b></center><br>
 			<ul style="list-style-type: none; padding: 0; text-align: center;">
-				<li>Hyderabad, USA, Dubai</li>
+				<li>India, USA, Dubai</li>
 				<li>+1 (414) 916 6789</li>
 				<li>info@connectlifevfx.com</li>
 			</ul>
@@ -237,6 +307,46 @@
 </footer>
 
 		<!-- Scripts -->
+		 <script>
+			document.addEventListener("DOMContentLoaded", function() {
+    const effectsParagraph = document.querySelector(".effects-j p");
+
+    function handleScrollAnimation() {
+        const rect = effectsParagraph.getBoundingClientRect();
+        const isInViewport = rect.top < window.innerHeight && rect.bottom >= 0;
+
+        if (isInViewport) {
+            effectsParagraph.classList.add("visible");
+            window.removeEventListener("scroll", handleScrollAnimation); // Remove listener once visible
+        }
+    }
+
+    window.addEventListener("scroll", handleScrollAnimation);
+    handleScrollAnimation(); // Initial check in case element is already in view
+});
+
+		 </script>
+		 <script>
+			document.addEventListener("DOMContentLoaded", function() {
+    const elements = document.querySelectorAll(".animate-on-scroll");
+
+    function handleScrollAnimation() {
+        elements.forEach((element) => {
+            const rect = element.getBoundingClientRect();
+            const isInViewport = rect.top < window.innerHeight && rect.bottom >= 0;
+
+            if (isInViewport) {
+                element.classList.add("visible");
+            }
+        });
+    }
+
+    window.addEventListener("scroll", handleScrollAnimation);
+    handleScrollAnimation(); // Initial check in case any elements are already in view
+});
+
+
+		 </script>
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.scrollex.min.js"></script>
 			<script src="assets/js/jquery.scrolly.min.js"></script>

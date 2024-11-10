@@ -1,4 +1,5 @@
 .info-item{
+    margin-top: -10%;
     margin-left: 170px;
     box-sizing: border-box;
 }
@@ -24,12 +25,49 @@
     background-color: #5d3a1f; /* Darker brown on hover */
 }
 
+/* Mobile view adjustments */
 @media (max-width: 768px) {
-    .contact-us-form {
-      width: 90%;
-      margin-left: 6%; /* Increase width for mobile view */
+    .workflow-head, .contact-img h2, .contact-img p {
+        font-size: 1.5em;
+        text-align: center;
     }
-    .info-item{
-        margin-left: 30%;
+
+    /* Center the info items and reduce spacing */
+    .info-item {
+        text-align: justify;
+        margin-left: 30%!important;
+        margin-top: -10px !important;
+    }
+
+    /* Contact form fields adjustments */
+    .contact-us-form h4 {
+        font-size: 1.2em;
+        text-align: center;
+        margin-left: -2%;
+    }
+    .contact-us-form{
+        margin-left: 10%;
+    }
+
+    .row.gtr-uniform > * {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    /* Adjust the form layout */
+    .contact-us-form form .col-6, .contact-us-form form .col-12 {
+        width: 100%;
+    }
+
+    /* Form actions buttons */
+    .actions li {
+        display: inline-block;
+        width: 48%;
+        margin: 5px 1%;
+    }
+
+    /* Reduce font size for smaller elements */
+    .info-item h4, .info-item a {
+        font-size: 1em;
     }
 }

@@ -19,51 +19,125 @@
 			<div id="page-wrapper">
 
 				<!-- Header -->
-					<header id="header">
-            <div class="logo">
+					<!-- Header -->
+					<header  class="gen-head" id="header" style="background-color: #0C0F26;padding: 33px;">
+						<div class="gen-logo">
+							<a href="index.html"><img src="./images1/nav-logo.png" alt="navlogo"></a>
 						
-              <img src="./assets/css/images/logo.png" alt="logo" width="50px" height="50px">
-                     </div>
-						<h1><a href="index.html">ConnectLifeVFX</a></h1>
+										 </div>
+						
+            
+           
 						<nav id="nav">
-							<ul>
-								<li class="special">
-									<a href="#menu" class="menuToggle"><span>Menu</span></a>
-									<div id="menu">
-										<ul>
-											<li><a href="index.html">Home</a></li>
-											<li><a href="generic.html">Workflow</a></li>
-											<li><a href="elements.html">Our Services</a></li>
-                      <li><a href="career.html">Careers</a></li>
-                      <li><a href="about.html">About Us</a></li>
-											<li><a href="contact.html">Contact Us</a></li>
-											
-										</ul>
-									</div>
+							<ul class="nav-links">
+								<li>
+									<a class="active" href="#home">What We Create</a>
+									<ul class="submenu">
+										<li><a href="index.html">Home</a></li>
+										<li><a href="generic.html">Workflow</a></li>
+										<li><a href="elements.html">Our Services</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="#news">Who We Are</a>
+									<ul class="submenu">
+										<li><a href="about.html">About-Us</a></li>
+									
+								</ul>
+								</li>
+								<li>
+									<a href="#contact">Join Our Crew</a>
+									<ul class="submenu">
+										<li><a href="career.html">Career</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="#about">Connect With Us</a>
+									<ul class="submenu">
+										<li><a href="contact.html">Contact-Us</a></li>
+									</ul>
 								</li>
 							</ul>
+							
+
+
+
+							<!-- Hamburger Menu Icon -->
+		
+	<a href="javascript:void(0);" class="menu-icon" onclick="toggleMenu()">&#9776;</a>
+<a href="javascript:void(0);" class="close-icon" style="display:none;" onclick="toggleMenu()">&times;</a>
+
 						</nav>
+						
+							
+            <!-- Hamburger Menu Icon -->
+			 
+            <a href="#menu" class="menuToggle"><span></span></a>
+            <div id="menu">
+                <ul>
+                    <li><a href="index.html">What We Create</a></li>
+                    <li><a href="generic.html">Who We are</a></li>
+                    <li><a href="elements.html">Join Our Crew</a></li>
+                    <li><a href="career.html">Connect With Us</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+                <!-- Close button for mobile menu -->
+               <span class="close-icon" onclick="toggleMenu()">&times;</span>
+            </div>
+        </li>
+    </ul>
+</nav>
+<script>
+	function toggleMenu() {
+    var links = document.querySelector(".nav-links");
+    var menuIcon = document.querySelector(".menu-icon");
+    var closeIcon = document.querySelector(".close-icon");
+
+    if (links.style.display === "flex") {
+        // Hide the menu and show the hamburger icon
+        links.style.display = "none";
+        menuIcon.style.display = "block";  // Show hamburger icon
+        closeIcon.style.display = "none";  // Hide close icon
+    } else {
+        // Show the menu and hide the hamburger icon
+        links.style.display = "flex";
+        menuIcon.style.display = "none";   // Hide hamburger icon
+        closeIcon.style.display = "block"; // Show close icon
+    }
+}
+
+
+
+
+
+</script>
 					</header>
-                    <section class="map" style="background-color: #29375a;">
+
+
+          <!--contact us banner-->
+                    <section class="map" style="background-color: #0C0F26">
                         <article id="main">
-                            <header>
-                                <h2>Contact Us</h2>
+                          <header class="contact-img">
+                            <img src="assets\images1\contact.webp" alt="">
+                                <h2 class="workflow-head">Contact Us</h2>
                                 <p>Reach us by using the below details</p>
                             </header><br><br>
                             <div class="col-lg-10 offset-lg-1">
-                                <div class="row">
+                                <div class="row" style="justify-content: center;">
                                   <div class="col-lg-4">
                                     <div class="info-item">
                                       <i class="fa fa-envelope"></i>
                                       <h4>Email Address</h4>
-                                      <a href="#">sales@connectlifevfx.com,</a><br>
-                                      <a href="#">VFX.careers@connectlifevfx.com, </a> <br>
-                                      <a href="#">info@connectlifevfx.com,</a>
-                                        
+                                      <a href="#">sales@connectlifevfx.com</a><br>
+                                      <a href="#">VFX.careers@connectlifevfx.com </a> <br>
+                                      <a href="#">info@connectlifevfx.com</a>
+                                        <br>
+                                        <br>
                                     </div>
                                   </div>
       
-                                <div class="col-lg-4" style="background-color: #29375a;">
+                                <div class="col-lg-4">
                                   <div class="info-item">
                                     <i class="fa fa-map-marked-alt"></i>
                                     <h4>Address</h4>
@@ -76,6 +150,7 @@
                           </div>
                         </div>
                       </section><br><br>
+                      
 
                       
                     
@@ -125,50 +200,50 @@
                                 <div class="col-12">
                                     <ul class="actions">
                                         <li><input type="submit" value="Send Message" class="primary" /></li>
-                                        <li><input type="reset" value="Reset" /></li>
+                                        <li><input type="reset" value="Reset" class="primary" /></li>
                                     </ul>
                                 </div>
                             </div>
                         </form>
 
                       </section>
-                    
-                      <section class="partners">
+                      <br><br><br><br>
+                    <!--<section class="partners">
                         <div class="container">
                           <div class="row">
                             <div class="col-lg-2 col-sm-4 col-6">
                               <div class="item">
-                                <img src="assets/images/client-01.png" alt="">
+                                <img src="assets\images1\career.webp" alt="">
                               </div>
                             </div>
                             <div class="col-lg-2 col-sm-4 col-6">
                               <div class="item">
-                                <img src="assets/images/client-01.png" alt="">
+                                <img src="assets\images1\career.webp" alt="">
                               </div>
                             </div>
                             <div class="col-lg-2 col-sm-4 col-6">
                               <div class="item">
-                                <img src="assets/images/client-01.png" alt="">
+                                <img src="assets\images1\career.webp" alt="">
                               </div>
                             </div>
                             <div class="col-lg-2 col-sm-4 col-6">
                               <div class="item">
-                                <img src="assets/images/client-01.png" alt="">
+                                <img src="assets\images1\career.webp" alt="">
                               </div>
                             </div>
                             <div class="col-lg-2 col-sm-4 col-6">
                               <div class="item">
-                                <img src="assets/images/client-01.png" alt="">
+                                <img src="assets\images1\career.webp" alt="">
                               </div>
                             </div>
                             <div class="col-lg-2 col-sm-4 col-6">
                               <div class="item">
-                                <img src="assets/images/client-01.png" alt="">
+                                <img src="assets\images1\career.webp" alt="">
                               </div>
                             </div>
                           </div>
                         </div>
-                      </section><br><br><br><br>
+                      </section><br><br><br><br>-->
                       
 				<!-- Footer -->
              <!-- Footer -->
@@ -179,7 +254,7 @@
 		<div class="contact">
 			<center><b class="footer-heading">Contact Us</b></center><br>
 			<ul style="list-style-type: none; padding: 0; text-align: center;">
-				<li>Hyderabad, USA, Dubai</li>
+				<li>India, USA, Dubai</li>
 				<li>+1 (414) 916 6789</li>
 				<li>info@connectlifevfx.com</li>
 			</ul>

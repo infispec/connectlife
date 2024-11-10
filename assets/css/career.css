@@ -11,6 +11,23 @@
     animation-delay: calc(0.1s * var(--i));
     position: relative;
 }
+/*for text alignment*/
+.wrapper.style5 .inner {
+    text-align: left;
+    text-align: justify;
+
+}
+
+.career-p1 {
+    text-align: left;
+    color: white;
+    line-height: 1.6;
+}
+
+.career-p1 h3 {
+    color: white;
+    margin-bottom: 10px;
+}
 
 @keyframes jump {
     0% {

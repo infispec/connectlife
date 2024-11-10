@@ -13,57 +13,120 @@
         <link rel="stylesheet" href="assets/css/career.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
-	<body class="is-preload">
+	<body class="is-preload" style="background-color: #0C0F26">
 
 		<!-- Page Wrapper -->
 			<div id="page-wrapper">
 
 				<!-- Header -->
-					<header id="header">
-						<div class="logo">
-						
-							<img src="./assets/css/images/logo.png" alt="logo" width="50px" height="50px">
-										 </div>
-						<h1><a href="index.html">connectlifevfx</a></h1>
+				<header  class="gen-head" id="header" style="background-color: #0C0F26;padding: 33px;">
+					<div class="gen-logo">
+						<a href="index.html"><img src="./images1/nav-logo.png" alt="navlogo"></a>
+					
+									 </div>
 						<nav id="nav">
-							<ul>
-								<li class="special">
-									<a href="#menu" class="menuToggle"><span>Menu</span></a>
-									<div id="menu">
-										<ul>
-											<li><a href="index.html">Home</a></li>
-											<li><a href="generic.html">Workflow</a></li>
-											<li><a href="elements.html">Our Services</a></li>
-                                            <li><a href="career.html">Careers</a></li>
-											<li><a href="about.html">About Us</a></li>
-											<li><a href="contact.html">Contact Us</a></li>
-											
-										</ul>
-									</div>
+							<ul class="nav-links">
+								<li>
+									<a class="active" href="#home">What We Create</a>
+									<ul class="submenu">
+										<li><a href="index.html">Home</a></li>
+										<li><a href="generic.html">Workflow</a></li>
+										<li><a href="elements.html">Our Services</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="#news">Who We Are</a>
+									<ul class="submenu">
+										<li><a href="about.html">About-Us</a></li>
+									
+								</ul>
+								</li>
+								<li>
+									<a href="#contact">Join Our Crew</a>
+									<ul class="submenu">
+										<li><a href="career.html">Career</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="#about">Connect With Us</a>
+									<ul class="submenu">
+										<li><a href="contact.html">Contact-Us</a></li>
+									</ul>
 								</li>
 							</ul>
+							
+
+
+
+							<!-- Hamburger Menu Icon -->
+		
+	<a href="javascript:void(0);" class="menu-icon" onclick="toggleMenu()">&#9776;</a>
+<a href="javascript:void(0);" class="close-icon" style="display:none;" onclick="toggleMenu()">&times;</a>
+
 						</nav>
+						
+							
+            <!-- Hamburger Menu Icon -->
+			 
+            <a href="#menu" class="menuToggle"><span></span></a>
+            <div id="menu">
+                <ul>
+                    <li><a href="index.html">What We Create</a></li>
+                    <li><a href="generic.html">Who We are</a></li>
+                    <li><a href="elements.html">Join Our Crew</a></li>
+                    <li><a href="career.html">Connect With Us</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+                <!-- Close button for mobile menu -->
+               <span class="close-icon" onclick="toggleMenu()">&times;</span>
+            </div>
+        </li>
+    </ul>
+</nav>
+<script>
+	function toggleMenu() {
+    var links = document.querySelector(".nav-links");
+    var menuIcon = document.querySelector(".menu-icon");
+    var closeIcon = document.querySelector(".close-icon");
+
+    if (links.style.display === "flex") {
+        // Hide the menu and show the hamburger icon
+        links.style.display = "none";
+        menuIcon.style.display = "block";  // Show hamburger icon
+        closeIcon.style.display = "none";  // Hide close icon
+    } else {
+        // Show the menu and hide the hamburger icon
+        links.style.display = "flex";
+        menuIcon.style.display = "none";   // Hide hamburger icon
+        closeIcon.style.display = "block"; // Show close icon
+    }
+}
+
+
+
+
+
+</script>
 					</header>
 
 				<!-- Main -->
 					<article id="main">
-						<header>
-							<h2>Our Careers</h2>
+						<header class="careers-img">
+							<img src="./assets/images1/job.png" alt="">
+							<h2 class="workflow-head">Our Careers</h2>
 							<p class="jumping-text">"Opportunities don't happen, we create them. <br>
                                 Join us on this journey."</p>
-<script>
-                                const waveText = document.querySelector('.wave-text');
-waveText.innerHTML = waveText.textContent
-    .split('')
-    .map((letter, i) => `<span style="--i:${i}">${letter}</span>`)
-    .join('');
-</script>
-						</header>
-						<section class="wrapper style5">
-							<div class="inner">
 
-                      <p> <h3 style="color: white;">Join Our Team at Connect Life VFX </h3>
-                     At Connect Life VFX, we are shaping the future of visual effects across the globe. 
+						</header>
+						<table style="width: 100%;display: flex; justify-content: center;align-items: center;table-layout: fixed;"> 
+							<tr>
+								<td>
+						<section class="ca">
+					
+                      <p class="career-p1"> <h3 style="color: white;">Join Our Team at Connect Life VFX </h3>
+                    
+					<p class="career-p2">	At Connect Life VFX, we are shaping the future of visual effects across the globe. 
                      As one of the fastest-growing VFX studios with operations in the USA, India, 
                      and Dubai, we pride ourselves on delivering world-class VFX solutions to some 
                      of the biggest names in entertainment and advertising.<br>
@@ -72,20 +135,36 @@ waveText.innerHTML = waveText.textContent
                      storytelling, innovative VFX techniques, and cutting-edge technology, this is the
                       place for you.
                                     </p>
-									<hr>
+								</section>
+							</td>
+							<td>
+								<div class="contain">
+								<img src="assets\images1\career.jpg" alt="career">
+							</div>
+						</td>
+						</tr>
+					</table>
+				<section class="car">
 					
 					<p> <h3 style="color: white;">How to Apply </h3>
-						We are always on the lookout for talented artists, technicians,
-					   and coordinators who share our passion for VFX. 
-					 If you're ready to take your career to the next level and work in a dynamic, 
-					 fast-paced environment, we’d love to hear from you! 
-					 Please send your resume and portfolio to <h4 style="color: burlywood;"><u>careers@connectlifevfx.com </u></h4>
+						<p class="fade-text">We are always on the lookout for talented artists, technicians,
+							and coordinators who share our passion for VFX. If you're ready to take your career 
+							to the next level and work in a dynamic, fast-paced environment, we’d love to hear 
+							from you! Please send your resume and portfolio to</p>
+						<h4 style="color: burlywood;"><u>careers@connectlifevfx.com </u></h4>
 					
-										</p><hr>
+										</p></section>
+										<section class="care">
 
                     <p><h3 style="color: white;">Why Work with Us?</h3>
 						
-						<p>
+						
+							<div class="videoContainer">
+							<video width="300" height="100" controls autoplay>
+								<source src="assets\images1\audio.mp4">
+							</video>
+						</div>
+						 
 							<h3 style="color: white;"> Global Impact</h3>
 							<p id="para1" class="toggle-paragraph">
 								Be part of an international studio working on high-profile projects for
@@ -119,20 +198,23 @@ waveText.innerHTML = waveText.textContent
 								Our mentorship programs, workshops, and industry partnerships help our artists and 
 								technicians stay at the forefront of VFX trends.
 							</p>
-                        </p>  
-						<hr>              
-
+                     
+					</section>         
+					<div class="mee">
 					<h3 style="color: white;">Current Openings</h3>
-                   <p> To know more Jobs <a href="jobs.html"><button> Click Here !</button> </a> 
+                   <p> To know more Jobs <a href="jobs.html"><button style="background-color: #4FC3F7;"> Click Here !</button> </a> 
                    </p>
                                          
                        
 
-				<p><a href="FAQ.html"><h3  style="color: white;">FAQ </h3></a></p>					
+				   <button style="background-color: #4FC3F7;justify-content:center"><a href="FAQ.html"><h3><center>FAQ</center> </h3></a></button>				
+			
 								
 							</div>
 						</section>
 					</article>
+					
+					
 
 				<!-- Footer -->
 				<!-- Footer -->
@@ -143,7 +225,7 @@ waveText.innerHTML = waveText.textContent
 		<div class="contact">
 			<center><b class="footer-heading">Contact Us</b></center><br>
 			<ul style="list-style-type: none; padding: 0; text-align: center;">
-				<li>Hyderabad, USA, Dubai</li>
+				<li>India, USA, Dubai</li>
 				<li>+1 (414) 916 6789</li>
 				<li>info@connectlifevfx.com</li>
 			</ul>
@@ -191,6 +273,35 @@ waveText.innerHTML = waveText.textContent
 </footer>
 
 		<!-- Scripts -->
+		<script>
+			const waveText = document.querySelector('.wave-text');
+waveText.innerHTML = waveText.textContent
+.split('')
+.map((letter, i) => `<span style="--i:${i}">${letter}</span>`)
+.join('');
+</script>
+<script>
+	document.addEventListener("DOMContentLoaded", function () {
+    const fadeText = document.querySelector(".fade-text");
+    
+    function checkVisibility() {
+        const rect = fadeText.getBoundingClientRect();
+        const windowHeight = window.innerHeight;
+
+        // Check if the text is in the viewport
+        if (rect.top <= windowHeight && rect.bottom >= 0) {
+            fadeText.classList.add("visible");
+        } else {
+            fadeText.classList.remove("visible"); // Optional: hide again if scrolled out
+        }
+    }
+
+    window.addEventListener("scroll", checkVisibility);
+    window.addEventListener("resize", checkVisibility); // Check visibility on resize
+    checkVisibility(); // Initial check
+});
+
+</script>
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.scrollex.min.js"></script>
 			<script src="assets/js/jquery.scrolly.min.js"></script>

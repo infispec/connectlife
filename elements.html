@@ -12,45 +12,113 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
-	<body class="is-preload">
+	<body class="is-preload" style="background-color: #0C0F26" >
 
 		<!-- Page Wrapper -->
 			<div id="page-wrapper">
 
 				<!-- Header -->
-					<header id="header">
-						<div class="logo">
-						
-							<img src="./assets/css/images/logo.png" alt="logo" width="50px" height="50px">
-										 </div>
-						<h1><a href="index.html">ConnectLifeVFX</a></h1>
+				<header  class="gen-head" id="header" style="background-color: #0C0F26;padding: 33px;">
+					<div class="gen-logo">
+						<img src="./images1/nav-logo.png" alt="navlogo">
+					
+									 </div>
+										 
+						 
 						<nav id="nav">
-							<ul>
-								<li class="special">
-									<a href="#menu" class="menuToggle"><span>Menu</span></a>
-									<div id="menu">
-										<ul>
-											<li><a href="index.html">Home</a></li>
-											<li><a href="generic.html">Workflow</a></li>
-											<li><a href="elements.html">Our Services</a></li>
-											<li><a href="career.html">Careers</a></li>
-											<li><a href="about.html">About Us</a></li>
-											<li><a href="contact.html">Contact Us</a></li>
-											
-										</ul>
-									</div>
+							<ul class="nav-links">
+								<li>
+									<a class="active" href="#home">What We Create</a>
+									<ul class="submenu">
+										<li><a href="index.html">Home</a></li>
+										<li><a href="generic.html">Workflow</a></li>
+										<li><a href="elements.html">Our Services</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="#news">Who We Are</a>
+									<ul class="submenu">
+										<li><a href="about.html">About-Us</a></li>
+									
+								</ul>
+								</li>
+								<li>
+									<a href="#contact">Join Our Crew</a>
+									<ul class="submenu">
+										<li><a href="career.html">Career</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="#about">Connect With Us</a>
+									<ul class="submenu">
+										<li><a href="contact.html">Contact-Us</a></li>
+									</ul>
 								</li>
 							</ul>
+							
+
+
+
+							<!-- Hamburger Menu Icon -->
+		
+	<a href="javascript:void(0);" class="menu-icon" onclick="toggleMenu()">&#9776;</a>
+<a href="javascript:void(0);" class="close-icon" style="display:none;" onclick="toggleMenu()">&times;</a>
+
 						</nav>
+						
+							
+            <!-- Hamburger Menu Icon -->
+			 
+            <a href="#menu" class="menuToggle"><span></span></a>
+            <div id="menu">
+                <ul>
+                    <li><a href="index.html">What We Create</a></li>
+                    <li><a href="generic.html">Who We are</a></li>
+                    <li><a href="elements.html">Join Our Crew</a></li>
+                    <li><a href="career.html">Connect With Us</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+                <!-- Close button for mobile menu -->
+               <span class="close-icon" onclick="toggleMenu()">&times;</span>
+            </div>
+        </li>
+    </ul>
+</nav>
+<script>
+	function toggleMenu() {
+    var links = document.querySelector(".nav-links");
+    var menuIcon = document.querySelector(".menu-icon");
+    var closeIcon = document.querySelector(".close-icon");
+
+    if (links.style.display === "flex") {
+        // Hide the menu and show the hamburger icon
+        links.style.display = "none";
+        menuIcon.style.display = "block";  // Show hamburger icon
+        closeIcon.style.display = "none";  // Hide close icon
+    } else {
+        // Show the menu and hide the hamburger icon
+        links.style.display = "flex";
+        menuIcon.style.display = "none";   // Hide hamburger icon
+        closeIcon.style.display = "block"; // Show close icon
+    }
+}
+
+
+
+
+
+</script>
 					</header>
 
 				<!-- Main -->
 					<article id="main">
-						<header>
-							<h2>Our Services</h2>
+						<header class="services-img">
+							<img src="assets\images1\services.png" alt="">
+							<h2 class="workflow-head">Our Services</h2>
 							<p>Delivering Outstanding Visual Experiences Through Dedication and Creativity</p>
 						</header>
-						<section class="wrapper style5">
+						<section class="wrapper style">
 							<div class="inner">
 
 						<!--		<section>
@@ -71,88 +139,176 @@
 									<br><br>-->
 									
 									<header class="rotoscoping-box">
-										<h3 class="scrolling-heading" style="color: white;">Rotoscoping</h3>
-										<p class="scrolling-paragraph" style="color: white;">
-											<b class="roto" style="color: white;">Comprehensive Services -</b> We offer end-to-end rotoscoping solutions for feature
-											films, web / TV productions, and commercials.<br>
-											<b style="color: white;">Advanced Techniques -</b> Proficient in Nuke shapes, Silhouette splines, hard mattes,
-											motion blur mattes, and open polygons for hair strands.<br>
-											<b style="color: white;">Precision and Realism -</b> Expertise in lifelike movement replication, complex
-											tracing, and clean extraction.<br>
-											<b style="color: white;">Commitment to Quality -</b> High levels of Quality Control (QC) and Quality Assurance
-											(QA) ensure timely delivery, every time.<br>
-											CLV Connect Life VFX – Our Rotoscoping Services Breathe Life into Your Visuals, Making
-											Them Feel Truly Real.
-										</p>
+										<h3 style="color: white;">Rotoscoping</h3>
+										<img class="element" src="assets\images1\rotoscoping.jpg" alt="">
+
+    <div class="scrolling-paragraph">
+        <ul>
+            <li>
+                <b class="roto" style="color: white;">Comprehensive Services </b>
+            <p>    We offer end-to-end rotoscoping solutions for feature films, 
+				web/TV productions, and commercials.</p>
+            </li>
+            <li>
+                <b style="color: white;">Advanced Techniques </b>
+              <p>  Proficient in Nuke shapes, Silhouette splines, hard mattes,
+				 motion blur mattes, and open polygons for hair strands.</p>
+            </li>
+            <li>
+                <b style="color: white;">Precision and Realism </b>
+             <p>   Expertise in lifelike movement replication, complex tracing, 
+				and clean extraction.</p>
+            </li>
+            <li>
+                <b style="color: white;">Commitment to Quality -</b>
+           <p>     High levels of Quality Control (QC) and Quality Assurance 
+			(QA) ensure timely delivery, every time.</p>
+            </li>
+            <li>
+                <b>CLV Connect Life VFX</b>
+				<p>Our Rotoscoping Services Breathe Life into Your Visuals, 
+					Making Them Feel Truly Real.</p>
+            </li>
+        </ul>
+    </div>
+										
 									</header>
 		
-									  <header class="paint-box" style="color: white;">
-										<h3 class="scrolling-heading" style="color: white;">Paint</h3>
-										<p class="scrolling-paragraph" style="color: white;">
-											<b class="paint" style="color: white;">Comprehensive Paint and Cleanup Solutions - </b>
-											We cater to all types of paint and cleanup needs for any project, ensuring quick turnaround times.<br>
-											<b style="color: white;">Advanced Techniques - </b>
-											Proficient in rig/wire removal, reflection cleaning, and dust/scratch removal.<br>
-											<b style="color: white;">Seamless Integration - </b>
-											We deliver Nuke scripts along with rendered clean plates for easy integration into your workflow.<br>
-											<b style="color: white;">Pixel-Perfect Results - </b>
-											Whether it's frame-by-frame or clean plate, we work tirelessly to ensure flawless results, pixel by pixel.<br>
-											Transform Your Visuals into Breathtaking Masterpieces with our VFX Paint Services!
-										</p>
+									  <header class="paint-box">
+										<h3 style="color: white;">Paint</h3>
+										
+										<img class="element" src="assets\images1\paintt.jpg" alt="">
+										<div class="scrolling-paragraph">
+											<ul>
+												<li>
+													<b class="paint">Comprehensive Paint and Cleanup Solutions</b>
+													<p>We cater to all types of paint and 
+							cleanup needs for any project, ensuring quick turnaround times.</p>
+												</li>
+												<li>
+													<b>Advanced Techniques  </b>
+		<p>			Proficient in rig/wire removal, reflection cleaning, and 
+			dust/scratch removal.</p>
+												</li>
+												<li>
+													<b>Seamless Integration  </b>
+				<p>	We deliver Nuke scripts along with rendered clean plates for easy 
+					integration into your workflow.</p>
+												</li>
+												<li>
+													<b>Pixel-Perfect Results  </b>
+						<p>	Whether it's frame-by-frame or clean plate, we work tirelessly
+							 to ensure flawless results, pixel by pixel.</p>
+												</li>
+												<li>
+					<p>Transform Your Visuals into Breathtaking Masterpieces with our VFX Paint Services!</p>
+												</li>
+											</ul>
+										</div>
 									</header>
 									
 									<header class="matchmove-box">
 
 										<h3 style="color: white;">Matchmove</h3>
+										<img class="element" src="assets\images1\MM.png" alt="">
 
-<p style="color: white;">
-
-
-<b class="match"  style="color: white;">Comprehensive Tracking Solutions -</b>
-Our expert tracking services include thorough camera tracking,
-object tracking, VFX production tracking, and matchmove. <br>
- 
-<b  style="color: white;">Advanced Techniques -</b>
-Proficient in high-end Maya, FBX, and proxy geometry, ensuring
-seamless integration with your pipeline.<br>
-  <b  style="color: white;">Complex Problem Solvers - </b>
-We can resolve and deliver the most intricate tracking challenges.<br>
-  <b  style="color: white;">Detailed Set Models - </b>
-We deliver exhaustive set models, providing a solid foundation for
-your VFX projects.<br>
-
-Our expertise in VFX tracking software and matchmove allows us to meet the camera and object
-tracking needs of a diverse range of clients
-
-</p>
+     
+    <div class="scrolling-paragraph">
+        <ul>
+            <li>
+                <b class="match">Comprehensive Tracking Solutions </b>
+           <p>     Our expert tracking services include thorough camera tracking, 
+			object tracking, VFX production tracking, and matchmove.</p>
+            </li>
+            <li>
+                <b>Advanced Techniques </b>
+           <p>     Proficient in high-end Maya, FBX, and proxy geometry, 
+			ensuring seamless integration with your pipeline.</p>
+            </li>
+            <li>
+                <b>Complex Problem Solvers </b>
+             <p>   We can resolve and deliver the most intricate tracking challenges.</p>
+            </li>
+            <li>
+                <b>Detailed Set Models </b>
+           <p>     We deliver exhaustive set models, providing a solid foundation
+			 for your VFX projects.</p>
+            </li>
+            <li>
+              <p>Our expertise in VFX tracking software and matchmove allows
+				 us to meet the camera and object tracking needs of a diverse range of clients.</p>
+            </li>
+        </ul>
+    </div>
 
 
 									</header>
 
 								<header class="compo-box">
-									<h3 style="color: white;">Compositing</h3>									
-   <b style="color: white;">Expert Green Screen Removal - </b>
-Specializing in seamless green screen removal and the integration
-of combined passes for 2D and 3D VFX compositing.<br>
-<b  style="color: white;">Rapid Delivery of Complex Shots - </b>
-  Capable of delivering highly intricate compositing shots in minimal
-timeframes.<br>
- <b  style="color: white;"> Unmatched Quality Control - </b>
-Our rigorous Quality Control (QC) and Quality Assurance (QA)
-processes ensure that our compositing deliveries are second to
-none.<br>
-  <b  style="color: white;"> Extensive Experience - </b>
-Our team brings years of experience from a dedicated VFX
-compositing studio, ensuring top-notch service and results.<br>
-
-Achieve “Pixel-Perfect” Solutions with Our VFX Compositing Expertise!
-									</p>
+									<h3 style="color: white;">Compositing</h3>	
+									<img class="element" src="assets\images1\compositing.jpg" alt="">							
+									<div class="scrolling-paragraph">
+										<ul>
+											<li>
+												<b>Expert Green Screen Removal  </b>
+						<p>	Specializing in seamless green screen removal and the 
+							integration of combined passes for 2D and 3D VFX compositing.</p>
+											</li>
+											<li>
+												<b>Rapid Delivery of Complex Shots  </b>
+					<p>	Capable of delivering highly intricate compositing shots in minimal
+						 timeframes.</p>
+											</li>
+											<li>
+												<b>Unmatched Quality Control </b>
+					<p>	Our rigorous Quality Control (QC) and Quality Assurance
+						 (QA) processes ensure that our compositing deliveries are second to none.</p>
+											</li>
+											<li>
+												<b>Extensive Experience </b>
+						<p>	Our team brings years of experience from a dedicated VFX
+							 compositing studio, ensuring top-notch service and results.</p>
+											</li>
+											<li>
+												<p>Achieve “Pixel-Perfect” Solutions with Our VFX Compositing Expertise!</p>
+											</li>
+										</ul>
+									</div>
+								
 								</header>	
 									
 									
 								</section>
 
-								
+					<script>
+						// Function to check if an element is in the viewport
+function isElementInViewport(el) {
+    const rect = el.getBoundingClientRect();
+    return (
+        rect.top >= 0 && rect.left >= 0 &&
+        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+    );
+}
+
+// Function to add the 'visible' class to list items
+function animateListItemsOnScroll() {
+    const items = document.querySelectorAll('.effects li'); // Select all list items
+
+    items.forEach((item) => {
+        if (isElementInViewport(item)) {
+            item.classList.add('visible'); // Add visible class when in view
+        }
+    });
+}
+
+// Event listener for scroll events
+window.addEventListener('scroll', animateListItemsOnScroll);
+
+// Initial check in case the items are already in view
+document.addEventListener('DOMContentLoaded', animateListItemsOnScroll);
+
+					</script>			
 
 								
 
@@ -168,7 +324,7 @@ Achieve “Pixel-Perfect” Solutions with Our VFX Compositing Expertise!
 		<div class="contact">
 			<center><b class="footer-heading">Contact Us</b></center><br>
 			<ul style="list-style-type: none; padding: 0; text-align: center;">
-				<li>Hyderabad, USA, Dubai</li>
+				<li>India, USA, Dubai</li>
 				<li>+1 (414) 916 6789</li>
 				<li>info@connectlifevfx.com</li>
 			</ul>

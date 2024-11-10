@@ -1,80 +1,375 @@
 <!DOCTYPE HTML>
-<!--
-	Spectral by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
 <html>
 	<head>
 		<title>Connect Life VFX</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Moondance&display=swap" rel="stylesheet">
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 		<script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
 
 	</head>
-	<body class="landing is-preload">
+	<body class="preload" id="spider-img" style="background-color: #0C0F26;
+	background-image: url(./images1/spider.png);background-repeat: no-repeat;">
+	
+		
 
 		<!-- Page Wrapper -->
+		
 			<div id="page-wrapper">
 
 				<!-- Header -->
-					<header id="header" class="alt">
-						<!--<div class="logo">
-						<a href="index.html">
-			<img src="./assets/css/images/logo.png" alt="logo" width="100px" height="100px"></a>
-						 </div>-->
-						<nav id="nav">
-							<ul>
-								<li class="special">
-									<a href="#menu" class="menuToggle"><span>Menu</span></a>
-									<div id="menu">
-										<ul>
-											<li><a href="index.html">Home</a></li>
-											<li><a href="generic.html">Workflow</a></li>
-											<li><a href="elements.html">Our Services</a></li>
-											<li><a href="career.html">Careers</a></li>
-											<li><a href="about.html">About Us</a></li>
-											<li><a href="contact.html">Contact Us</a></li>
-											
-											
-										</ul>
-									</div>
-								</li>
+				<header  class="gen-head" id="header" style="background-color: #0C0F26;padding: 33px;">
+					<div class="gen-logo">
+						<a href="index.html"><img src="./images1/nav-logo.png" alt="navlogo"></a>
+					
+									 </div>
+					<nav id="nav">
+						<ul class="nav-links">
+							<li>
+								<a class="active" href="#home">What We Create</a>
+								<ul class="submenu">
+									<li><a href="index.html">Home</a></li>
+									<li><a href="generic.html">Workflow</a></li>
+									<li><a href="elements.html">Our Services</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="#news">Who We Are</a>
+								<ul class="submenu">
+									<li><a href="about.html">About-Us</a></li>
+								
 							</ul>
-						</nav>
-					</header>
+							</li>
+							<li>
+								<a href="#contact">Join Our Crew</a>
+								<ul class="submenu">
+									<li><a href="career.html">Career</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="#about">Connect With Us</a>
+								<ul class="submenu">
+									<li><a href="contact.html">Contact-Us</a></li>
+								</ul>
+							</li>
+						</ul>
+						
+
+
+
+						<!-- Hamburger Menu Icon -->
+	
+<a href="javascript:void(0);" class="menu-icon" onclick="toggleMenu()">&#9776;</a>
+<a href="javascript:void(0);" class="close-icon" style="display:none;" onclick="toggleMenu()">&times;</a>
+
+					</nav>
+					
+						
+		<!-- Hamburger Menu Icon -->
+		 
+		<a href="#menu" class="menuToggle"><span></span></a>
+		<div id="menu">
+			<ul>
+				<li><a href="index.html">What We Create</a></li>
+				<li><a href="generic.html">Who We are</a></li>
+				<li><a href="elements.html">Join Our Crew</a></li>
+				<li><a href="career.html">Connect With Us</a></li>
+				<li><a href="about.html">About Us</a></li>
+				<li><a href="contact.html">Contact Us</a></li>
+			</ul>
+			<!-- Close button for mobile menu -->
+		   <span class="close-icon" onclick="toggleMenu()">&times;</span>
+		</div>
+	</li>
+</ul>
+</nav>
+<style>
+	
+@media (max-width: 768px) {
+	#header nav > ul > li {
+    display: flex; /* Use flexbox for alignment */
+    align-items: center; /* Center items vertically */
+}
+
+#header nav > ul > li > a {
+    padding: 0 0 0 18px; /* Adjust padding as needed */
+    text-align: left; /* Align text to the left */
+    color: #f2f2f2; /* Ensure link color is visible */
+    text-decoration: none; /* Remove underline from links */
+    flex: 1; /* Allow links to take available space */
+	margin-left: 20%;
+}
+#heaser nav > ul > li > a {
+	padding: 0 0 0 1.5em;
+}
+    .topnav .nav-links {
+        flex-direction: column;
+        position: absolute;
+        width: 100%;
+        top: 60px; /* Adjust based on your topnav height */
+        right: 0; /* Aligns the menu to the right */
+        background-color: #141b2a; /* Background color for the mobile menu */
+        z-index: 5; /* Ensure it appears above other content */
+        padding: 20px; /* Ensure there's padding inside the menu */
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5); /* Optional: Adds a shadow for depth */
+    }
+
+    .topnav .nav-links.active {
+        left: 0; /* Show the menu when active */
+    }
+	.menu-icon {
+		display: flex; /* Show menu icon on mobile */
+		margin-top: -2%;
+		margin-left: -600%;
+	}
+	
+    .close-icon {
+        display: block; /* Show close icon on mobile */
+        align-self: flex-end; /* Align close icon to the right */
+        margin-top: 10%;
+		margin-top: -2%;
+		margin-right: auto; /* Remove the large right margin */
+		margin-left: -900%; 
+    }
+
+    .topnav a {
+        padding: 10px 15px; /* Adjust padding for smaller screen */
+        color: #ffffff; /* Ensure link color is white */
+    }
+	.submenu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-left: 10%; /* Floats the submenu to the left */
+}
+
+	
+	#header nav > ul {
+				list-style: none;
+				margin: 0;
+				padding: 0 0 0 2.5em;
+				white-space: nowrap;
+			}
+		ul.nav-links {
+			text-align: center;
+        display: none;
+        flex-direction: column;
+        width: 500px;
+        padding: 10px;
+        position: absolute;
+        top: 50px;
+        right: 0;
+        background-color: #141b2a;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+        z-index: 10;
+    }		
+	
+ul.nav-links li {
+    margin-right: 10px;
+    position: relative; /* Position for submenu */
+}
+			
+}
+	
+@media (max-width: 600px) {
+	#header nav > ul > li {
+    display: flex; /* Use flexbox for alignment */
+    align-items: center; /* Center items vertically */
+}
+
+#header nav > ul > li > a {
+    padding: 0 0 0 18px; /* Adjust padding as needed */
+    text-align: center; /* Align text to the left */
+    color: #f2f2f2; /* Ensure link color is visible */
+    text-decoration: none; /* Remove underline from links */
+    flex: 1; /* Allow links to take available space */
+	margin-left: 20%;
+}
+#heaser nav > ul > li > a {
+	padding: 0 0 0 1.5em;
+}
+    .topnav .nav-links {
+        flex-direction: column;
+        position: absolute;
+        width: 100%;
+        top: 60px; /* Adjust based on your topnav height */
+        right: 0; /* Aligns the menu to the right */
+        background-color: #141b2a; /* Background color for the mobile menu */
+        z-index: 5; /* Ensure it appears above other content */
+        padding: 20px; /* Ensure there's padding inside the menu */
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5); /* Optional: Adds a shadow for depth */
+    }
+
+    .topnav .nav-links.active {
+        left: 0; /* Show the menu when active */
+    }
+	.menu-icon {
+		display: flex; /* Show menu icon on mobile */
+		margin-top: -2%;
+		margin-left: -100%;
+	}
+	
+    .close-icon {
+        display: block; /* Show close icon on mobile */
+        align-self: flex-end; /* Align close icon to the right */
+        margin-top: 10%;
+		margin-top: -2%;
+		margin-right: auto; /* Remove the large right margin */
+		margin-left: -200%; 
+    }
+
+    .topnav a {
+        padding: 10px 15px; /* Adjust padding for smaller screen */
+        color: #ffffff; /* Ensure link color is white */
+    }
+	.submenu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-left: 20%; /* Floats the submenu to the left */
+}
+
+	
+	#header nav > ul {
+				list-style: none;
+				margin: 0;
+				padding: 0 0 0 2.5em;
+				white-space: nowrap;
+			}
+		ul.nav-links {
+			text-align: center;
+        display: none;
+        flex-direction: column;
+        width: 500px;
+        padding: 10px;
+        position: absolute;
+        top: 50px;
+        right: 0;
+        background-color: #141b2a;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+        z-index: 10;
+    }		
+	
+ul.nav-links li {
+    margin-right: 10px;
+    position: relative; /* Position for submenu */
+}
+		
+@media (max-width: 600px) {/* General reset for padding and margin */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Ensure body takes the full viewport width without overflow */
+html, body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+/* Main container styling */
+.container {
+    width: 100%; /* Full width without exceeding viewport */
+    max-width: 100vw; /* Prevents content from exceeding the viewport width */
+    overflow-x: hidden; /* Prevents horizontal scrolling */
+    margin: 0 auto; /* Centers the container */
+}
+
+/* Ensure no child elements cause overflow */
+.container * {
+    max-width: 100%; /* Prevents any child from exceeding the container width */
+}
+
+/* Specific adjustments for any flex layouts */
+.flex-container {
+    display: flex;
+    flex-wrap: wrap; /* Ensures items wrap within the container */
+    width: 100%; /* Ensures no extra width is added */
+}
+
+ video, iframe {
+    max-width: 100%;
+    height: auto;
+    display: block; /* Avoids extra space from inline elements */
+}
+}
+		
+}
+</style>
+<script>
+function toggleMenu() {
+var links = document.querySelector(".nav-links");
+var menuIcon = document.querySelector(".menu-icon");
+var closeIcon = document.querySelector(".close-icon");
+
+if (links.style.display === "flex") {
+	// Hide the menu and show the hamburger icon
+	links.style.display = "none";
+	menuIcon.style.display = "block";  // Show hamburger icon
+	closeIcon.style.display = "none";  // Hide close icon
+} else {
+	// Show the menu and hide the hamburger icon
+	links.style.display = "flex";
+	menuIcon.style.display = "none";   // Hide hamburger icon
+	closeIcon.style.display = "block"; // Show close icon
+}
+}
+
+
+
+
+
+</script>
+				</header>
 
 					<div id="particles-js"></div>
-				<!-- Banner -->
+				<!--loading logo-- Banner -->
 				<div id="loading-overlay">
-					<img src="./assets/css/images/logo.png" alt="logo" class="loading-logo" /><h2>Connect Life VFX</h2>
 					
 				  </div>
-
+<!--landing page logo and content-->
 				<section id="banner">
 					<div class="inner">
-					      <h2>Connect Life VFX </h2>
-					 <p> We are a leading visual effects studio located<br>
-					   in Hyderabad,India, with additional offices <br>in the USA and Dubai. Our
-						 talented team harnesses <br> state-of-the-art technology to create
-						 exceptional<br> visual experiences that redefine storytelling<br /></p>
-					  <ul class="actions special">
-						<li><a href="contact.html" class="button primary">Contact</a></li>
-					  </ul>
-					  <a href="#one" class="more scrolly">Know More</a>
+						<h1 class="tlt">
+							<img src="./images1/nav-logo.png" alt="Connect Life Logo" class="land-image"><br>
+						</h1>
+						<div class="head-para">Bringing Imagination to Life, One pixel at a Time</div>
+					</div>
+					
+					  
+					  <a href="#punch-para" class="more scrolly">Know More</a>
 					</div>
 				  </section>
 
-				<!-- One -->
+
+				  <!--first para-->
+<section id="punch-para">
+	<div class="punch">
+		<h1 class="punch-p">"Facing Challenges in Bringing Your Creative Vision to Life?" </h1>
+		<p class="punch-text">
+	In today’s fast-paced media landscape, transforming your concepts into visually 
+	stunning experiences can be overwhelming. With tight deadlines, complex requirements,
+	 and high expectations, how do you ensure your vision stands out and captivates your 
+	 audience? <br>
+			 
+		</p>
+	</div>
+</section>
+
+
+				<!-- second para -->
 					<section id="one" class="wrapper style1 special">
 						<div class="inner">
 							<header class="major">
-								<div class="container">
-						<div class="para1">
-										Bringing Imagination to Life,
-										One pixel at a Time
+								<div class="container2">
+						<br><div class="para1">
+							Introducing Connect Life VFX: Your Vision, Our Expertise <br>
+
 										<div class="particles">
 											<div class="particle"></div>
 											<div class="particle"></div>
@@ -88,49 +383,191 @@
 										</div>
 									</div>
 								  </div>
-								  <div class="container">
+								  <div class="container2">
 									<div class="image-container">
-					<img src="./assets/images1/into.webp" alt="Image" class="left-image">
+					<img src="./images1/new1.jpeg" alt="Image" class="left-image">
 									</div>
-									<div class="text">		
-										At Connect Life VFX, we believe every project is an 
-										opportunity to create something extraordinary. Our team blends creativity, technical mastery, and a 
-										deep understanding of cinematic storytelling to push the
-										boundaries of what’s possible in visual effects (VFX). 
-										We don’t just provide VFX services; we craft immersive
-										experiences that captivate audiences and elevate your 
-										narrative. Our man-day-based pricing model reflects 
-										our commitment to transparency, fairness, and delivering
-										unparalleled quality.
+									<div class="text1">		
+	<br><p>Connect Life VFX is a premier visual effects studio located in the heart of Hyderabad,
+	 with additional creative hubs in the USA and Dubai. We combine cutting-edge technology
+	  with creative artistry to craft visual narratives that elevate your projects and take
+	   storytelling to new heights. </p>
 									</div>
 								</div>
 					</header>
 					</section>
 
+
+		<!--punch para 2 why choose us-->
+						  <!--first para-->
+<section id="punch-para1">
+	<div class="punch">
+		<h1 class="punch-p">Why Choose Connect Life VFX?  </h1>
+		<p class="punch-text5">
+			Our experienced team of industry veterans and visionary artists works collaboratively 
+			with you, bringing your ideas to life with precision and creativity. Whether you’re
+			 refining a single scene or transforming an entire project, we are dedicated to
+			  delivering exceptional VFX that captures your audience and leaves a lasting impression.  <br>
+			 
+		</p>
+	</div>
+</section>			
+
 				<!-- Two -->
-				<article id="three-img" style="background-color: #1f2944 ;">
+				<article id="three-img" ;">
 					<header class="head-3">
-						<center><h2><br>Why choose us?</h2></center>
+						<br><br><center><h2>Our Services</h2></center><br>
 						
 						<div class="images-container">
 							<div class="first-img">
-								<img src="./images1/experience and expertise.jpg" alt="exp">
-								<div class="img-text">Experience & Expertise</div>
+							<br>	<div class="only-text">Rotoscoping</div><br>
+			<img src="assets\images1\rotoscoping.jpg" alt="exp" class="small-img"> <br>
+								<p style="color: #A0AEC0;">
+									Rotoscoping breathes life into frames, turning motion into seamless artistry.
+								</p>
 							</div>
+							
 							<div class="second-img">
-								<img src="./images1/innovation.jpg" alt="innov">
-								<div class="img-text">Innovation</div>
+								<br><div class="only-text">Paint</div><br>
+								<img src="assets\images1\paintt.jpg" alt="innov"><br>
+								<p style="color: #A0AEC0;">
+									With every stroke, VFX paintwork turns imperfection into cinematic perfection.
+								</p>
+								
 							</div>
 							<div class="third-img">
-								<img src="./images1/collab.jpg" alt="collab">
-								<div class="img-text">Collaboration</div>	
+							<br>	<div class="only-text">Matchmove</div>	<br>
+								<img src="assets\images1\MM.png" alt="collab"><br>
+						<p style="color: #A0AEC0;">
+							Matchmove is the bridge between reality and the virtual, aligning worlds with precision.
+						</p>
 							</div><br>
+							<div class="second-img">
+								<br><div class="only-text">Compositing</div><br>
+								<img src="assets\images1\compositing.jpg" alt="innov"><br>
+								<p>
+									Compositing weaves layers of reality and illusion, crafting a seamless visual story.
+								</p>
+							</div>
 						</div><br>
-					<br><button class="more"><a href="knowmore.html"> Know more</a></button><br><br>
+			<br>
+			<div class="button-container">
+				<button class="more-know" onclick="window.location.href='knowmore.html'">Know more</button>
+			  </div><br>
 					</header>
 				</article>
 				
+
+				<!--connect life partner companies-->
+				<section>
+					<div class="movement">
+						<center><h2><b style="color: white;">CONNECT LIFE PROUD TO WORK WITH</b></h2></center><br>
+						
+						<div class="particles">
+							<div class="particle"></div>
+							<div class="particle"></div>
+							<div class="particle"></div>
+							<div class="particle"></div>
+							<div class="particle"></div>
+						</div>
+
+					<div class="image-slider">
+						<div class="image-track">
+
 				
+				<img src="./assets/css/images/walt.jpg" alt="walt" width="50px" height="50px">
+					<img src="./assets/css/images/warner.jpg" alt="walt" width="100px" height="100px">
+					<img src="./assets/css/images/netflix.jpg" alt="walt" width="100px" height="100px">
+					<img src="./assets/css/images/marvel.jpg"alt="walt" width="120px" height="100px">
+					<img src="./assets/css/images/HBO.jpg"alt="walt" width="120px" height="100px">
+					<img src="./assets/css/images/amazon.jpg"alt="walt" width="100px" height="100px">
+					<img src="./assets/css/images/20th.jpg"alt="walt" width="120px" height="100px">
+					<img src="./assets/css/images/pixar.jpg"alt="walt" width="120px" height="100px">
+					<img src="./assets/css/images/amblin.jpg"alt="walt" width="120px" height="100px">
+					<img src="./assets/css/images/universe.jpg"alt="walt" width="120px" height="100px">
+					<img src="./assets/css/images/bad.jpg"alt="walt" width="120px" height="100px">
+					<img src="./assets/css/images/turtle.jpg"alt="walt" width="120px" height="100px">
+					<img src="./assets/css/images/light.jpg"alt="walt" width="120px" height="100px">
+					<img src="./assets/css/images/kia.jpg"alt="walt" width="120px" height="100px">
+					<img src="./assets/css/images/annapurna.jpg"alt="walt" width="120px" height="100px">
+					<img src="./assets/css/images/sony.jpg"alt="walt" width="120px" height="100px">
+					<img src="./assets/css/images/epic.jpg"alt="walt" width="120px" height="100px">
+					<img src="./assets/css/images/legendry.jpg"alt="walt" width="120px" height="100px">
+					<img src="./assets/css/images/paramount.jpg"alt="walt" width="120px" height="100px">
+					<img src="./assets/css/images/firaxis.jpg"alt="walt" width="120px" height="100px">
+					<img src="./assets/css/images/weta.jpg"alt="walt" width="120px" height="100px">
+					<img src="./assets/css/images/private.jpg"alt="walt" width="120px" height="100px">
+					<img src="./assets/css/images/amazon1 (1).jpg"alt="walt" width="120px" height="100px">
+					<img src="./assets/css/images/utube.jpg"alt="walt" width="120px" height="100px">
+					<img src="./assets/css/images/apple.jpg"alt="walt" width="120px" height="100px">
+			
+			<!--Duplicate images for loop-->
+			<img src="./assets/css/images/walt.jpg" alt="walt" width="50px" height="50px">
+					<img src="./assets/css/images/warner.jpg" alt="walt" width="100px" height="100px">
+					<img src="./assets/css/images/netflix.jpg" alt="walt" width="100px" height="100px">
+					<img src="./assets/css/images/marvel.jpg"alt="walt" width="120px" height="100px">
+					<img src="./assets/css/images/HBO.jpg"alt="walt" width="120px" height="100px">
+					<img src="./assets/css/images/amazon.jpg"alt="walt" width="100px" height="100px">
+					<img src="./assets/css/images/20th.jpg"alt="walt" width="120px" height="100px">
+					<img src="./assets/css/images/pixar.jpg"alt="walt" width="120px" height="100px">
+					<img src="./assets/css/images/amblin.jpg"alt="walt" width="120px" height="100px">
+					<img src="./assets/css/images/universe.jpg"alt="walt" width="120px" height="100px">
+					<img src="./assets/css/images/bad.jpg"alt="walt" width="120px" height="100px">
+					<img src="./assets/css/images/turtle.jpg"alt="walt" width="120px" height="100px">
+					<img src="./assets/css/images/light.jpg"alt="walt" width="120px" height="100px">
+					<img src="./assets/css/images/kia.jpg"alt="walt" width="120px" height="100px">
+					<img src="./assets/css/images/annapurna.jpg"alt="walt" width="120px" height="100px">
+					<img src="./assets/css/images/sony.jpg"alt="walt" width="120px" height="100px">
+					<img src="./assets/css/images/epic.jpg"alt="walt" width="120px" height="100px">
+					<img src="./assets/css/images/legendry.jpg"alt="walt" width="120px" height="100px">
+					<img src="./assets/css/images/paramount.jpg"alt="walt" width="120px" height="100px">
+					<img src="./assets/css/images/firaxis.jpg"alt="walt" width="120px" height="100px">
+					<img src="./assets/css/images/weta.jpg"alt="walt" width="120px" height="100px">
+	<img src="./assets/css/images/private.jpg"alt="walt" width="120px" height="100px">
+				</div>
+		</div>
+		</div>
+			</section>
+
+						
+<!--Code for book an appointment-->
+
+<section id="cta" class="wrapper style4">
+	<div class="inner">
+		<div class="btn-one"><br>
+			<button><a href="contact.html">Book a Meeting</a></button><br><br>
+		</div>
+	</div>
+</section>
+
+		
+				<!-- Our Core Partner Company Code -->
+				<article class="core-comp">
+					<section id="partner">
+						<div class="inner">
+	<h3 class="core-heading" style="color: white;">OUR CORE PARTNER COMPANY</h3>
+							<div class="cli-company">
+								<div class="part-img block">
+									<img src="./assets/images1/conn.jpg" alt="cl1" class="hover-image">
+									<br><strong><a href="https://www.connectlifesolutions.com/">Connect Life Solution</a></strong><br>
+								</div>
+								<div class="cl2 block">
+									<img src="./assets/images1/conn1.png" alt="cl2" class="hover-image">
+									<br><strong><a href="https://www.connectlife.org/">Connect Life Foundation </a></strong><br>
+								</div>
+								<div class="cl3 block">
+									<img src="./assets/images1/cl3.png" alt="cl3" class="hover-image">
+									<br><strong><a href="https://www.cls.global/">CLS Global <br></a></strong><br>
+								</div>
+							</div>
+						</div>
+					</section>
+				</article>
+
+
+
+
+
 				<!--Section for before and after effects-->
 			<!--	<br><div class="splitview skewed">
 					<div class="panel bottom">
@@ -163,14 +600,14 @@
 			
 				
 
-				<!-- Three -->
-					<section id="three" class="wrapper style3 special">
+				<!-- Three our vision code -->
+			<!--		<section id="three" class="wrapper style3 special">
 						<div class="inner">
 							<header class="major">
 					
                                   <p id="myText">Our vision</p>
 								  <div class="container">
-									<div class="text">Our vision is to redefine the landscape of 
+									<div class="text-vision">Our vision is to redefine the landscape of 
 										visual storytelling by pushing the boundaries of VFX
 										 through innovation and creativity. We aspire to be a
 										  leader in the industry, known for our ability to 
@@ -183,11 +620,12 @@
 								  </div>
 							</header>
 							<ul class="features">
-								<li class="icon solid fa-regular fa-palette">
+								<li class="icon solid fa-solid fa-lightbulb"></i>
 									<h3>Innovative Techniques</h3>
 									<p class="fade-up">
 									  Artistic Integrity Client-centric Focus
-									  We utilize the latest advancements in VFX software and techniques
+									  We utilize the latest advancements in VFX 
+									  software and techniques
 									  to push the boundaries of visual storytelling.
 									</p>
 								  </li>
@@ -200,7 +638,7 @@
 									</p>
 								  </li>
 								  
-								  <li class="icon solid fa-code">
+								  <li class="icon solid fa-solid fa-users"></i>
 									<h3>Client-centric Focus</h3>
 									<p class="fade-up">
 									  We prioritize open communication and collaboration, ensuring that our VFX meets your specific
@@ -208,24 +646,24 @@
 									</p>
 								  </li>
 								  
-								  <li class="icon solid fa-regular fa-palette">
-									<h3>Proven Track Record:</h3>
+								  <li class="icon solid fa-regular fa-folder-open"></i>
+									<h3>Proven Track Record</h3>
 									<p class="fade-up">
 									  With a portfolio that spans various industries and media, we have consistently delivered
 									  high-quality results that make us a trusted partner in the VFX space.
 									</p>
 								  </li>
 								  
-								  <li class="icon fa-heart">
-									<h3>Transparent Communication:</h3>
+								  <li class="icon solid fa-solid fa-handshake"></i>
+									<h3>Transparent Communication</h3>
 									<p class="fade-up">
 									  We keep you informed at every stage of the process, ensuring a smooth and collaborative
 									  experience from start to finish.
 									</p>
 								  </li>
 								  
-								  <li class="icon fa-flag">
-									<h3>Scalable Capabilities:</h3>
+								  <li class="icon solid fa-sharp fa-solid fa-cubes"></i>
+									<h3>Scalable Capabilities</h3>
 									<p class="fade-up">
 									  Whether you need a few simple shots or complex sequences for a full-length feature, our
 									  team is equipped to scale our services to meet your project's demands.
@@ -236,10 +674,10 @@
 							</ul>
 						</div>
 					
-					</section>
+					</section>-->
 
-				<!-- CTA -->
-					<section id="cta" class="wrapper style4" style="background-color:  #29375a;">
+				<!-- CTA - our mission code
+					<section id="cta" class="wrapper style4" style="background-color:  #0C0F26;">
 						<div class="inner">
 							<header>
 								<h2>Our Mission</h2>
@@ -255,110 +693,51 @@
 								<li><a href="contact.html" class="button fit">Conatct-Us</a></li>
 							</ul>
 						</div>
-					</section>
+					</section>->
 
-					<section>
-						<div class="movement" style="background-color:  #1f2944 ;">
-							<center><b>CONNECT LIFE PROUD TO WORK WITH</b></center><br>
-							
-							<div class="particles">
-								<div class="particle"></div>
-								<div class="particle"></div>
-								<div class="particle"></div>
-								<div class="particle"></div>
-								<div class="particle"></div>
-							</div>
-
-						<div class="image-slider">
-							<div class="image-track">
-
-					
-					<img src="./assets/css/images/walt.jpg" alt="walt" width="100px" height="100px">
-						<img src="./assets/css/images/warner.jpg" alt="walt" width="100px" height="100px">
-						<img src="./assets/css/images/netflix.jpg" alt="walt" width="100px" height="100px">
-						<img src="./assets/css/images/marvel.jpg"alt="walt" width="120px" height="100px">
-						<img src="./assets/css/images/HBO.jpg"alt="walt" width="120px" height="100px">
-						<img src="./assets/css/images/amazon.jpg"alt="walt" width="100px" height="100px">
-						<img src="./assets/css/images/20th.jpg"alt="walt" width="120px" height="100px">
-						<img src="./assets/css/images/pixar.jpg"alt="walt" width="120px" height="100px">
-						<img src="./assets/css/images/amblin.jpg"alt="walt" width="120px" height="100px">
-						<img src="./assets/css/images/universe.jpg"alt="walt" width="120px" height="100px">
-						<img src="./assets/css/images/bad.jpg"alt="walt" width="120px" height="100px">
-						<img src="./assets/css/images/turtle.jpg"alt="walt" width="120px" height="100px">
-						<img src="./assets/css/images/light.jpg"alt="walt" width="120px" height="100px">
-						<img src="./assets/css/images/kia.jpg"alt="walt" width="120px" height="100px">
-						<img src="./assets/css/images/annapurna.jpg"alt="walt" width="120px" height="100px">
-						<img src="./assets/css/images/sony.jpg"alt="walt" width="120px" height="100px">
-						<img src="./assets/css/images/epic.jpg"alt="walt" width="120px" height="100px">
-						<img src="./assets/css/images/legendry.jpg"alt="walt" width="120px" height="100px">
-						<img src="./assets/css/images/paramount.jpg"alt="walt" width="120px" height="100px">
-						<img src="./assets/css/images/firaxis.jpg"alt="walt" width="120px" height="100px">
-						<img src="./assets/css/images/weta.jpg"alt="walt" width="120px" height="100px">
-						<img src="./assets/css/images/private.jpg"alt="walt" width="120px" height="100px">
-						<img src="./assets/css/images/amazon1 (1).jpg"alt="walt" width="120px" height="100px">
-						<img src="./assets/css/images/utube.jpg"alt="walt" width="120px" height="100px">
-						<img src="./assets/css/images/apple.jpg"alt="walt" width="120px" height="100px">
-				
-				<!--Duplicate images for loop-->
-				<img src="./assets/css/images/walt.jpg" alt="walt" width="100px" height="100px">
-						<img src="./assets/css/images/warner.jpg" alt="walt" width="100px" height="100px">
-						<img src="./assets/css/images/netflix.jpg" alt="walt" width="100px" height="100px">
-						<img src="./assets/css/images/marvel.jpg"alt="walt" width="120px" height="100px">
-						<img src="./assets/css/images/HBO.jpg"alt="walt" width="120px" height="100px">
-						<img src="./assets/css/images/amazon.jpg"alt="walt" width="100px" height="100px">
-						<img src="./assets/css/images/20th.jpg"alt="walt" width="120px" height="100px">
-						<img src="./assets/css/images/pixar.jpg"alt="walt" width="120px" height="100px">
-						<img src="./assets/css/images/amblin.jpg"alt="walt" width="120px" height="100px">
-						<img src="./assets/css/images/universe.jpg"alt="walt" width="120px" height="100px">
-						<img src="./assets/css/images/bad.jpg"alt="walt" width="120px" height="100px">
-						<img src="./assets/css/images/turtle.jpg"alt="walt" width="120px" height="100px">
-						<img src="./assets/css/images/light.jpg"alt="walt" width="120px" height="100px">
-						<img src="./assets/css/images/kia.jpg"alt="walt" width="120px" height="100px">
-						<img src="./assets/css/images/annapurna.jpg"alt="walt" width="120px" height="100px">
-						<img src="./assets/css/images/sony.jpg"alt="walt" width="120px" height="100px">
-						<img src="./assets/css/images/epic.jpg"alt="walt" width="120px" height="100px">
-						<img src="./assets/css/images/legendry.jpg"alt="walt" width="120px" height="100px">
-						<img src="./assets/css/images/paramount.jpg"alt="walt" width="120px" height="100px">
-						<img src="./assets/css/images/firaxis.jpg"alt="walt" width="120px" height="100px">
-						<img src="./assets/css/images/weta.jpg"alt="walt" width="120px" height="100px">
-		<img src="./assets/css/images/private.jpg"alt="walt" width="120px" height="100px">
-					</div>
-			</div>
-			</div>
-				</section>
-
-				<!--Our core partner company code-->
-				<!--<article class="core-comp">
-					<section id="partner">
-						<div class="inner">
-							<div class="cli-company">
-						<br>	<center><h1><b>Our Core partner company</p></b> </center>
-							<div class="part-img">
-		<img src="./assets/images1/conn.jpg" alt="cl1" width="90px" height="90px"><br>
-		Connect Life <br>Solution<br><br>
-		<div class="cl2">
-			<img src="./assets/images1/conn1.png" alt="cl2" width="90px" height="90px"><br>
-			Connect Life<br> Foundation<br>
-		</div><br>
-		<div class="cl3">
-			<img src="./assets/images1/cl3.png" alt="cl3" width="120px" height="90px"><br>
-			CLS Global<br>
-		</div><br></div>
-							</div>
-						</div>
-					</section>
-				</article>
 			
 
-Code for book an appointment-->
-
-<section id="cta" class="wrapper style4" style="background-color:#141b2a;">
-	<div class="inner">
-		<div class="btn-one"><br>
-			<button style="background-color: #1649ff;"><a href="contact.html">Book a Meeting</a></button><br><br>
+	<!-Code for the highlight para -->
+	
+	<!--
+	<div class="quote-slider" style="background-color: #1f2944; position: relative;"> 
+		<div class="arrow left-arrow" onclick="prevSlide()" aria-label="Previous Slide" style="color: white; position: absolute; top: 50%; left: 10px; transform: translateY(-50%);">&#10094;</div>
+		<div class="quotes">
+			<div class="quote-item active">
+				<img src="./images1/quote.png" alt="quote icon" class="quote-icon top-quote">
+				<p>
+					At Connect Life VFX, we believe in transforming ideas into breathtaking visual experiences
+					that captivate and engage. Our team of dedicated professionals combines cutting-edge
+					technology with artistic innovation to deliver stunning visual effects that elevate
+					your projects to new heights. Whether you're seeking seamless CGI, mesmerizing motion
+					graphics, or flawless compositing, we are here to bring your vision to life. Let’s
+					collaborate and create something extraordinary together book a meeting with us today and
+					discover the endless possibilities for your next project!
+				</p>
+			</div>
+			<div class="quote-item">
+				<p class="quote-p2">
+					Imagine your ideas brought to life with a level of detail and creativity that speaks directly
+					to your brand’s story. With Connect Life VFX, you’re not just a client; you’re a partner in
+					a journey of creativity and discovery. Let’s create something unforgettable—book a
+					meeting today, and let’s explore how we can transform your vision into reality.
+				</p>
+				<div class="close-quote">
+					<img src="./images1/close-quotes.png" alt="close quotes" class="quote-icon bottom-quote">
+				</div>
+			</div>
 		</div>
+		<div class="arrow right-arrow" onclick="nextSlide()" aria-label="Next Slide" style="color: white; position: absolute; top: 50%; right: 10px; transform: translateY(-50%);">&#10095;</div>
 	</div>
-</section>
+-->
+	
+			<!-- Add more quote items as needed -->
+		<!--code for images-->
+
+<!--Code for logo evelving with circle-->
+
+
+
 
 				<!---Footer-->
 				
@@ -370,7 +749,7 @@ Code for book an appointment-->
 		<div class="contact">
 			<center><b class="footer-heading">Contact Us</b></center><br>
 			<ul style="list-style-type: none; padding: 0; text-align: center;">
-				<li>Hyderabad, USA, Dubai</li>
+				<li>India, USA, Dubai</li>
 				<li>+1 (414) 916 6789</li>
 				<li>info@connectlifevfx.com</li>
 			</ul>
@@ -379,9 +758,18 @@ Code for book an appointment-->
 		<div class="company">
 			<center><b class="footer-heading">Company</b></center><br>
 			<ul style="list-style-type: none; padding: 0; text-align: center;">
-				<li><a href="generic.html">Workflow</a></li>
-				<li><a href="career.html">Career</a></li>
-				<li><a href="about.html">About Us </a></li>
+				<li class="tooltip">
+					<a href="generic.html">Workflow</a>
+					<!--<span class="tooltip-text">View project workflow</span>-->
+				</li><br>
+				<li class="tooltip">
+					<a href="career.html">Career</a>
+					<!--<span class="tooltip-text">Join Our Team</span>-->
+				</li><br>
+				<li class="tooltip">
+					<a href="about.html">About Us </a>
+					<!--<span class="tooltip-text">Meet Our Team</span>-->
+				</li>
 			</ul>
 		</div>
 		
@@ -424,7 +812,7 @@ Code for book an appointment-->
 		<script>
 			particlesJS("particles-js", {
 				particles: {
-					number: { value: 80, density: { enable: true, value_area: 800 } },
+					number: { value: 80, density: { enable: true, value_area: 1000 } },
 					color: { value: "#ffffff" },
 					shape: {
 						type: "circle",
@@ -552,6 +940,30 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
+		</script>
+		<!--code for quotes-->
+		<script>
+			let currentSlide = 0;
+			const slides = document.querySelectorAll('.quote-item');
+		
+			function showSlide(index) {
+				slides.forEach((slide, i) => {
+					slide.classList.remove('active');
+					if (i === index) {
+						slide.classList.add('active');
+					}
+				});
+			}
+		
+			function prevSlide() {
+				currentSlide = (currentSlide > 0) ? currentSlide - 1 : slides.length - 1;
+				showSlide(currentSlide);
+			}
+		
+			function nextSlide() {
+				currentSlide = (currentSlide < slides.length - 1) ? currentSlide + 1 : 0;
+				showSlide(currentSlide);
+			}
 		</script>
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.scrollex.min.js"></script>
