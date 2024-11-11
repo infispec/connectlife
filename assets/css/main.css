@@ -6111,7 +6111,7 @@ svg {
   line-height: 1.5;
 }
 .third-img p {
-  font-family: "Montserrat", "Robot";
+  font-family: "Roboto";
   margin: 0; /* Removes default margin from the paragraph */
   font-size: 14px; /* Adjust font size as needed for better readability */
   line-height: 1.5;
