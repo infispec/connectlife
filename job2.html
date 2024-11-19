@@ -1,10 +1,5 @@
 <!DOCTYPE HTML>
-<!--
-	Spectral by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
+<html lang="en">
 	<head>
 		<title>Jobs Openings </title>
 		<meta charset="utf-8" />
@@ -135,7 +130,7 @@
 
            
            <h3 class="res" style="text-align:justify"> Responsibilities:</h3>
-       <ul style="text-align:justify">
+       <ul style="text-align:justify;font-family: 'Roboto'; ">
 
           
       <li> <b> Visual Integration:</b> Combine connect-life-vfx footage with CGI elements to create stunning
@@ -158,10 +153,11 @@
         </ul>    
 
          <br>  <h3 class="req" style="text-align:justify">Requirements:</h3>
-<ul style="text-align:justify">
+<ul style="text-align:justify;font-family: 'Roboto';">
+
 
 <li>Minimum of 2-5 years of experience as a compositor in the visual effects (VFX) or animation 
-    industry.<br>
+    industry.</li>
 <li> A portfolio demonstrating your best compositing work and showcasing your ability to
      blend live-action and CGI elements seamlessly.</li>
 <li> Proficiency in industry-standard compositing software such as Nuke, Adobe After Effects, 
@@ -170,10 +166,15 @@
      and 3D integration.</li>
 <li> Familiarity with multi-pass compositing and working with render layers.    </li> 
 
-        </ul>       
+        </ul>
+		<br>       
         
-      <br> <h3 class="pref" style="text-align:justify;float: left;"> Preferred Skills:</h3><br><br>
-<ul style="text-align:justify">
+      <h3 class="pref" style="text-align:justify;float: left;"> Preferred Skills:</h3><br><br>
+<br><ul style="text-align:justify;font-family: 'Roboto';">
+
+
+
+
 <li> Familiarity with 3D software (e.g., Maya, Blender, or Cinema 4D) for integrating CGI 
     elements into live-action footage.</li>
 <li>  Basic scripting knowledge in languages such as Python or TCL to automate processes
@@ -252,6 +253,26 @@
 </footer>
 
 		<!-- Scripts -->
+
+		<script>
+			// Function to check if an element is in the viewport
+function isInViewport(element) {
+    const rect = element.getBoundingClientRect();
+    return (
+        rect.top <= (window.innerHeight || document.documentElement.clientHeight) &&
+        rect.bottom >= 0
+    );
+}
+
+// Add scroll event listener
+document.addEventListener("scroll", function () {
+    const desJob = document.querySelector(".des-job1");
+    if (isInViewport(desJob)) {
+        desJob.classList.add("scroll-active");
+    }
+});
+
+		 </script>
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.scrollex.min.js"></script>
 			<script src="assets/js/jquery.scrolly.min.js"></script>

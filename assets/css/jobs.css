@@ -1,8 +1,15 @@
 .job1-head{
     background-color: #0C0F26  ;
-    color: white;
+    color: #a0aec0;
     letter-spacing: normal;
     font-family: 'Monsterrat',sans-serif;
+}
+.job1-head li{
+    background-color: #0C0F26  ;
+    color: #a0aec0;
+    letter-spacing: normal;
+    font-family: 'Roboto',sans-serif;
+    font-size: 14px;
 }
 .job1-head b{
    color: white;
@@ -50,5 +57,9 @@
        margin-top: -5%;
 	   margin-left: -2%;
     }
+    .first,.second,.third{
+        float: left;
+    }
 
 }
+

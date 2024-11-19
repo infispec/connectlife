@@ -1,10 +1,5 @@
 <!DOCTYPE HTML>
-<!--
-	Spectral by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
+<html lang="en">
 	<head>
 		<title>Jobs Openings </title>
 		<meta charset="utf-8" />
@@ -133,7 +128,7 @@
       storytelling in our projects.</p>
           
 	  <br><h3 class="res" style="text-align:justify;float: left;"> Responsibilities:</h3><br><br>
-<ul style="text-align:justify">
+<br><ul style="text-align:justify">
 <li><b>Tracking and Matchmoving: </b>Utilize industry-standard software to perform accurate 
     camera tracking and matchmoving, ensuring that CG elements interact convincingly with the 
     live-action footage. This includes working with various types of shots, such as handheld,
@@ -165,7 +160,7 @@
 </ul>
 
           <br> <h3 class="req" style="text-align:justify;float: left;">Requirements:</h3><br><br>
-<ul style="text-align:justify">
+<br><ul style="text-align:justify">
 
 
     <li><b>Experience: </b>Minimum of 2-4 years of experience as a matchmove artist or in a 
@@ -191,7 +186,7 @@
         </ul>       
         
      <br>  <h3 class="pref" style="text-align:justify;float: left;"> Preferred Skills:</h3><br><br>
-<ul style="text-align:justify">
+<br><ul style="text-align:justify">
     <li> Familiarity with scripting languages such as Python or Mel to streamline workflows
          and automate processes.</li>
  <li> Understanding of compositing software (e.g., Nuke, Adobe After Effects) to foresee
@@ -268,6 +263,25 @@
 </footer>
 
 		<!-- Scripts -->
+		<script>
+			// Function to check if an element is in the viewport
+function isInViewport(element) {
+    const rect = element.getBoundingClientRect();
+    return (
+        rect.top <= (window.innerHeight || document.documentElement.clientHeight) &&
+        rect.bottom >= 0
+    );
+}
+
+// Add scroll event listener
+document.addEventListener("scroll", function () {
+    const desJob = document.querySelector(".des-job1");
+    if (isInViewport(desJob)) {
+        desJob.classList.add("scroll-active");
+    }
+});
+
+		 </script>
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.scrollex.min.js"></script>
 			<script src="assets/js/jquery.scrolly.min.js"></script>

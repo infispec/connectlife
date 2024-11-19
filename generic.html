@@ -4,7 +4,7 @@
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
-<html>
+<html lang="en">
 	<head>
 		<title>Our Workflow</title>
 		<meta charset="utf-8" />
@@ -118,14 +118,19 @@
 							<p class="sub-head">"Focus on being productive instead of busy." </p>
 						</header>
 
-						<section class="workflow">
+						<section class="workflow" id="groot-img"  style="background-image: url(./images1/groot.png);background-repeat: no-repeat;" >
 							<div class="work">
 								<img class="work-img" src="./images1/workflow.png" alt="workflow">
 							</div>
+							
 						</section>
-						
+						<section>
+		
+								
+							</div></section>
 						
 						<section class="wra">
+							
 							<div class="in">
 							  <div class="se">
 								<h3 style="color: white;letter-spacing: normal;">From Concept to Completion</h3>
@@ -133,7 +138,7 @@
 								  
 								  <div class="accordion-item">
 									<h5 class="gen-head1" onclick="toggleContent(this)">
-									   1. Initial Consultation and Project Scoping <span class="toggle-btn">+</span>
+									   1.Initial Consultation and Project Scoping <span class="toggle-btn">+</span>
 									</h5>
 									<ul class="accordion-content" style="display: none;">
 									  <li>We begin with a comprehensive consultation to understand your project’s goals, vision, and budget.</li>
@@ -146,7 +151,7 @@
 						  
 								  <div class="accordion-item">
 									<h5 class="gen-head1" onclick="toggleContent(this)">
-									 2. Detailed Man-Day Estimation and Planning   <span class="toggle-btn">+</span>
+									 2.Detailed Man-Day Estimation<span class="toggle-btn">+</span>
 									</h5>
 									<ul class="accordion-content" style="display: none;">
 									  <li>Provide a detailed man-day estimation, breaking down each phase of production.</li>
@@ -159,7 +164,7 @@
 						  
 								  <div class="accordion-item">
 									<h5 class="gen-head1" onclick="toggleContent(this)">
-									   3. Execution with Continuous Collaboration <span class="toggle-btn">+</span>
+									   3.Execution with Continuous Collaboration <span class="toggle-btn">+</span>
 									</h5>
 									<ul class="accordion-content" style="display: none;">
 									  <li>Begin execution with a well-defined plan and maintain open communication.</li>
@@ -172,7 +177,7 @@
 						  
 								  <div class="accordion-item">
 									<h5 class="gen-head1" onclick="toggleContent(this)">
-									  4. Final Delivery and Quality Assurance <span class="toggle-btn">+</span> 
+									  4.Final Delivery and Quality Assurance <span class="toggle-btn">+</span> 
 									</h5>
 									<ul class="accordion-content" style="display: none;">
 									  <li>Conduct rigorous quality control, reviewing every detail to ensure perfection.</li>
@@ -189,10 +194,26 @@
 								<img src="./images1/cat.png" alt="cat">
 							</div>
 	
-						  
-							  <div class="im"> 
-								<img src="assets/images1/Untitled-5.png" alt="Descriptive Alt Text">
-							  </div>
+							<div class="im" style="text-align: start;">
+							<div class="moving">
+								<h3 style="font-size: 20px;letter-spacing: normal;font-weight:600;margin-left:2px;font-family: 'Roboto,sans-serif';margin: 0px 0px 20px;">Security Policy</h3>
+								<div style="font-size: 14px;color: #4fc3f7;">
+						Your Data, Guarded with Ironclad Security.</div>
+						<br>
+							<div class="sec-para">	At Connect Life VFX, we treat your data with superhero-level 
+								protection. 
+				Like Iron Man’s armor, our security protocols are designed to 
+				keep every detail secure.</div>
+								
+							
+				<div class="sec-para2"><li>No Personal Devices: Only company-approved devices are 
+			used, ensuring all work environments are controlled and secure.</div></li>
+		
+		<div class="sec-para3">	<li>Zero Third-Party Sharing: We maintain 
+			complete control over your data, strictly prohibiting third-party sharing.</li>
+			With Connect Life VFX, your data is protected by a security force you can trust!</div>
+							</div>
+						</div>
 							  
 <div class="container1">
 	<!-- Background layers 
@@ -328,6 +349,25 @@ document.addEventListener('DOMContentLoaded', animateAccordionOnScroll);
   }
 }
 
+
+		 </script>
+
+		 <script>/*script for security para*/
+			document.addEventListener("scroll", () => {
+  const fadeElement = document.querySelector(".moving");
+
+  // Get the position of the element relative to the viewport
+  const rect = fadeElement.getBoundingClientRect();
+  const isVisible = rect.top < window.innerHeight && rect.bottom > 0;
+
+  if (isVisible) {
+    fadeElement.classList.add("visible");
+    fadeElement.classList.remove("hidden");
+  } else {
+    fadeElement.classList.add("hidden");
+    fadeElement.classList.remove("visible");
+  }
+});
 
 		 </script>
 			<script src="assets/js/jquery.min.js"></script>

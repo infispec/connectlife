@@ -4,7 +4,7 @@
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
-<html>
+<html lang="en">
 	<head>
 		<title>Jobs Openings </title>
 		<meta charset="utf-8" />
@@ -133,7 +133,7 @@
         and technical goals align to achieve the project’s vision.</p>
            <h3 class="res" style="text-align:justify;float: left;">Responsibilities:</h3><br><br>
 <ul style="text-align:justify">
-<li> Guide, mentor, and support VFX artists to develop their skills and
+<li class="first"> Guide, mentor, and support VFX artists to develop their skills and
      deliver exceptional work.</li>
 
 <li>
@@ -166,7 +166,7 @@
 <ul style="text-align:justify">
 
 
-    <li>  Bachelor’s degree in Visual Effects, Digital Arts, Animation, 
+    <li class="second">  Bachelor’s degree in Visual Effects, Digital Arts, Animation, 
         or a related field (or equivalent experience).</li>
 
     <li>5+ years of experience in VFX production, with a proven track record of leading
@@ -181,7 +181,7 @@
         
       <br> <h3 class="pref" style="text-align:justify;float: left;"> Preferred Skills:</h3><br><br>
 <ul style="text-align:justify">
-    <li>Strong interpersonal and motivational skills to lead, mentor, 
+    <li class="third">Strong interpersonal and motivational skills to lead, mentor, 
         and inspire a team of VFX artists.</li>
  <li>Deep understanding of VFX techniques, including animation, texturing, 
     lighting, and color grading.</li>
@@ -258,6 +258,26 @@
 	</div>
 </footer>
 		<!-- Scripts -->
+		 <!-- Scripts -->
+		<script>
+			// Function to check if an element is in the viewport
+function isInViewport(element) {
+    const rect = element.getBoundingClientRect();
+    return (
+        rect.top <= (window.innerHeight || document.documentElement.clientHeight) &&
+        rect.bottom >= 0
+    );
+}
+
+// Add scroll event listener
+document.addEventListener("scroll", function () {
+    const desJob = document.querySelector(".des-job1");
+    if (isInViewport(desJob)) {
+        desJob.classList.add("scroll-active");
+    }
+});
+
+		 </script>
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.scrollex.min.js"></script>
 			<script src="assets/js/jquery.scrolly.min.js"></script>

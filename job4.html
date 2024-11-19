@@ -1,10 +1,5 @@
 <!DOCTYPE HTML>
-<!--
-	Spectral by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
+<html lang="en">
 	<head>
 		<title>Jobs Openings </title>
 		<meta charset="utf-8" />
@@ -159,7 +154,7 @@ with the design, VFX, and animation teams, you will contribute to high-quality v
 <ul style="text-align:justify">
 
 
-    <li>Proven experience as a 3D Artist with a strong portfolio of 3D modeling, texturing,
+    <li class="first">Proven experience as a 3D Artist with a strong portfolio of 3D modeling, texturing,
          and animation work.</li>
 
     <li>Proficiency in industry-standard 3D software such as Maya, 3ds Max,
@@ -177,7 +172,7 @@ with the design, VFX, and animation teams, you will contribute to high-quality v
         
     <br>   <h3 class="pref" style="text-align:justify;float:left;"> Preferred Skills:</h3><br><br>
 <ul style="text-align:justify">
-    <li><b> Experience with Game Engines:</b> Familiarity with Unity or Unreal Engine for projects
+    <li class="second"><b> Experience with Game Engines:</b> Familiarity with Unity or Unreal Engine for projects
          that require real-time rendering.</li>
  <li><b> Strong Artistic Sense:</b> Solid grasp of color theory, composition, and 
     visual storytelling.</li>
@@ -259,6 +254,27 @@ with the design, VFX, and animation teams, you will contribute to high-quality v
 </footer>
 
 		<!-- Scripts -->
+		 
+		<!-- Scripts -->
+		<script>
+			// Function to check if an element is in the viewport
+function isInViewport(element) {
+    const rect = element.getBoundingClientRect();
+    return (
+        rect.top <= (window.innerHeight || document.documentElement.clientHeight) &&
+        rect.bottom >= 0
+    );
+}
+
+// Add scroll event listener
+document.addEventListener("scroll", function () {
+    const desJob = document.querySelector(".des-job1");
+    if (isInViewport(desJob)) {
+        desJob.classList.add("scroll-active");
+    }
+});
+
+		 </script>
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.scrollex.min.js"></script>
 			<script src="assets/js/jquery.scrolly.min.js"></script>

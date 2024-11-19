@@ -4,7 +4,7 @@
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
-<html>
+<html lang="en">
 	<head>
 		<title>Jobs Openings </title>
 		<meta charset="utf-8" />
@@ -186,6 +186,19 @@
                             </div>
 						</section>
                     </div>
+					<style>
+		
+						/* Targets only the first list item */
+						ul li:first-child {
+							float: left;
+							clear: left; /* Ensures the float doesn't affect subsequent items */
+							width: 100%; /* Ensures it takes up full width if needed */
+						}
+						/* Resets the float for other items */
+						ul li {
+							float: none;
+						}
+						  </style>  
 					</article>
 
 				<!-- Footer -->
@@ -244,6 +257,26 @@
 	</div>
 </footer>
 		<!-- Scripts -->
+		 <!-- Scripts -->
+		<script>
+			// Function to check if an element is in the viewport
+function isInViewport(element) {
+    const rect = element.getBoundingClientRect();
+    return (
+        rect.top <= (window.innerHeight || document.documentElement.clientHeight) &&
+        rect.bottom >= 0
+    );
+}
+
+// Add scroll event listener
+document.addEventListener("scroll", function () {
+    const desJob = document.querySelector(".des-job1");
+    if (isInViewport(desJob)) {
+        desJob.classList.add("scroll-active");
+    }
+});
+
+		 </script>
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.scrollex.min.js"></script>
 			<script src="assets/js/jquery.scrolly.min.js"></script>

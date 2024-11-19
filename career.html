@@ -4,7 +4,7 @@
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
-<html>
+<html lang="en">
 	<head>
 		<title>Careers</title>
 		<meta charset="utf-8" />
@@ -113,7 +113,7 @@
 				<!-- Main -->
 					<article id="main">
 						<header class="careers-img">
-							<img src="./assets/images1/job.png" alt="">
+							<img src="./images1/career-bg.png" alt="">
 							<h2 class="workflow-head">Our Careers</h2>
 							<p class="jumping-text">"Opportunities don't happen, we create them. <br>
                                 Join us on this journey."</p>
@@ -164,7 +164,7 @@
 								<source src="assets\images1\audio.mp4">
 							</video>
 						</div>
-						 
+						 <div class="career-para">
 							<h3 style="color: white;"> Global Impact</h3>
 							<p id="para1" class="toggle-paragraph">
 								Be part of an international studio working on high-profile projects for
@@ -198,8 +198,37 @@
 								Our mentorship programs, workshops, and industry partnerships help our artists and 
 								technicians stay at the forefront of VFX trends.
 							</p>
-                     
-					</section>         
+						</div>
+					</section> 
+					<script>
+	
+  function handleScroll() {
+    // Select all elements with the .toggle-paragraph class
+    const paragraphs = document.querySelectorAll('.toggle-paragraph');
+
+    paragraphs.forEach(paragraph => {
+      // Get the bounding rectangle of each paragraph
+      const rect = paragraph.getBoundingClientRect();
+      const isVisible = rect.top < window.innerHeight && rect.bottom >= 0;
+
+      // Add the 'active' class if the paragraph is in the viewport, remove if not
+      if (isVisible) {
+        paragraph.classList.add('active');
+      } else {
+        paragraph.classList.remove('active');
+      }
+    });
+  }
+
+  // Listen for scroll events and call handleScroll on each scroll
+  window.addEventListener('scroll', handleScroll);
+
+  // Trigger the function once on page load to check for any paragraphs already in view
+  window.addEventListener('load', handleScroll);
+
+
+</script>
+
 					<div class="mee">
 					<h3 style="color: white;">Current Openings</h3>
                    <p> To know more Jobs <a href="jobs.html"><button style="background-color: #4FC3F7;"> Click Here !</button> </a> 
@@ -207,7 +236,7 @@
                                          
                        
 
-				   <button style="background-color: #4FC3F7;justify-content:center"><a href="FAQ.html"><h3><center>FAQ</center> </h3></a></button>				
+				   <button id="FAQ" style="background-color: #4FC3F7;justify-content:center"><a href="FAQ.html"><h3><center>FAQ</center> </h3></a></button>				
 			
 								
 							</div>

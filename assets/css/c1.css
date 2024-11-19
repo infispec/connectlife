@@ -172,6 +172,8 @@
 
 /* Visible state to trigger the animation */
 .animate-on-scroll.visible {
+    color: #a0aec0;
+    font-size: 14px;
     opacity: 1; /* Fully visible */
     transform: translateY(0); /* Move to original position */
 }

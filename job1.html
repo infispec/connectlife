@@ -1,10 +1,5 @@
 <!DOCTYPE HTML>
-<!--
-	Spectral by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
+<html lang="en">
 	<head>
 		<title>Jobs Openings </title>
 		<meta charset="utf-8" />
@@ -136,7 +131,7 @@
 
            
            <h3 class="res" style="text-align:justify"> Responsibilities:</h3>
-<ul style="text-align: justify;">
+<ul style="text-align: justify;font-family: 'Roboto';font-size: 14px; color: #a0aec0;">
 <li>Create clean plates by removing wires, rigs, and other unwanted objects from footage.<br></li>
 <li>Perform rotoscoping to generate mattes for characters, objects, or effects.<br></li>
   <li>Work closely with compositors to ensure seamless integration of effects into live-action 
@@ -151,7 +146,7 @@
 </ul>
 
       <br>     <h3 class="req" style="text-align:justify">Requirements:</h3>
-<ul style="text-align: justify;">
+<ul style="text-align: justify; color: #a0aec0;font-size: 14px;">
 
 
        <li > Proven experience as a Paint & Roto Artist in a VFX or post-production 
@@ -169,7 +164,7 @@
         </ul>       
         
      <br>  <h3 class="pref" style="text-align:justify"> Preferred Skills:</h3>
-<ul style="text-align:justify">
+<ul style="text-align:justify;font-size: 14px; color: #a0aec0;">
 
 
      <li> Experience with compositing is a plus.</li>
@@ -243,6 +238,25 @@
 </footer>
 
 		<!-- Scripts -->
+		 <script>
+			// Function to check if an element is in the viewport
+function isInViewport(element) {
+    const rect = element.getBoundingClientRect();
+    return (
+        rect.top <= (window.innerHeight || document.documentElement.clientHeight) &&
+        rect.bottom >= 0
+    );
+}
+
+// Add scroll event listener
+document.addEventListener("scroll", function () {
+    const desJob = document.querySelector(".des-job1");
+    if (isInViewport(desJob)) {
+        desJob.classList.add("scroll-active");
+    }
+});
+
+		 </script>
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.scrollex.min.js"></script>
 			<script src="assets/js/jquery.scrolly.min.js"></script>

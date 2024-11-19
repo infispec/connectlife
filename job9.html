@@ -4,7 +4,7 @@
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
-<html>
+<html lang="en">
 	<head>
 		<title>Jobs Openings </title>
 		<meta charset="utf-8" />
@@ -134,7 +134,7 @@
 </p>
            <h3 class="res" style="text-align:justify;float: left;">Responsibilities:</h3><br><br>
 <ul style="text-align:justify">
-<li>Develop and manage the production budget, tracking all expenses, and making 
+<li class="first">Develop and manage the production budget, tracking all expenses, and making 
     adjustments as necessary to maintain financial control.</li>
 
 <li>
@@ -166,7 +166,7 @@
 <ul style="text-align:justify">
 
 
-    <li>  Bachelor’s degree in Film Production, Business,
+    <li class="second">  Bachelor’s degree in Film Production, Business,
          Media, or related field (or equivalent experience).</li>
 
     <li>5+ years in film or television production, with demonstrated 
@@ -181,7 +181,7 @@
         <br>
        <h3 class="pref" style="text-align:justify;float: left;"> Preferred Skills:</h3><br><br>
 <ul style="text-align:justify">
-    <li>Strong interpersonal and leadership skills to motivate and manage 
+    <li class="third">Strong interpersonal and leadership skills to motivate and manage 
         diverse teams, creating a collaborative working environment.</li>
  <li>Ability to anticipate and address production challenges, demonstrating 
     resourcefulness and adaptability on set.</li>
@@ -264,6 +264,26 @@
 </footer>
 
 		<!-- Scripts -->
+		 <!-- Scripts -->
+		<script>
+			// Function to check if an element is in the viewport
+function isInViewport(element) {
+    const rect = element.getBoundingClientRect();
+    return (
+        rect.top <= (window.innerHeight || document.documentElement.clientHeight) &&
+        rect.bottom >= 0
+    );
+}
+
+// Add scroll event listener
+document.addEventListener("scroll", function () {
+    const desJob = document.querySelector(".des-job1");
+    if (isInViewport(desJob)) {
+        desJob.classList.add("scroll-active");
+    }
+});
+
+		 </script>
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.scrollex.min.js"></script>
 			<script src="assets/js/jquery.scrolly.min.js"></script>

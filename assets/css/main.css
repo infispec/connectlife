@@ -284,26 +284,10 @@ textarea {
 #spider-img {
   background-image: url(./images1/spider.png);
   background-repeat: no-repeat;
-  background-position:  90% 35%; /* Aligns the image to the right and center */
+  background-position: 90% 35%; /* Aligns the image to the right and center */
   background-size: 20%; /* Reduces the image size to 20% of its container */
-  background-color: rgba(12, 15, 38, 1); 
+  background-color: rgba(12, 15, 38, 1);
 }
-#spider-img::before {
-  content: ''; /* Creates an empty pseudo-element */
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-image: url(./images1/spider.png);
-  background-repeat: no-repeat;
-  background-position: 90% 35%;
-  background-size: 20%;
-  opacity: 0.2; /* Set the opacity you want */
-  pointer-events: none; /* Ensures the image doesn't block interactions with the content */
-}
-
-
 
 /* Loading Overlay effects  */
 /*
@@ -345,7 +329,7 @@ textarea {
 }
 
   /* Page Content (Hidden initially) */
-  /*
+/*
 #banner {
   opacity: 0;
   transition: opacity 4s ease; /* Duration for fading in the banner 
@@ -368,11 +352,8 @@ html {
 }
 
 body {
-  background: #0C0F26 ;
+  background: #0c0f26;
 }
-;
-}
-
 body.is-preload *,
 body.is-preload *:before,
 body.is-preload *:after {
@@ -391,7 +372,7 @@ input,
 select,
 textarea {
   color: #fff;
-  font-family: "Open Sans", Helvetica, sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 15pt;
   font-weight: 400;
   letter-spacing: 0.075em;
@@ -2049,7 +2030,7 @@ article.special {
 }
 
 header p {
-  color: #A0AEC0 ;
+  color: rgba(255, 255, 255, 0.5);
   position: relative;
   top: -0.25em;
 }
@@ -2647,13 +2628,13 @@ table {
 }
 
 table tbody tr {
-  border: solid 1px #0C0F26;
+  border: solid 1px #0c0f26;
   border-left: 0;
   border-right: 0;
 }
 
 table tbody tr:nth-child(2n + 1) {
-  background-color: #0C0F26;
+  background-color: #0c0f26;
 }
 
 table td {
@@ -2717,7 +2698,7 @@ button,
   -webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
   -ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
   transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
-  background-color:  #4FC3F7;
+  background-color: #4fc3f7;
   border-radius: 3px;
   border: 0;
   box-shadow: inset 0 0 0 2px #fff;
@@ -2744,7 +2725,7 @@ input[type="reset"]:hover,
 input[type="button"]:hover,
 button:hover,
 .button:hover {
-  background-color:#29B6F6 ;
+  background-color: #29b6f6;
 }
 
 input[type="submit"]:active,
@@ -2752,7 +2733,7 @@ input[type="reset"]:active,
 input[type="button"]:active,
 button:active,
 .button:active {
-  background-color: #29B6F6;
+  background-color: #29b6f6;
 }
 
 input[type="submit"].icon:before,
@@ -2980,7 +2961,6 @@ button:disabled,
   border-radius: 0;
   width: 500px;
   height: 250px;
-
 }
 
 .spotlight .content {
@@ -3001,15 +2981,15 @@ button:disabled,
 }
 /*part2 bg color*/
 .spotlight:nth-child(1) {
-  background-color: #29375a;
+  background-color: #0c0f26;
 }
 
 .spotlight:nth-child(2) {
-  background-color: #29375a;
+  background-color: #0c0f26;
 }
 
 .spotlight:nth-child(3) {
-  background-color: #29375a;
+  background-color: #0c0f26;
 }
 
 .spotlight:nth-child(4) {
@@ -3175,14 +3155,18 @@ button:disabled,
 @media screen and (max-width: 736px) {
   .wrapper.style1 header.major p {
     color: #a0aec0;
-   
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    line-height: 1.6;
+    max-width: 800px;
+    padding: 0 1rem;
     margin-left: 10%;
-    width: 270px;
+    width: 350px;
     height: 250px;
-    text-align: justify;
+    text-align: start;
+    margin-left: -8px;
   }
 }
-
 
 .wrapper.style1 label {
   color: #ffffff;
@@ -3479,8 +3463,8 @@ button:disabled,
 }
 
 .wrapper.style5 {
-  background-color: #0C0F26;
-  color: white;
+  background-color: #0c0f26;
+  color: #a0aec0;
 }
 
 .wrapper.style5 strong,
@@ -3629,7 +3613,7 @@ button:disabled,
 .wrapper.style5 input[type="button"]:hover,
 .wrapper.style5 button:hover,
 .wrapper.style5 .button:hover {
-  background-color: #29B6F6;
+  background-color: #29b6f6;
 }
 
 .wrapper.style5 input[type="submit"]:active,
@@ -4245,39 +4229,46 @@ ul.nav-links li a {
 /*about page header logo*/
 /*hulk images*/
 #hulk-img {
-  background-image: url(/images1/girl.png);
+  background-image: url(/images1/gir.png);
   background-repeat: no-repeat;
   background-position: -8% 30%; /* Aligns the image to the right and center */
   background-size: 30%; /* Reduces the image size to 20% of its container */
   position: relative; /* Required for pseudo-element positioning */
   z-index: 1; /* Ensures this element appears above other content */
 }
- 
-#hulk-img::before {
-  content: ''; /* Creates an empty pseudo-element */
-  position: absolute;
-  top: 70%; /* Moves the image upwards within the container */
-  left: 10%; /* Adjust this value to move the image to the left (10% from the left edge) */
-  width: 100px;  /* Set the width as needed */
-  height: 100px; /* Set the height as needed */
- 
-  background-image: url(/images1/girl.png); /* Ensure the image path is correct */
+
+/* Center the parent container */
+
+/* Style for the centered #bw-img div */
+#bw-img {
+  background-image: url(./images1/bw.png);
   background-repeat: no-repeat;
-  background-position: center; /* Center the background image */
-  background-size: contain; /* Ensure the entire image fits inside */
- 
-  opacity: 0.2; /* Set the opacity to make the image transparent */
-  pointer-events: none; /* Ensures the image doesn't block interactions with the content */
-  z-index: 2; /* Ensures the image is above other content */
+  background-position: 100% 50%; /* Adjust the percentage to move it higher */
+  background-size: contain; /* Ensures responsive scaling */
+  width: 100%;
+  max-width: 1000px; /* Maximum width for larger screens */
+  height: 400px; /* Default height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -28%;
 }
- 
 
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  #bw-img {
+    height: 300px; /* Scale down height for smaller screens */
+  }
+}
 
-
-
+@media (max-width: 480px) {
+  #bw-img {
+    height: 200px; /* Further scale down for very small screens */
+  }
+}
 
 /*generic page cat image*/
-.cat img{
+.cat img {
   margin-left: 120%;
   margin-top: -50%;
   width: 200px;
@@ -4286,16 +4277,125 @@ ul.nav-links li a {
   transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
-
 .cat img:hover {
   opacity: 1; /* Increase opacity on hover */
   transform: scale(1.1); /* Slightly scale up the image on hover */
   filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.5)); /* Add shadow effect */
 }
-/* Mobile view adjustments */@media (max-width: 768px) {   .cat img {     margin-left: 20%; /* Adjust position for smaller screens */margin-top: -10%; /* Adjust vertical position */width: 150px; /* Reduce size for mobile view */height: 225px; } }
+/* Mobile view adjustments */
+@media (max-width: 600px) {
+  .cat img {
+    margin-left: 20%; /* Adjust position for smaller screens */
+    margin-top: -10%; /* Adjust vertical position */
+    width: 150px; /* Reduce size for mobile view */
+    height: 225px;
+  }
 
+  .foreground-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.3s ease; /* Smooth transition for rotation */
+  }
+  .container1 {
+    margin-top: 10%;
+    position: relative;
+    width: 300px;
+    height: 400px;
+  }
+  .im img {
+    margin-top: 10%;
+    margin-left: 1%;
+  }
+  .im {
+    font-family: "Monsterrat", sans-serif;
+    color: #ffffff;
+  }
 
+  .text-content {
+    float: right; /* Floats the content to the right */
+    width: 60%; /* Adjust width as needed */
+  }
 
+  .im h3 {
+    margin-top: 150%;
+    font-size: 16px;
+    font-family: "Monsterrat", "sans-serif";
+    color: #ffffff;
+  }
+
+  .im p {
+    font-size: 1em;
+    margin: 10px 0;
+  }
+
+  .im ul {
+    list-style-type: disc;
+    padding-left: 20px;
+  }
+
+  .im ul li {
+    margin-bottom: 8px;
+  }
+}
+
+@media (max-width: 768px) {
+  .cat img {
+    margin-left: 20%; /* Adjust position for smaller screens */
+    margin-top: -10%; /* Adjust vertical position */
+    width: 150px; /* Reduce size for mobile view */
+    height: 225px;
+  }
+
+  .foreground-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.3s ease; /* Smooth transition for rotation */
+  }
+  .container1 {
+    margin-top: 10%;
+    position: relative;
+    width: 300px;
+    height: 400px;
+  }
+  .im img {
+    margin-top: 10%;
+    margin-left: 1%;
+  }
+  .im {
+    font-family: "Monsterrat", sans-serif;
+    color: #ffffff;
+  }
+
+  .text-content {
+    float: right; /* Floats the content to the right */
+    width: 60%; /* Adjust width as needed */
+  }
+
+  .im h3 {
+    margin-top: 150%;
+    font-size: 16px;
+    font-family: "Monsterrat", "sans-serif";
+    color: #ffffff;
+  }
+
+  .im p {
+    font-size: 1em;
+    margin: 10px 0;
+  }
+
+  .im ul {
+    list-style-type: disc;
+    padding-left: 20px;
+  }
+
+  .im ul li {
+    margin-bottom: 8px;
+  }
+}
 
 /*generic navbar logo*/
 
@@ -4333,6 +4433,22 @@ ul.nav-links li a {
   color: #fff;
 }
 
+/*moving effects security para*/
+.moving {
+  opacity: 0; /* Initially hidden */
+  transform: translateY(20px); /* Start slightly below */
+  transition: opacity 1.5s ease, transform 1.5s ease; /* Smooth fade and movement */
+}
+
+.moving.visible {
+  opacity: 1; /* Fully visible */
+  transform: translateY(0); /* Moves to its original position */
+}
+
+.moving.hidden {
+  opacity: 0; /* Fully transparent for fade-out */
+  transform: translateY(20px); /* Moves slightly downward */
+}
 .toggle-btn {
   font-weight: bold;
   font-size: 1em;
@@ -4345,7 +4461,7 @@ ul.nav-links li a {
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: transform 0.2s ease;
+  transition: transform 1.5s ease;
   margin-left: auto; /* Aligns toggle button to the far right */
 }
 .toggle-btn:hover {
@@ -4378,7 +4494,21 @@ ul.nav-links li a {
   font-family: "Roboto";
   color: #a0aec0; /* Adjust color if needed */
 }
-
+.sec-para {
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+  color: #a0aec0;
+}
+.sec-para2 {
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+  color: #a0aec0;
+}
+.sec-para3 {
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+  color: #a0aec0;
+}
 /*images with 3d effects in generic page*/
 
 /* Mobile view adjustments */
@@ -4391,6 +4521,24 @@ ul.nav-links li a {
   .toggle-btn {
     margin-top: 8px; /* Adds space between heading and toggle button */
     margin-left: 0; /* Resets left margin */
+  }
+  .moving {
+    line-height: 1.9;
+    font-weight: normal;
+    text-decoration: none;
+    color: #a0aec0;
+  }
+  .sec-para {
+    font-size: 14px;
+    font-family: "Roboto", sans-serif;
+  }
+  .sec-para2 {
+    font-size: 14px;
+    font-family: "Roboto", sans-serif;
+  }
+  .sec-para3 {
+    font-size: 14px;
+    font-family: "Roboto", sans-serif;
   }
 }
 
@@ -4653,10 +4801,10 @@ ul.nav-links li a {
   -webkit-transition-delay: 3.5s;
   -ms-transition-delay: 3.5s;
   transition-delay: 3.5s;
-  -moz-transform: translateY(0);
-  -webkit-transform: translateY(0);
-  -ms-transform: translateY(0);
-  transform: translateY(0);
+  -moz-transform: translateY(-10px); /* Move up slightly */
+  -webkit-transform: translateY(-10px); /* Move up slightly */
+  -ms-transform: translateY(-10px); /* Move up slightly */
+  transform: translateY(-10px); /* Move up slightly */
   border: none;
   bottom: 0;
   color: inherit;
@@ -4748,10 +4896,12 @@ ul.nav-links li a {
   #banner p {
     font-size: 0.85rem; /* Further adjust paragraph size */
   }
-
   #banner .more {
-    font-size: 0.8em; /* Adjust button text size */
-    padding: 8px 12px; /* Reduce padding for smaller screens */
+    font-size: 0.8em;
+    padding: 8px 12px;
+    position: relative;
+    top: 212px; /* Adjust as needed */
+    margin-left: -90%;
   }
 }
 
@@ -4903,6 +5053,13 @@ body.is-preload #banner:after {
 .core-comp {
   padding: 40px 0; /* Add padding to the top and bottom for spacing */
   text-align: center; /* Center the content */
+  opacity: 0; /* Initially hidden */
+  transition: opacity 1.5s ease, transform 1.5s ease; /* Transition for both opacity and transform */
+  transform: translateY(20px); /* Start slightly below */
+}
+.core-comp.active {
+  opacity: 1; /* Make visible */
+  transform: translateY(0); /* Move to original position */
 }
 
 /* Center the heading */
@@ -4925,7 +5082,6 @@ body.is-preload #banner:after {
   max-width: 1200px; /* Optional: Restrict the max width of the container */
   width: 100%; /* Ensures the container takes up the full width */
 }
-
 
 /* Styling for each partner company block */
 .cli-company .block {
@@ -4951,7 +5107,6 @@ body.is-preload #banner:after {
   margin-bottom: 20px; /* Add spacing between heading and content */
   display: block;
 }
-
 
 .core-heading b {
   color: white;
@@ -5540,7 +5695,6 @@ body.is-mobile.landing #footer {
     font-size: medium;
   }
   .btn-one button {
-
   }
 }
 
@@ -5695,7 +5849,7 @@ svg {
   justify-content: center;
   align-items: center;
   width: 100%;
-  padding: 4% 0; 
+  padding: 4% 0;
 }
 
 .punch-p {
@@ -5707,6 +5861,14 @@ svg {
   margin-bottom: 20px; /* Adds space below the heading */
   letter-spacing: normal;
   text-align: center;
+  opacity: 0; /* Initially hidden */
+  transition: opacity 1.5s ease, transform 1.5s ease; /* Transition for both opacity and transform */
+  transform: translateY(20px); /* Start slightly below */
+}
+
+.punch-p.active {
+  opacity: 1; /* Make visible */
+  transform: translateY(0); /* Move to original position */
 }
 .punch-text {
   font-family: "Roboto", sans-serif; /* Applies Roboto font */
@@ -5717,48 +5879,66 @@ svg {
   padding: 0 1rem; /* Adds side padding for better spacing */
   text-align: center; /* Centers the text within the container */
   margin: 0; /* Removes any default margin */
+  opacity: 0; /* Initially hidden */
+  transition: opacity 1.5s ease, transform 1.5s ease; /* Transition for both opacity and transform */
+  transform: translateY(20px); /* Start slightly below */
 }
-.punch-text5{
-  font-family: "Roboto", sans-serif; /* Applies Roboto font */
-  font-size: 14px; /* Adjusts the paragraph text size */
-  color: #a0aec0; /* Sets the paragraph text color */
-  line-height: 1.6; /* Increases line height for readability */
-  max-width: 800px; /* Limits the paragraph width */
-  padding: 0 1rem; /* Adds side padding for better spacing */
-  text-align: center; /* Centers the text within the container */
-  margin: 0; /* Removes any default margin */
+
+.punch-text.active {
+  opacity: 1; /* Make visible */
+  transform: translateY(0); /* Move to original position */
 }
-#punch-para1{
+.punch-text5 {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  color: #a0aec0;
+  line-height: 1.6;
+  max-width: 800px;
+  padding: 0 1rem;
+  text-align: center;
+  margin: 0;
+  opacity: 0; /* Initially hidden */
+  transform: translateY(20px); /* Start slightly below for scroll effect */
+  transition: opacity 1.5s ease, transform 1.5s ease; /* Smooth transition */
+}
+
+.punch-text5.active {
+  opacity: 1; /* Fully visible */
+  transform: translateY(0); /* Slide up to natural position */
+}
+
+#punch-para1 {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
   padding: 4% 0;
 }
-.punch-p h1{
+.punch-p h1 {
   align-items: center;
 }
 /* Mobile View Adjustments */
 @media (max-width: 600px) {
   .punch-text {
     margin-top: 10%;
-    width: 300px;
+    width: 350px;
     height: 250px;
-    text-align: justify;
-    letter-spacing: normal;
-    margin-left: 10%;
+    text-align: start;
+    font-size: 14px;
+    margin-left: 3%;
   }
-  .punch-text5{
+  .punch-text5 {
     font-family: "Roboto", sans-serif; /* Applies Roboto font */
     font-size: 14px; /* Adjusts the paragraph text size */
     color: #a0aec0; /* Sets the paragraph text color */
     line-height: 1.6; /* Increases line height for readability */
     max-width: 800px; /* Limits the paragraph width */
     padding: 0 1rem; /* Adds side padding for better spacing */
-    text-align: justify; /* Centers the text within the container */
+    text-align: start; /* Centers the text within the container */
     margin: 0; /* Removes any default margin */
+    width: 350px;
   }
-  
+
   .punch-p {
     margin-top: -10%;
     font-size: 16px;
@@ -5773,12 +5953,17 @@ svg {
     margin-left: -50%;
   }
 }
-@media only screen and
- (max-width: 768px) { 
-  #spider-img {     background-position: 75% 29%; /* Adjust the position for mobile */background-size: 35%; /* Increase the size slightly for better visibility */ }
- 
-#spider-img::before {     background-position: 80% 40%;     background-size: 35%; } }
- 
+@media only screen and (max-width: 768px) {
+  #spider-img {
+    background-position: 75% 29%; /* Adjust the position for mobile */
+    background-size: 35%; /* Increase the size slightly for better visibility */
+  }
+
+  #spider-img::before {
+    background-position: 80% 40%;
+    background-size: 35%;
+  }
+}
 
 /*home page intro particles*/
 
@@ -5840,21 +6025,28 @@ svg {
   font-size: 14px;
   color: #a0aec0;
   text-align: justify;
+  opacity: 0; /* Initially hidden */
+  transition: opacity 1.5s ease, transform 1.5s ease; /* Transition for both opacity and transform */
+  transform: translateY(20px); /* Start slightly below */
+}
+.text1.active {
+  opacity: 1; /* Make visible */
+  transform: translateY(0); /* Move to original position */
 }
 /* Mobile view adjustments */
 @media (max-width: 768px) {
   .left-image {
-    margin-top: 5%;       /* Maintain top margin */
-    margin-left: auto;    /* Center the image horizontally */
-    margin-right: auto;   /* Center the image horizontally */
-    display: block;       /* Ensures the image is treated as a block element */
-    width: 80%;           /* Increase width for better visibility on mobile */
+    margin-top: 5%; /* Maintain top margin */
+    margin-left: auto; /* Center the image horizontally */
+    margin-right: auto; /* Center the image horizontally */
+    display: block; /* Ensures the image is treated as a block element */
+    width: 80%; /* Increase width for better visibility on mobile */
   }
   .punch-p {
-    font-size: 18px;       /* Smaller font size for readability on mobile */
-    margin-top: 3%;        /* Reduce top margin to save space */
-    margin-bottom: 15px;   /* Slightly reduce bottom margin */
-    line-height: 1.3;      /* Adjust line height for better readability */
+    font-size: 18px; /* Smaller font size for readability on mobile */
+    margin-top: 3%; /* Reduce top margin to save space */
+    margin-bottom: 15px; /* Slightly reduce bottom margin */
+    line-height: 1.3; /* Adjust line height for better readability */
   }
 }
 /* Mobile View Adjustments */
@@ -5942,7 +6134,6 @@ svg {
   }
 
   .para1 {
-    
     font-size: 18px;
     width: 80%; /* Ensure heading takes full width */
     margin-left: 8%; /* Center the heading */
@@ -6043,16 +6234,206 @@ svg {
 .map {
   background-color: #29375a;
 }
-.contact-us-form {
-  background-color: #29375a; /* Set your desired background color */
-  padding: 20px; /* Adds padding inside the section */
-  border-radius: 8px; /* Rounds the corners */
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Optional shadow for a subtle 3D effect */
+
+/* Container Styling */
+.cont {
+  display: flex;
+  flex-direction: column; /* Default to vertical layout for smaller screens */
+  justify-content: center;
+  align-items: center; /* Center content horizontally */
+  padding: 20px;
+  text-align: center;
+  justify-content: center;
+  gap: 20px;
+  margin-top: -6%; /* Adds some space between form and image */
 }
 
-.contact-us-form h4 {
-  color: white; /* Adjust heading color as needed */
-  margin-bottom: 15px;
+/* Base Styles for Contact Form */
+.contact-container {
+  display: flex;
+  flex-wrap: wrap; /* Allows flex items to wrap on smaller screens */
+  justify-content: space-between;
+  max-width: 900px;
+  width: 100%; /* Makes width 100% for better responsiveness */
+  padding: 20px;
+}
+
+.contact-form,
+.contact-info {
+  width: 45%;
+  margin-bottom: 20px;
+}
+
+.contact-form {
+  background-color: #141b2a;
+}
+
+.contact-form h3 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #4fc3f7;
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 10px 0;
+  color: #ffffff;
+  font-size: 16px;
+}
+
+.contact-form input[type="text"]::placeholder,
+.contact-form input[type="email"]::placeholder,
+.contact-form textarea::placeholder {
+  color: #7a8ba1;
+}
+
+.contact-form input[type="text"]:focus,
+.contact-form input[type="email"]:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-bottom: 1px solid #ffffff;
+}
+
+.feedback-button {
+  background-color: #4fc3f7;
+  letter-spacing: normal;
+  color: white;
+  padding: 3px 20px;
+  text-align: center;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.feedback-button:hover {
+  background-color: #29b6f6;
+}
+
+.contact-info {
+  text-align: center;
+}
+
+.contact-info h1 {
+  font-size: 48px;
+  font-weight: bold;
+  position: relative;
+  display: inline-block;
+}
+
+.contact-info p {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #7a8ba1;
+}
+
+/* Responsive styling for smaller screens */
+@media (max-width: 768px) {
+  .contact-form,
+  .contact-info {
+    width: 100%; /* Stacks form and info vertically */
+    margin-bottom: 20px;
+  }
+
+  .contact-container {
+    padding: 10px; /* Reduce padding on smaller screens */
+  }
+
+  .contact-info h1 {
+    font-size: 36px; /* Smaller font size for headings */
+  }
+
+  .contact-form h3 {
+    font-size: 18px;
+  }
+
+  .feedback-button {
+    padding: 8px 16px; /* Smaller padding for button */
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-info h1 {
+    font-size: 28px; /* Further reduce font size on extra small screens */
+  }
+
+  .contact-form h3 {
+    font-size: 16px;
+  }
+
+  .contact-form input[type="text"],
+  .contact-form input[type="email"],
+  .contact-form textarea {
+    font-size: 14px; /* Smaller font for input fields */
+    padding: 8px 0;
+  }
+
+  .feedback-button {
+    padding: 6px 12px;
+  }
+}
+
+/* Black Widow Image Styling */
+#avengers-img {
+  background-image: url(/images1/avengers.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: 700px; /* Ensures image is no wider than the form */
+  height: 800px;
+  margin-top: 20px;
+}
+
+/* Large Screen Layout (Side by Side) */
+@media (min-width: 1024px) {
+  .cont {
+    flex-direction: row; /* Side by side layout on large screens */
+    justify-content: center; /* Center the elements horizontally */
+  }
+
+  .contact-us-form {
+    margin: 0 20px; /* Adds some space between the form and the image */
+  }
+
+  #avengers-img {
+    margin-top: 0; /* Removes top margin */
+  }
+}
+
+/* Responsive Styles for Tablet Screens */
+@media (max-width: 768px) {
+  .contact-us-form {
+    max-width: 90%; /* Increase form width on tablets */
+    padding: 15px;
+  }
+
+  #avengers-img {
+    background-size: 80%;
+    height: 400px;
+  }
+}
+
+/* Responsive Styles for Mobile Screens */
+@media (max-width: 600px) {
+  .contact-us-form {
+    max-width: 100%; /* Full-width form on mobile */
+    padding: 10px;
+    left: 0;
+  }
+
+  #avengers-img {
+    background-size: 80%;
+    height: 400px;
+    margin-top: 15px; /* Adjusts spacing between form and image */
+  }
 }
 
 /*three images in home page*/
@@ -6100,20 +6481,20 @@ svg {
 .first-img p {
   font-family: "Roboto";
   margin: 0; /* Removes default margin from the paragraph */
-  font-size: 14px; /* Adjust font size as needed for better readability */
+  font-size: 12px; /* Adjust font size as needed for better readability */
   line-height: 1.5; /* Increases line height for better text visibility */
 }
 
 .second-img p {
   font-family: "Roboto";
   margin: 0; /* Removes default margin from the paragraph */
-  font-size: 14px; /* Adjust font size as needed for better readability */
+  font-size: 12px; /* Adjust font size as needed for better readability */
   line-height: 1.5;
 }
 .third-img p {
   font-family: "Roboto";
   margin: 0; /* Removes default margin from the paragraph */
-  font-size: 14px; /* Adjust font size as needed for better readability */
+  font-size: 12px; /* Adjust font size as needed for better readability */
   line-height: 1.5;
 }
 /* Responsive Design for Mobile */
@@ -6145,7 +6526,7 @@ svg {
     width: 100%; /* Increase the width */
     height: auto; /* Maintain aspect ratio */
   }
-  .text1{
+  .text1 {
     margin-top: -90%;
     margin-left: -5%;
     text-align: justify;
@@ -6172,6 +6553,18 @@ svg {
   }
 }
 
+/*our service animation code*/
+
+.head-3 {
+  opacity: 0; /* Initially hidden */
+  transition: opacity 1.5s ease, transform 1.5s ease; /* Transition for both opacity and transform */
+  transform: translateY(20px); /* Start slightly below */
+}
+
+.head-3.active {
+  opacity: 1; /* Make visible */
+  transform: translateY(0); /* Move to original position */
+}
 /* Image styling */
 .first-img img,
 .second-img img,
@@ -6220,6 +6613,8 @@ svg {
 
 /* Button styling */
 .more-know {
+  width: 220px;
+  margin-right: 10px; /* Adjust the value as needed for spacing */
   background-color: #4fc3f7;
   color: #ffffff;
   font-family: "Montserrat", sans-serif;
@@ -6235,6 +6630,33 @@ svg {
   background-color: #29b6f6;
   color: #f8fafc;
 }
+
+.more-know1 {
+  width: 210px;
+  margin-left: 280px;
+  background-color: #4fc3f7;
+  color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  letter-spacing: normal;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  position: relative;
+}
+.more-know1:hover {
+  background-color: #29b6f6;
+  color: #f8fafc;
+}
+
+@media (max-width: 600px) {
+  .more-know1 {
+    margin-bottom: 5%;
+    margin-left: 23%;
+  }
+}
+
 /*generic heading*/
 .gen-head {
   text-transform: capitalize;
@@ -6258,7 +6680,6 @@ svg {
     gap: 20px; /* Increased gap for mobile view */
   }
   .more-know {
-    
     margin-bottom: 5%;
   }
 }
@@ -6280,11 +6701,10 @@ svg {
 
 /* css effects for part2 content*/
 .content-box {
+  color: #a0aec0;
+  text-align: justify;
   padding: 20px; /* Space inside the box */
-  border: 5px solid #ccc; /* Border around the box */
-  background-color: #141b2a; /* Light background color */
   border-radius: 2px; /* Rounded corners */
-  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
   max-width: 800px; /* Optional: Limit the width of the box */
   margin: 20px auto; /* Center the box horizontally */
   font-family: Arial, sans-serif; /* Font family for the text */
@@ -6299,7 +6719,7 @@ svg {
   color: white;
 }
 .image {
-  background-color: #29375a;
+  background-color: #0c0f26;
 }
 /*elements page effects*/
 
@@ -6321,7 +6741,7 @@ svg {
 
 .rotoscoping-box {
   text-align: left;
-  text-align: justify;
+  text-align: start;
   font-family: "Monsterrat", sans-serif;
   border-radius: 5px; /* Slightly rounded corners */
   padding: 15px; /* Less padding to reduce overall box size */
@@ -6382,7 +6802,6 @@ li p {
     flex: 1 1 calc(45% - 20px); /* Two boxes per row with gap */
     margin: 10px 0; /* Vertical spacing */
     border-radius: 10px;
-    background: rgba(255, 255, 255, 0.1);
     transition: transform 0.3s, box-shadow 0.3s;
     min-height: 50px; /* Set a minimum height */
   }
@@ -6409,7 +6828,7 @@ li p {
   font-size: 12px;
   position: relative;
   animation: scrollUp 2s ease-in-out forwards; /* Adjust duration as needed */
-  animation-delay: 0.5s; /* Delay the paragraph animation */
+  animation-delay: 1.5s; /* Delay the paragraph animation */
   opacity: 0; /* Start hidden */
 }
 
@@ -6433,7 +6852,7 @@ li p {
 }
 .scrolling-paragraph p {
   color: #a0aec0;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 /* Keyframes for scroll up effect */
@@ -6512,6 +6931,11 @@ li p {
   width: 300px;
   height: 250px;
 }
+
+.element-paint {
+  width: 250px;
+  height: 200px;
+}
 @media (max-width: 480px) {
   .element {
     width: 240px;
@@ -6541,7 +6965,7 @@ li p {
 }
 
 .paint-box {
-  text-align: justify;
+  text-align: start;
   padding: 20px; /* Spacing inside the box */
   max-width: 1000px; /* Optional max width for the box */
   margin-left: 0%; /* Center the box horizontally with some margin */
@@ -6549,8 +6973,7 @@ li p {
 
 /*matchmove box*/
 .matchmove-box {
-  text-align: left;
-  text-align: justify;
+  text-align: start;
   padding: 20px; /* Spacing inside the box */
   max-width: 1000px; /* Optional max width for the box */
   margin-left: 0%; /* Center the box horizontally with some margin */
@@ -6558,7 +6981,7 @@ li p {
 
 /*compo-box */
 .compo-box {
-  text-align: justify;
+  text-align: start;
   padding: 20px; /* Spacing inside the box */
   max-width: 1000px; /* Optional max width for the box */
   margin-left: 0%; /* Center the box horizontally with some margin */
@@ -6567,6 +6990,9 @@ li p {
 .compo-box,
 p {
   margin-left: 0%;
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+  color: #a0aec0;
 }
 
 /*css effects for elements image*/
@@ -6870,7 +7296,9 @@ p {
   }
 }
 .about {
-  text-align: justify;
+  text-align: start;
+  color: #a0aec0;
+  font-size: 14px;
 }
 /* Heading styling */
 .heading {
@@ -6907,24 +7335,58 @@ p {
 .fade-up {
   opacity: 0;
   transform: translateY(20px);
-  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  transition: opacity 1.6s ease-out, transform 1.6s ease-out;
 }
 
 /* Trigger animation when element is visible */
 .fade-up.visible {
   opacity: 1;
   transform: translateY(0);
-
 }
 
 /* Additional styling for mission and vision sections */
 .mis-fade-up,
 .vision-fade-up {
- /* Space between sections */
+  /* Space between sections */
   text-align: left;
   text-align: justify;
   margin-left: 20%;
+  color: #a0aec0;
+  font-size: 14px;
+  word-spacing: 5px;
 }
+
+@media (max-width: 768px) {
+  .mis-fade-up,
+  .vision-fade-up {
+    /* Space between sections */
+    text-align: left;
+    margin-left: 20%;
+    color: #a0aec0;
+    font-size: 14px;
+    word-spacing: 1px;
+  }
+}
+
+/*effects for about page */
+.fade-effect {
+  opacity: 0; /* Initially hidden */
+  transform: translateY(20px); /* Start slightly below */
+  transition: opacity 1.5s ease, transform 1.5s ease; /* Smooth fade and movement */
+}
+
+.fade-effect.visible {
+  opacity: 1; /* Fully visible */
+  transform: translateY(0); /* Moves to its original position */
+  color: #a0aec0;
+  font-size: 14px;
+}
+
+.fade-effect.hidden {
+  opacity: 0; /* Fully transparent for fade-out */
+  transform: translateY(20px); /* Moves slightly downward */
+}
+
 .life-fade-up {
   margin-bottom: 40px; /* Space between sections */
   text-align: left;
@@ -6933,10 +7395,12 @@ p {
 
 /* Text styling */
 .text-only {
-  font-size: 0.9rem;
-  color: white;
+  font-size: 14px;
+  color: #a0aec0;
   text-align: justify;
   margin-top: auto; /* Pushes text to the bottom if necessary */
+  line-height: 1.5;
+  letter-spacing: normal;
 }
 
 .mis {
@@ -6945,6 +7409,27 @@ p {
 #team {
   text-align: justify;
 }
+
+/*team below para effects*/
+.team-fadeup {
+  color: #a0aec0;
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+  opacity: 0; /* Initially hidden */
+  transform: translateY(20px); /* Start slightly below */
+  transition: opacity 1.9s ease, transform 1.9s ease; /* Smooth fade and movement */
+}
+
+.team-fadeup.visible {
+  opacity: 1; /* Fully visible */
+  transform: translateY(0); /* Moves to its original position */
+}
+
+.team-fadeup.hidden {
+  opacity: 0; /* Fully transparent for fade-out */
+  transform: translateY(20px); /* Moves slightly downward */
+}
+
 #about-us {
   padding: 40px;
   text-align: center;
@@ -6972,7 +7457,7 @@ p {
     width: calc(50% - 20px); /* Adjust to fit two team members per row */
   }
   .team {
-    text-align: justify;
+    text-align: start;
   }
 }
 
@@ -7020,7 +7505,7 @@ p {
 }
 
 .life {
-  text-align: justify;
+  text-align: start;
 }
 .vision {
   text-align: justify;
@@ -7047,7 +7532,7 @@ p {
   }
 
   .text-only {
-    font-size: 0.8em;
+    font-size: 14px;
   }
 }
 @media (max-width: 375px) {
@@ -7074,7 +7559,6 @@ p {
     font-size: 0.8em;
   }
 }
-
 
 /*generic-bg*/
 .generic-img {
@@ -7139,7 +7623,7 @@ p {
 /* Foreground image (character) */
 .foreground-image {
   position: absolute;
-  top: 0;
+  top: -10%;
   left: 0;
   width: 100%;
   height: 100%;
@@ -7153,7 +7637,6 @@ p {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border-radius: 8px;
   transition: transform 0.3s ease; /* Smooth transition for rotation */
 }
 
@@ -7188,12 +7671,11 @@ p {
 .work-img {
   width: 1024px;
   height: 768px;
-  display: flex;              /* Turn it into a flex container */
-  justify-content: center;    /* Center horizontally */
-  align-items: center;        /* Center vertically */
-  margin: 0 auto;             /* Center the element horizontally if needed */
+  display: flex; /* Turn it into a flex container */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  margin: 0 auto; /* Center the element horizontally if needed */
 }
-
 
 @media (max-width: 600px) {
   /* Adjusted for smaller screens */
@@ -7202,6 +7684,37 @@ p {
     height: 200px;
     margin-left: 10%; /* Reset to avoid negative margins */
   }
+}
+
+/*security content in workflow*/
+.im {
+  font-family: "Monsterrat", sans-serif;
+  color: #ffffff;
+}
+
+.text-content {
+  float: right; /* Floats the content to the right */
+  width: 60%; /* Adjust width as needed */
+}
+
+.im h3 {
+  font-size: 16px;
+  font-family: "Monsterrat", "sans-serif";
+  color: #ffffff;
+}
+
+.im p {
+  font-size: 1em;
+  margin: 10px 0;
+}
+
+.im ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.im ul li {
+  margin-bottom: 8px;
 }
 
 /*services-bg-image*/
@@ -7232,7 +7745,9 @@ p {
 }
 
 .career-p2 {
-  text-align: justify;
+  text-align: start;
+  color: #a0aec0;
+  font-family: "Roboto", sans-serif;
 }
 .careers-img img {
   position: absolute;
@@ -7245,6 +7760,7 @@ p {
   object-fit: cover; /* Use 'cover' instead of 'fill' to maintain aspect ratio */
 }
 .fade-text {
+  color: #a0aec0;
   opacity: 0; /* Initially hidden */
   transition: opacity 0.5s ease, transform 0.5s ease; /* Transition for both opacity and transform */
   transform: translateY(20px); /* Start slightly below */
@@ -7261,6 +7777,9 @@ p {
 /* Mobile styles */
 @media (max-width: 767px) {
   .fade-text.visible {
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    text-align: justify;
     opacity: 1; /* Fully visible */
     transform: translateY(0); /* No movement */
   }
@@ -7495,6 +8014,27 @@ p {
   transform: translate(-50%, -50%); /* Centers the image */
   object-fit: cover; /* Ensures the image covers the entire area without distortion */
 }
+
+/*code for jobs mobile view*/
+@media (max-width: 768px) {
+  .des-job1 p {
+    color: #a0aec0;
+    text-align: justify;
+    margin: 3.2%; /* Removes default margin */
+    padding: 0; /* Removes default padding */
+    width: 320px;
+  }
+}
+
+@media (max-width: 600px) {
+  .pref {
+    font-family: "Roboto", sans-serif; /* Use Roboto font as specified */
+    margin: 0; /* Remove any default margin */
+    padding-bottom: 15px; /* Adds space between heading and list */
+    text-align: left; /* Aligns heading to the left */
+  }
+}
+
 /*services*/
 .wrapper {
   /*background: #0c0f26; this colour is used for home page para2 */
@@ -7515,8 +8055,8 @@ p {
   padding: 20px; /* Optional: Padding around the container */
 }
 
-
-.rotoscoping-box ,.compo-box{
+.rotoscoping-box,
+.compo-box {
   flex: 1 1 calc(45% - 20px); /* Two boxes per row with gap */
   margin: 10px 0; /* Vertical spacing */
   padding: 20px;
@@ -7534,7 +8074,7 @@ p {
   transition: transform 0.3s, box-shadow 0.3s;
   min-height: 250px; /* Set a minimum height */
 }
-.compo-box{
+.compo-box {
   flex: 1 1 calc(45% - 20px); /* Two boxes per row with gap */
   margin: 10px 0; /* Vertical spacing */
   padding: 20px;
@@ -7583,7 +8123,7 @@ img {
   border-radius: 1px;
   margin: 15px 0;
 }
-.jobopen{
+.jobopen {
   position: relative; /* Allows for absolute positioning of child elements if needed */
   width: 100%; /* Ensures it takes the full width of the screen */
   height: 60vh; /* Sets the height to the full viewport height */
@@ -7602,7 +8142,7 @@ img {
 }
 
 /*moving img */
-.image-track img{
+.image-track img {
   width: 100px;
   height: 85px;
 }
@@ -7659,12 +8199,39 @@ b {
 }
 
 /*workflow*/
+
+/*grrot*/
+/* Ensure the body or parent container takes up the full viewport */
+
+/* Center the Groot section both horizontally and vertically */
+
+/* Style the div with the image and make it responsive */
+#groot-img {
+  background-image: url(/images1/groot.png);
+  background-repeat: no-repeat;
+  background-position: 100% 45%; /* Aligns the image to the right and center */
+  background-size: 20%; /* Reduces the image size to 20% of its container */
+}
+
+/* Adjustments for smaller screens */
+@media (max-width: 768px) {
+  #groot-img {
+    height: 600px; /* Scale down for smaller screens */
+    background-size: 15%;
+  }
+}
+@media (max-width: 480px) {
+  #groot-img {
+    height: 200px;
+    background-size: 15%; /* Further scale down for very small screens */
+  }
+}
+
 .wra {
   display: flex;
   justify-content: center; /* Space between text and image */
   align-items: flex-start; /* Align items at the start of the container */
   padding: 80px; /* Add some padding */
-
 }
 
 .in {
@@ -7687,12 +8254,11 @@ b {
 }
 
 .se {
-  margin-bottom: 20px;       /* Space between sections */
-  text-align: left;          /* Align text to the left */
-  margin-left: 0;            /* Remove any left margin */
-  margin-right: 0;           /* Remove any right margin if it exists */
+  margin-bottom: 20px; /* Space between sections */
+  text-align: left; /* Align text to the left */
+  margin-left: 0; /* Remove any left margin */
+  margin-right: 0; /* Remove any right margin if it exists */
 }
-
 
 h3 {
   margin-bottom: 20px; /* Space below the main heading */
@@ -7708,8 +8274,9 @@ h5.gen-head1 {
 
 /* Image styles */
 .im {
-  flex: 0 0 400px; /* Fixed width for the image container */
-  text-align: right; /* Align image to the right */
+  margin-left: 40%;
+  width: 600px;
+  margin-top: 35%;
 }
 
 .im img {
@@ -7739,7 +8306,7 @@ h5.gen-head1 {
   .se {
     margin-left: -10%;
     text-align: left; /* Align text to the left */
-    text-align: justify; /* Adjust text alignment for mobile view if needed */
+    text-align: start; /* Adjust text alignment for mobile view if needed */
     letter-spacing: normal;
     word-spacing: normal;
   }
@@ -7748,11 +8315,15 @@ h5.gen-head1 {
     margin-top: 20px; /* Space above subheadings */
     text-transform: capitalize;
     font-family: "Montserrat", sans-serif; /* Fixed font name */
-    font-size: 18px; /* Increased font size for better readability */
-    letter-spacing: 0; /* Set to zero to ensure no additional letter spacing */
+    font-size: 14px; /* Increased font size for better readability */
+    letter-spacing: normal; /* Set to zero to ensure no additional letter spacing */
     word-spacing: 0; /* Set to zero to remove any extra word spacing */
     line-height: 1.4; /* Adjust for better line readability */
     white-space: normal; /* Ensure text wraps naturally without extra space */
+  }
+  .moving {
+    margin-top: 130%;
+    color: #a0aec0;
   }
 }
 /*career*/
@@ -7822,7 +8393,75 @@ h5.gen-head1 {
 
   h3 {
     font-size: 18px;
-    text-align: center;
+    margin-left: 5%;
+  }
+
+  h5.gen-head {
+    margin-top: 20px;
+    text-transform: capitalize;
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    letter-spacing: 0;
+    word-spacing: 0;
+    line-height: 1.4;
+  }
+
+  .cat img {
+    margin-left: 20%; /* Adjust position for smaller screens */
+    margin-top: -10%; /* Adjust vertical position */
+    width: 150px; /* Reduce size for mobile view */
+    height: 225px;
+  }
+
+  .foreground-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.3s ease; /* Smooth transition for rotation */
+  }
+  .container1 {
+    margin-top: 10%;
+    position: relative;
+    width: 300px;
+    height: 400px;
+  }
+  .im img {
+    margin-top: 10%;
+    margin-left: 1%;
+  }
+  .im {
+    font-family: "Roboto", sans-serif;
+    color: #ffffff;
+    margin-left: -5%;
+    width: 300px;
+    margin-top: -350px;
+  }
+
+  .text-content {
+    float: right; /* Floats the content to the right */
+    width: 60%; /* Adjust width as needed */
+  }
+
+  .im h3 {
+    margin-top: 150%;
+    font-size: 16px;
+    font-family: "Monsterrat", "sans-serif";
+    color: #ffffff;
+  }
+
+  .im p {
+    font-size: 1em;
+    margin: 10px 0;
+  }
+
+  .im ul {
+    list-style-type: disc;
+    padding-left: 20px;
+  }
+
+  .im ul li {
+    margin-bottom: 8px;
   }
 }
 
@@ -7846,15 +8485,12 @@ h5.gen-head1 {
   border-radius: 8px; /* Optional: Slightly rounded corners */
 }
 
-
-
 .videoContainer {
   margin-left: 5rem;
   width: 100%; /* Make it responsive */
   max-width: 40rem; /* Limit the max width */
   overflow: hidden;
   border-radius: 15px;
-
 
   transition: transform 0.3s ease;
 }
@@ -7889,6 +8525,16 @@ h5.gen-head1 {
     height: 50vh; /* Adjust height for smaller screens */
     margin: 0; /* Reset margins */
   }
+  #FAQ {
+    background-color: #4fc3f7;
+    padding: 5px;
+    width: 100px;
+    margin-left: 15%;
+  }
+  #FAQ:hover {
+    background-color: #29b6f6;
+    color: #f8fafc;
+  }
 }
 
 @media (max-width: 480px) {
@@ -7902,10 +8548,20 @@ h5.gen-head1 {
 }
 
 .toggle-paragraph {
-  color: #cccccc; /* Light gray text for paragraphs */
-  font-size: 16px; /* Standard font size for readability */
+  color: #a0aec0; /* Light gray text for paragraphs */
+  font-size: 14px; /* Standard font size for readability */
+  font-family: "Roboto", sans-serif;
+  text-align: start;
   line-height: 1.5; /* Improve line spacing */
   margin-bottom: 20px; /* Space below paragraphs */
+  opacity: 0; /* Initially hidden */
+  transition: opacity 0.5s ease, transform 0.5s ease; /* Transition for both opacity and transform */
+  transform: translateY(20px); /* Start slightly below */
+}
+
+.toggle-paragraph.active {
+  opacity: 1; /* Make visible */
+  transform: translateY(0); /* Move to original position */
 }
 
 .toggle-paragraph:hover {
@@ -7917,24 +8573,60 @@ h5.gen-head1 {
 
 .mee {
   text-align: center;
- 
 }
-.mee button{
-  background-color: #4FC3F7;
+.mee button {
+  background-color: #4fc3f7;
+}
+#FAQ {
+  background-color: #4fc3f7;
+  padding: 5px;
+  width: 100px;
+  margin-left: 15%;
+}
+#FAQ:hover {
+  background-color: #29b6f6;
+  color: #f8fafc;
 }
 .mee button:hover {
   background-color: #29b6f6;
   color: #f8fafc;
 }
 .faq {
-  background-color: #4FC3F7;
+  background-color: #4fc3f7;
   text-align: center;
   margin: 0 auto; /* Centers the container horizontally if it has a fixed width */
   padding: 10px; /* Optional: adds padding for better spacing */
   width: 10%; /* Optional: set a width for better control */
 }
 
-.apply:hover{
+.apply:hover {
   background-color: #29b6f6;
   color: #f8fafc;
+}
+
+.fqa-text {
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+}
+.resp-li {
+  text-align: justify;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+}
+#fqa-text {
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+}
+
+/* Initial state: hidden and translated down */
+.des-job1 {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 2s ease-out, transform 2s ease-out;
+}
+
+/* When in view: fade in and move to position */
+.des-job1.scroll-active {
+  opacity: 1;
+  transform: translateY(0);
 }

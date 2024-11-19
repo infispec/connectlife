@@ -4,7 +4,7 @@
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
-<html>
+<html lang="en">
 	<head>
 		<title>Jobs Openings </title>
 		<meta charset="utf-8" />
@@ -131,7 +131,7 @@
       integrates with the overall visual narrative.</p>
            <h3 class="res" style="float: left;">Responsibilities:</h3><br><br>
 <ul style="text-align:justify">
-<li><b>Quality Assessment:</b> Conduct detailed quality checks on VFX shots, ensuring they meet 
+<li class="first"><b>Quality Assessment:</b> Conduct detailed quality checks on VFX shots, ensuring they meet 
     aesthetic, technical, and continuity standards.</li>
 
 <li>
@@ -164,7 +164,7 @@
 <ul style="text-align:justify">
 
 
-    <li> Bachelor’s degree in Visual Effects, Film Production, 
+    <li class="second"> Bachelor’s degree in Visual Effects, Film Production, 
         Digital Arts, or related field (or equivalent experience).</li>
 
     <li>2+ years of experience in a VFX QC role or similar quality assurance
@@ -187,7 +187,7 @@
         
       <br> <h3 class="pref" style="text-align:justify;float: left;"> Preferred Skills:</h3><br><br>
 <ul style="text-align:justify">
-    <li>Familiarity with VFX pipelines, project management software 
+    <li class="third">Familiarity with VFX pipelines, project management software 
         (ShotGrid, FTrack), and QC tools.</li>
  <li>Experience working with 4K, HDR, and high-frame-rate content.</li>
  <li>Knowledge of scripting languages (Python, MEL) for automated QC tools (a plus).
@@ -260,6 +260,26 @@
 </footer>
 
 		<!-- Scripts -->
+		 <!-- Scripts -->
+		<script>
+			// Function to check if an element is in the viewport
+function isInViewport(element) {
+    const rect = element.getBoundingClientRect();
+    return (
+        rect.top <= (window.innerHeight || document.documentElement.clientHeight) &&
+        rect.bottom >= 0
+    );
+}
+
+// Add scroll event listener
+document.addEventListener("scroll", function () {
+    const desJob = document.querySelector(".des-job1");
+    if (isInViewport(desJob)) {
+        desJob.classList.add("scroll-active");
+    }
+});
+
+		 </script>
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.scrollex.min.js"></script>
 			<script src="assets/js/jquery.scrolly.min.js"></script>

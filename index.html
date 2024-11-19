@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html>
+<html lang="en">
 	<head>
 		<title>Connect Life VFX</title>
 		<meta charset="utf-8" />
@@ -358,6 +358,59 @@ if (links.style.display === "flex") {
 	 audience? <br>
 			 
 		</p>
+		<script>
+			function handleScroll() {
+			  // Select all elements with the .toggle-paragraph class
+			  const paragraphs = document.querySelectorAll('.punch-text');
+		  
+			  paragraphs.forEach(paragraph => {
+				// Get the bounding rectangle of each paragraph
+				const rect = paragraph.getBoundingClientRect();
+				const isVisible = rect.top < window.innerHeight && rect.bottom >= 0;
+		  
+				// Add the 'active' class if the paragraph is in the viewport, remove if not
+				if (isVisible) {
+				  paragraph.classList.add('active');
+				} else {
+				  paragraph.classList.remove('active');
+				}
+			  });
+			}
+		  
+			// Listen for scroll events and call handleScroll on each scroll
+			window.addEventListener('scroll', handleScroll);
+		  
+			// Trigger the function once on page load to check for any paragraphs already in view
+			window.addEventListener('load', handleScroll);
+		  </script>
+		  
+
+		  <script>
+			function handleScroll() {
+			  // Select all elements with the .toggle-paragraph class
+			  const paragraphs = document.querySelectorAll('.punch-p');
+		  
+			  paragraphs.forEach(paragraph => {
+				// Get the bounding rectangle of each paragraph
+				const rect = paragraph.getBoundingClientRect();
+				const isVisible = rect.top < window.innerHeight && rect.bottom >= 0;
+		  
+				// Add the 'active' class if the paragraph is in the viewport, remove if not
+				if (isVisible) {
+				  paragraph.classList.add('active');
+				} else {
+				  paragraph.classList.remove('active');
+				}
+			  });
+			}
+		  
+			// Listen for scroll events and call handleScroll on each scroll
+			window.addEventListener('scroll', handleScroll);
+		  
+			// Trigger the function once on page load to check for any paragraphs already in view
+			window.addEventListener('load', handleScroll);
+		  </script>
+		  
 	</div>
 </section>
 
@@ -394,6 +447,27 @@ if (links.style.display === "flex") {
 	   storytelling to new heights. </p>
 									</div>
 								</div>
+								<script>
+									function handleScrollEffect() {
+									  const paragraph = document.querySelector('.text1');
+								  
+									  if (paragraph) {
+										const rect = paragraph.getBoundingClientRect();
+										const isVisible = rect.top < window.innerHeight && rect.bottom >= 0;
+								  
+										// Toggle 'active' class based on visibility
+										if (isVisible) {
+										  paragraph.classList.add('active');
+										} else {
+										  paragraph.classList.remove('active');
+										}
+									  }
+									}
+								  
+									// Run the function on page load and on scroll
+									window.addEventListener('scroll', handleScrollEffect);
+									window.addEventListener('load', handleScrollEffect);
+								  </script>
 					</header>
 					</section>
 
@@ -408,13 +482,36 @@ if (links.style.display === "flex") {
 			with you, bringing your ideas to life with precision and creativity. Whether you’re
 			 refining a single scene or transforming an entire project, we are dedicated to
 			  delivering exceptional VFX that captures your audience and leaves a lasting impression.  <br>
-			 
+			 <br>
 		</p>
+		<button class="more-know1" onclick="window.location.href='knowmore.html'">Know more</button>
 	</div>
-</section>			
+</section>		
+<script>
+	function handleScrollEffect() {
+	  const paragraph = document.querySelector('.punch-text5');
+  
+	  if (paragraph) {
+		const rect = paragraph.getBoundingClientRect();
+		const isVisible = rect.top < window.innerHeight && rect.bottom >= 0;
+  
+		// Toggle 'active' class based on visibility
+		if (isVisible) {
+		  paragraph.classList.add('active');
+		} else {
+		  paragraph.classList.remove('active');
+		}
+	  }
+	}
+  
+	// Run the function on page load and on scroll
+	window.addEventListener('scroll', handleScrollEffect);
+	window.addEventListener('load', handleScrollEffect);
+  </script>
+  
 
 				<!-- Two -->
-				<article id="three-img" ;">
+				<article id="three-img">
 					<header class="head-3">
 						<br><br><center><h2>Our Services</h2></center><br>
 						
@@ -452,9 +549,31 @@ if (links.style.display === "flex") {
 						</div><br>
 			<br>
 			<div class="button-container">
-				<button class="more-know" onclick="window.location.href='knowmore.html'">Know more</button>
+				<button class="more-know" onclick="window.location.href='elements.html'">Our Services</button>
+				
 			  </div><br>
 					</header>
+					<script>
+						function handleScrollEffect() {
+						  const paragraph = document.querySelector('.head-3');
+					  
+						  if (paragraph) {
+							const rect = paragraph.getBoundingClientRect();
+							const isVisible = rect.top < window.innerHeight && rect.bottom >= 0;
+					  
+							// Toggle 'active' class based on visibility
+							if (isVisible) {
+							  paragraph.classList.add('active');
+							} else {
+							  paragraph.classList.remove('active');
+							}
+						  }
+						}
+					  
+						// Run the function on page load and on scroll
+						window.addEventListener('scroll', handleScrollEffect);
+						window.addEventListener('load', handleScrollEffect);
+					  </script>
 				</article>
 				
 
@@ -562,6 +681,28 @@ if (links.style.display === "flex") {
 							</div>
 						</div>
 					</section>
+					<script>
+						function handleScrollEffect() {
+						  const paragraph = document.querySelector('.core-comp');
+					  
+						  if (paragraph) {
+							const rect = paragraph.getBoundingClientRect();
+							const isVisible = rect.top < window.innerHeight && rect.bottom >= 0;
+					  
+							// Toggle 'active' class based on visibility
+							if (isVisible) {
+							  paragraph.classList.add('active');
+							} else {
+							  paragraph.classList.remove('active');
+							}
+						  }
+						}
+					  
+						// Run the function on page load and on scroll
+						window.addEventListener('scroll', handleScrollEffect);
+						window.addEventListener('load', handleScrollEffect);
+					  </script>
+					  
 				</article>
 
 

@@ -4,7 +4,8 @@
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
-<html>
+<html lang="en">
+ 
 	<head>
 		<title>About-Us</title>
 		<meta charset="utf-8" />
@@ -176,7 +177,7 @@ At Connect Life VFX, we specialize in key areas of the VFX pipeline: rotoscoping
 							</div>
 						<div class="hulk"id="hulk-img" style="background-image: url(./images1/girl.png);background-repeat: no-repeat;">
 
-							<div class="mis-fade-up fade-up"  >
+							<div class="mis-fade-up fade-up">
 								<b style="color: white;">Our Mission</b><br><br>
 								Our team comprises passionate professionals who are not only skilled in their
 								respective fields but also dedicated to pushing the boundaries of creativity. We
@@ -196,17 +197,20 @@ At Connect Life VFX, we specialize in key areas of the VFX pipeline: rotoscoping
 								only meet expectations but exceed them, establishing ourselves as a
 								trusted name in the industry.
 							</div>
+						<!--	<div class="bw"id="bw-img" style="background-image: url(./images1/bw.png);background-repeat: no-repeat;"></div>-->
 						
 								<br>					
 
-			<div class="life">
-				
-				<b style="color: white;" class="life-fade-up">Life at Connect Life VFX</b><br><br>
-					At Connect Life VFX, we believe that our people are our greatest asset. Here, 
-					you'll find a collaborative and friendly atmosphere, with teams that work hard
-					 but know how to have fun. We host regular creative workshops, team-building
-					  events, and social gatherings to keep the energy alive and foster creativity.
-					</div>  
+								<div class="life">
+									<b style="color: white;" class="life-fade-up">Life at Connect Life VFX</b><br><br>
+									<div class="content-scroll fade-effect">
+									  At Connect Life VFX, we believe that our people are our greatest asset. Here, 
+									  you'll find a collaborative and friendly atmosphere, with teams that work hard
+									  but know how to have fun. We host regular creative workshops, team-building
+									  events, and social gatherings to keep the energy alive and foster creativity.
+									</div>
+								  </div>
+								  
 			</div>
 
 				</section>
@@ -221,40 +225,41 @@ At Connect Life VFX, we specialize in key areas of the VFX pipeline: rotoscoping
 							<div class="team-member">
 								<img src="./assets/images1/Kranthi.png" alt="John Doe" class="team-photo">
 								<b style="color: white;">KRANTHI KUMAR TUMMA </b><br>
-								<b style="color: white; font-size: x-small;" >CEO & Founder</b>
+								<b style="color: white; font-size: small;" >CEO & Founder</b>
 							</div>
 							<div class="team-member">
 								<img src="./assets/images1/Vamsi Krishna.jpeg" alt="Jane Smith" class="team-photo">
 								<b style="color: white;">VAMSI KRISHNA CHENGALASETTY</b><br>
-								<b style="color: white; font-size: x-small;">Creative Head</b><br>
-								<b style="color: white;font-size: x-small;">USA & India</b>
+								<b style="color: white; font-size: small;">Creative Head</b><br>
+								<b style="color: white;font-size: small;">USA & India</b>
 							</div>
 							<div class="team-member">
 								<img src="./assets/images1/Sreenivasa.jpg" alt="Alex Johnson" class="team-photo">
 								<b style="color: white;">SREENIVASA SEELAM</b><br>
-					<b style="color: white; font-size: x-small;">VP Sales, Client Partner</b><br>
-					<b style="color: white;font-size: x-small;">USA</b>
+					<b style="color: white; font-size: small;">VP Sales, Client Partner</b><br>
+					<b style="color: white;font-size: small;">USA</b>
 							</div>
 							<div class="team-member">
 								<img src="./assets/images1/Sharif Shaik.jpg" alt="Alex Johnson" class="team-photo">
 								<b style="color: white;">MASTAN SHARIF SHAIK</b><br>
-					<b style="color: white; font-size: x-small;">Head Of Production</b><br>
-					<b style="color: white;font-size: x-small;">India</b>
+					<b style="color: white; font-size: small;">Head Of Production</b><br>
+					<b style="color: white;font-size: small;">India</b>
 							</div>
 							<div class="team-member">
 								<img src="./assets/images1/Saiteja.jpg" alt="Alex Johnson" class="team-photo">
 								<b style="color: white;">SAITEJA BELLAM</b><br>
-						<b style="color: white; font-size: x-small;">Sales & Marketing</b><br>
-								<b style="color: white;font-size: x-small;">USA</b>
+						<b style="color: white; font-size: small;">Sales & Marketing</b><br>
+								<b style="color: white;font-size: small;">USA</b>
 							</div>
 							<div class="team-member">
 								<img src="./assets/images1/Sreechkshu.jpg" alt="Alex Johnson" class="team-photo">
 								<b style="color: white;">SREECHAKSHU AILURI</b><br>
-								<b style="color: white; font-size: x-small;">Sales Associate</b><br>
-								<b style="color: white;font-size: x-small;">USA</b>
+								<b style="color: white; font-size: small;">Sales Associate</b><br>
+								<b style="color: white;font-size: small;">USA</b>
 							</div>
 						</div><br><br>
 							<div class="team">
+								<div class="team-fadeup">
 								<center><b style="color: white;"> Meet the Wizards Behind the Magic</b></center><br>
 						
 		At connectlifevfx , our team is more than just a group of professionals; we are a 
@@ -262,6 +267,7 @@ At Connect Life VFX, we specialize in key areas of the VFX pipeline: rotoscoping
 		Our team includes Creative head, technical directors,Skilled Sales and marketing,
 		 skilled animators, and visionary founders, all of whom bring a unique blend of
 		  talent, experience, and dedication to every project.<br><br>
+		</div>
 							<!-- Add more team members as needed -->
 						</div>
 					</article>
@@ -376,6 +382,42 @@ At Connect Life VFX, we specialize in key areas of the VFX pipeline: rotoscoping
 					observer.observe(element);
 				});
 			});
+		</script>
+		<script>/*effects for life para*/
+			document.addEventListener("scroll", () => {
+  const fadeElement = document.querySelector(".fade-effect");
+
+  // Get the position of the element relative to the viewport
+  const rect = fadeElement.getBoundingClientRect();
+  const isVisible = rect.top < window.innerHeight && rect.bottom > 0;
+
+  if (isVisible) {
+    fadeElement.classList.add("visible");
+    fadeElement.classList.remove("hidden");
+  } else {
+    fadeElement.classList.add("hidden");
+    fadeElement.classList.remove("visible");
+  }
+});
+
+		</script>
+		<script>
+			document.addEventListener("scroll", () => {
+  const fadeElement = document.querySelector(".team-fadeup");
+
+  // Get the position of the element relative to the viewport
+  const rect = fadeElement.getBoundingClientRect();
+  const isVisible = rect.top < window.innerHeight && rect.bottom > 0;
+
+  if (isVisible) {
+    fadeElement.classList.add("visible");
+    fadeElement.classList.remove("hidden");
+  } else {
+    fadeElement.classList.add("hidden");
+    fadeElement.classList.remove("visible");
+  }
+});
+
 		</script>
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.scrollex.min.js"></script>
