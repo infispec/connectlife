@@ -30,11 +30,13 @@
 					<nav id="nav">
 						<ul class="nav-links">
 							<li>
+								<a class="home-menu" href="index.html">Home</a>
+							</li>
+							<li>
 								<a class="active" href="#home">What We Create</a>
 								<ul class="submenu">
-									<li><a href="index.html">Home</a></li>
-									<li><a href="generic.html">Workflow</a></li>
 									<li><a href="elements.html">Our Services</a></li>
+									<li><a href="generic.html">Workflow</a></li>
 								</ul>
 							</li>
 							<li>
@@ -228,8 +230,8 @@ ul.nav-links li {
     }
 	.submenu {
     list-style: none;
-    margin: 0;
-    padding: 0;
+	padding: 10px 10px; /* Adjust top-bottom and left-right padding as needed */
+    margin: 10px 0; /* Add spacing around the item */
     margin-left: 20%; /* Floats the submenu to the left */
 }
 
@@ -336,7 +338,7 @@ if (links.style.display === "flex") {
 				<section id="banner">
 					<div class="inner">
 						<h1 class="tlt">
-							<img src="./images1/nav-logo.png" alt="Connect Life Logo" class="land-image"><br>
+							<img src="./images1/nav-logo1.png" alt="Connect Life Logo" class="land-image"><br>
 						</h1>
 						<div class="head-para">Bringing Imagination to Life, One pixel at a Time</div>
 					</div>
@@ -517,35 +519,60 @@ if (links.style.display === "flex") {
 						
 						<div class="images-container">
 							<div class="first-img">
-							<br>	<div class="only-text">Rotoscoping</div><br>
-			<img src="assets\images1\rotoscoping.jpg" alt="exp" class="small-img"> <br>
+							<br>	
+							<a href="elements.html">
+								<div class="only-text">Rotoscoping</div>
+								<br>
+								<img src="assets/images1/rotoscoping.png" alt="exp" class="small-img">
+								<br>
+							</a>
+							
 								<p style="color: #A0AEC0;">
 									Rotoscoping breathes life into frames, turning motion into seamless artistry.
 								</p>
 							</div>
 							
 							<div class="second-img">
-								<br><div class="only-text">Paint</div><br>
-								<img src="assets\images1\paintt.jpg" alt="innov"><br>
+								<br>
+								<div class="only-text">Paint</div>
+								<br>
+								<a href="elements.html">
+									<img src="assets/images1/paintt.png" alt="innov">
+								</a>
+								<br>
 								<p style="color: #A0AEC0;">
 									With every stroke, VFX paintwork turns imperfection into cinematic perfection.
 								</p>
-								
 							</div>
+							
 							<div class="third-img">
-							<br>	<div class="only-text">Matchmove</div>	<br>
-								<img src="assets\images1\MM.png" alt="collab"><br>
-						<p style="color: #A0AEC0;">
-							Matchmove is the bridge between reality and the virtual, aligning worlds with precision.
-						</p>
-							</div><br>
+								<br>
+								<div class="only-text">Matchmove</div>
+								<br>
+								<a href="elements.html">
+									<img src="assets/images1/MM.png" alt="collab">
+								</a>
+								<br>
+								<p style="color: #A0AEC0;">
+									Matchmove is the bridge between reality and the virtual, aligning worlds with precision.
+								</p>
+							</div>
+							<br>
+							
 							<div class="second-img">
-								<br><div class="only-text">Compositing</div><br>
-								<img src="assets\images1\compositing.jpg" alt="innov"><br>
+								<br>
+								<div class="only-text">Compositing</div>
+								<br>
+								<a href="elements.html">
+									<img src="assets/images1/compositing.jpg" alt="innov">
+								</a>
+								<br>
 								<p>
 									Compositing weaves layers of reality and illusion, crafting a seamless visual story.
 								</p>
 							</div>
+							
+
 						</div><br>
 			<br>
 			<div class="button-container">
@@ -664,7 +691,7 @@ if (links.style.display === "flex") {
 				<article class="core-comp">
 					<section id="partner">
 						<div class="inner">
-	<h3 class="core-heading" style="color: white;">OUR CORE PARTNER COMPANY</h3>
+	<h3 class="core-heading" style="color: white;">OUR GROUP OF COMPANIES</h3>
 							<div class="cli-company">
 								<div class="part-img block">
 									<img src="./assets/images1/conn.jpg" alt="cl1" class="hover-image">

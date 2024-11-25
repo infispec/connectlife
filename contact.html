@@ -30,12 +30,14 @@
            
 						<nav id="nav">
 							<ul class="nav-links">
+                <li>
+                  <a class="home-menu" href="index.html">Home</a>
+                </li>
 								<li>
 									<a class="active" href="#home">What We Create</a>
 									<ul class="submenu">
-										<li><a href="index.html">Home</a></li>
-										<li><a href="generic.html">Workflow</a></li>
 										<li><a href="elements.html">Our Services</a></li>
+                    <li><a href="generic.html">Workflow</a></li>
 									</ul>
 								</li>
 								<li>
@@ -130,8 +132,8 @@
                                     <div class="info-item">
                                       <i class="fa fa-envelope"></i>
                                       <h4>Email Address</h4>
-                                      <a href="#">sales@connectlifevfx.com</a><br>
-                                      <a href="#">VFX.careers@connectlifevfx.com </a> <br>
+                                      <!--<a href="#">sales@connectlifevfx.com</a><br>
+                                      <a href="#">VFX.careers@connectlifevfx.com </a> <br>-->
                                       <a href="#">info@connectlifevfx.com</a>
                                         <br>
                                         <br>
@@ -158,31 +160,53 @@
                       <section class="contact-us-form" style="background-color:  #141b2a;">
                         
                         <div class="contact-container">
-                          <!-- Contact Form -->
-                          <div class="contact-form">
-                          <form target="_blank" action="https://formsubmit.co/info@connectlife-vfx.com" method="POST">
-                          
-                          <input type="text" name="name" placeholder="Your Name" required>
-                        
-                          <input type="email" name="email" placeholder="Your Email" required>
-                        
-                          <textarea name="message" placeholder="Share your thoughts" rows="1" required></textarea>
-                          <!-- Hidden field to prevent spam and optional redirect URL -->
-                          <input type="hidden" name="_captcha" value="false">
-                          <input type="hidden" name="_next" value="https://yourwebsite.com/thank-you.html">
-                           
-                                      <div>
-                          <button type="submit" class="feedback-button">SHARE YOUR FEEDBACK</button>
+                          <div class="form-container">
+                              <h3>Share Your Thoughts</h3>
+                              <form id="feedbackForm">
+                                  <input type="text" name="name" placeholder="Your Name" required>
+                                  <input type="email" name="email" placeholder="Your Email" required>
+                                  <textarea name="thoughts" placeholder="Share your thoughts" rows="5" required></textarea>
+                                  <button type="submit">Share Your Feedback</button>
+                              </form>
                           </div>
-                          </form>
+                          <div class="info-container">
+                              <h2>Contact Us</h2>
+                              <p>It is very important for us to keep in touch with you, so we are always ready to answer any question that interests you. Shoot!</p>
                           </div>
-                           
-                              <!-- Contact Info Section -->
-                          <div class="contact-info">
-                          <h1>Contact<br> Us</h1>
-                          <p>It is very important for us to keep in touch with you, so we are always ready to answer any question that interests you. Shoot!</p>
-                          </div>
-                          </div>
+                      </div>
+                  
+                      <script>
+                          document.getElementById("feedbackForm").addEventListener("submit", function(event) {
+                              event.preventDefault(); // Prevent the default form submission behavior
+                              
+                              // Collect form data
+                              const formData = new FormData(event.target);
+                              const name = formData.get("name");
+                              const email = formData.get("email");
+                              const thoughts = formData.get("thoughts");
+                  
+                              // Send data to the server (replace URL with your server endpoint)
+                              fetch("https://formspree.io/f/xanybled", {
+                                  method: "POST",
+                                  headers: { "Content-Type": "application/json" },
+                                  body: JSON.stringify({ name, email, thoughts })
+                              })
+                              .then(response => {
+                                  if (response.ok) {
+                                      alert("Form submitted successfully!");
+                                  } else {
+                                      alert("There was an error submitting your feedback. Please try again later.");
+                                  }
+                              })
+                              .catch(error => {
+                                  alert("Failed to submit the form. Please try again.");
+                                  console.error("Error:", error);
+                              });
+                  
+                              // Clear the form
+                              event.target.reset();
+                          });
+                      </script>
                       </section>
                       <div class="avengers"id="avengers-img" style="background-image: url(./images1/avengers.png);background-repeat: no-repeat;"></div>
                     </section>
