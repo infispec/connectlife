@@ -4499,7 +4499,8 @@ ul.nav-links li a {
 
 .accordion-content li {
   margin-bottom: 4px;
-  font-family: "Roboto";
+  font-size: 14px;
+  font-family: "Roboto",sans-serif;
   color: #a0aec0; /* Adjust color if needed */
 }
 .sec-para {
@@ -5381,7 +5382,7 @@ strong {
 }
 
 .footer-content div {
-  flex: 1;
+  flex: 0;
   min-width: 200px;
   margin-bottom: 20px;
   text-align: center;
@@ -6460,20 +6461,20 @@ svg {
 .first-img p {
   font-family: "Roboto";
   margin: 0; /* Removes default margin from the paragraph */
-  font-size: 12px; /* Adjust font size as needed for better readability */
+  font-size: 14px; /* Adjust font size as needed for better readability */
   line-height: 1.5; /* Increases line height for better text visibility */
 }
 
 .second-img p {
   font-family: "Roboto";
   margin: 0; /* Removes default margin from the paragraph */
-  font-size: 12px; /* Adjust font size as needed for better readability */
+  font-size: 14px; /* Adjust font size as needed for better readability */
   line-height: 1.5;
 }
 .third-img p {
   font-family: "Roboto";
   margin: 0; /* Removes default margin from the paragraph */
-  font-size: 12px; /* Adjust font size as needed for better readability */
+  font-size: 14px; /* Adjust font size as needed for better readability */
   line-height: 1.5;
 }
 /* Responsive Design for Mobile */
@@ -7398,24 +7399,66 @@ p {
 }
 
 /*team below para effects*/
+/* Styling the team container */
+.team {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  width: 100%;
+  box-sizing: border-box; /* Include padding in width calculations */
+}
+
+/* Team fade-up effect styling */
 .team-fadeup {
   color: #a0aec0;
-  font-size: 14px;
   font-family: "Roboto", sans-serif;
+  font-size: 1rem; /* Responsive text size */
+  line-height: 1.8;
+  max-width: 800px; /* Set a maximum width for alignment */
+  width: 90%; /* Ensure it adapts to smaller screens */
+  text-align: center;
+  margin: 0 auto;
+  box-sizing: border-box; /* Prevent overflow issues */
   opacity: 0; /* Initially hidden */
   transform: translateY(20px); /* Start slightly below */
   transition: opacity 1.9s ease, transform 1.9s ease; /* Smooth fade and movement */
 }
 
+/* When visible */
 .team-fadeup.visible {
   opacity: 1; /* Fully visible */
   transform: translateY(0); /* Moves to its original position */
 }
 
+/* When hidden */
 .team-fadeup.hidden {
   opacity: 0; /* Fully transparent for fade-out */
   transform: translateY(20px); /* Moves slightly downward */
 }
+
+/* Responsive font scaling */
+.team-fadeup p {
+  margin: 10px 0;
+  font-size: 1em; /* Adjust font size responsively */
+}
+
+/* Breakpoint for tablets */
+@media (max-width: 768px) {
+  .team-fadeup {
+    font-size: 0.9rem;
+    padding: 10px;
+  }
+}
+
+/* Breakpoint for mobile */
+@media (max-width: 480px) {
+  .team-fadeup {
+    font-size: 0.8rem;
+    line-height: 1.5;
+  }
+}
+
 
 #about-us {
   padding: 40px;
@@ -7678,13 +7721,9 @@ p {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: transform 0.3s ease; /* Smooth transition for rotation */
 }
 
-/* Rotate on hover */
-.foreground-image:hover img {
-  transform: rotate(5deg); /* Slight rotation on hover */
-}
+
 
 @media (max-width: 600px) {
   /* Adjusted for smaller screens */
@@ -8298,6 +8337,7 @@ b {
   opacity: 1; /* Fully visible */
   transform: translateY(0); /* Move to original position */
 }
+/* Styling for the list */
 
 .se {
   margin-bottom: 20px; /* Space between sections */
@@ -8677,3 +8717,27 @@ h5.gen-head1 {
   transform: translateY(0);
 }
 
+/* Styling for the intro-para container */
+.intro-para {
+  position: relative;
+  height: 100vh; /* Full viewport height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.intro-para p {
+  font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    color: #a0aec0;
+    line-height: 1.6;
+    max-width: 800px;
+    padding: 0 1rem;
+    text-align: center;
+    margin: 0;
+    opacity: 0;
+    transition: opacity 1.5s ease, transform 1.5s ease;
+    transform: translateY(20px);
+
+}

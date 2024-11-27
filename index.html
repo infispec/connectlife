@@ -2,6 +2,7 @@
 <html lang="en">
 	<head>
 		<title>Connect Life VFX</title>
+		<link rel="icon" href="./images1/main-logo.jpeg" type="image/png">
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -10,6 +11,7 @@
 		<link href="https://fonts.googleapis.com/css2?family=Moondance&display=swap" rel="stylesheet">
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 		<script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+		
 
 	</head>
 	<body class="preload" id="spider-img" style="background-color: #0C0F26;
@@ -414,11 +416,11 @@ if (links.style.display === "flex") {
 		  </script>
 		  
 	</div>
-</section>
+</section><br>
 
 
 				<!-- second para -->
-					<section id="one" class="wrapper style1 special">
+				<section id="one" class="wrapper style1 special">
 						<div class="inner">
 							<header class="major">
 								<div class="container2">
@@ -438,38 +440,30 @@ if (links.style.display === "flex") {
 										</div>
 									</div>
 								  </div>
-								  <div class="container2">
-									<div class="image-container">
-					<img src="./images1/new1.jpeg" alt="Image" class="left-image">
-									</div>
-									<div class="text1">		
-	<br><p>Connect Life VFX is a premier visual effects studio located in the heart of Hyderabad,
-	 with additional creative hubs in the USA and Dubai. We combine cutting-edge technology
-	  with creative artistry to craft visual narratives that elevate your projects and take
-	   storytelling to new heights. </p>
-									</div>
-								</div>
-								<script>
-									function handleScrollEffect() {
-									  const paragraph = document.querySelector('.text1');
-								  
-									  if (paragraph) {
-										const rect = paragraph.getBoundingClientRect();
-										const isVisible = rect.top < window.innerHeight && rect.bottom >= 0;
-								  
-										// Toggle 'active' class based on visibility
-										if (isVisible) {
-										  paragraph.classList.add('active');
-										} else {
-										  paragraph.classList.remove('active');
-										}
-									  }
-									}
-								  
-									// Run the function on page load and on scroll
-									window.addEventListener('scroll', handleScrollEffect);
-									window.addEventListener('load', handleScrollEffect);
-								  </script>
+								  <div class="punch">
+									<p class="punch-text">
+				Connect Life VFX is a premier visual effects studio located in the heart of Hyderabad,
+				with additional creative hubs in the USA and Dubai. We combine cutting-edge technology
+				with creative artistry to craft visual narratives that elevate your projects and take
+			 storytelling to new heights. <br>
+										 
+									</p>
+								 <script>
+									document.addEventListener('scroll', function () {
+  const introPara = document.querySelector('.intro-para p');
+  const paraPosition = introPara.getBoundingClientRect().top;
+  const windowHeight = window.innerHeight;
+
+  if (paraPosition < windowHeight) {
+    introPara.style.transform = 'translateY(0)';
+    introPara.style.opacity = '1';
+  } else {
+    introPara.style.transform = 'translateY(50px)';
+    introPara.style.opacity = '0';
+  }
+});
+
+								 </script>
 					</header>
 					</section>
 
@@ -694,17 +688,30 @@ if (links.style.display === "flex") {
 	<h3 class="core-heading" style="color: white;">OUR GROUP OF COMPANIES</h3>
 							<div class="cli-company">
 								<div class="part-img block">
-									<img src="./assets/images1/conn.jpg" alt="cl1" class="hover-image">
-									<br><strong><a href="https://www.connectlifesolutions.com/">Connect Life Solution</a></strong><br>
-								</div>
-								<div class="cl2 block">
-									<img src="./assets/images1/conn1.png" alt="cl2" class="hover-image">
-									<br><strong><a href="https://www.connectlife.org/">Connect Life Foundation </a></strong><br>
-								</div>
-								<div class="cl3 block">
-									<img src="./assets/images1/cl3.png" alt="cl3" class="hover-image">
-									<br><strong><a href="https://www.cls.global/">CLS Global <br></a></strong><br>
-								</div>
+									<a href="https://www.connectlifesolutions.com/" target="_blank" rel="noopener noreferrer">
+									  <img src="./assets/images1/conn.jpg" alt="cl1" class="hover-image">
+									  <br>
+									  <strong>Connect Life Solutions</strong>
+									</a>
+								  </div>
+								  
+								  <div class="cl2 block">
+									<a href="https://www.linkedin.com/company/connectlife-foundation" target="_blank" rel="noopener noreferrer">
+									  <img src="./assets/images1/conn1.png" alt="cl2" class="hover-image">
+									  <br>
+									  <strong>Connect Life Foundation</strong>
+									</a>
+									<br>
+								  </div>
+								  <div class="cl3 block">
+									<a href="https://www.linkedin.com/company/connect-life-global" target="_blank" rel="noopener noreferrer">
+									  <img src="./assets/images1/cl3.png" alt="cl3" class="hover-image">
+									  <br>
+									  <strong>CLS Global</strong><br>
+									</a>
+									<br>
+								  </div>
+								  
 							</div>
 						</div>
 					</section>
@@ -918,7 +925,6 @@ if (links.style.display === "flex") {
 			<center><b class="footer-heading">Contact Us</b></center><br>
 			<ul style="list-style-type: none; padding: 0; text-align: center;">
 				<li>India, USA, Dubai</li>
-				<li>+1 (414) 916 6789</li>
 				<li>info@connectlifevfx.com</li>
 			</ul>
 		</div>
@@ -956,9 +962,9 @@ if (links.style.display === "flex") {
 			<ul class="icons" style="list-style-type: none; padding: 0; display: flex; justify-content: center; gap: 10px;">
 				<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
 				<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-				<li><a href="https://www.instagram.com/connectlife.vfx/" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-				<li><a href="https://www.linkedin.com/company/connect-life-vfx" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
-				<li><a href="mailto:info@connectlifevfx.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+				<li><a href="https://www.instagram.com/connectlife.vfx/" target="_blank" rel="noopener noreferrer" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+				<li><a href="https://www.linkedin.com/company/connect-life-vfx" target="_blank" rel="noopener noreferrer" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+				<li><a href="mailto:info@connectlifevfx.com" target="_blank" rel="noopener noreferrer" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
 			</ul>
 		</div>
 		
