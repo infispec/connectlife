@@ -4413,6 +4413,7 @@ ul.nav-links li a {
 }
 .gen-logo img {
   margin-top: -2%;
+  margin-left: -4%;
   width: 200px; /* Adjust as needed */
   height: 50px; /* Adjust as needed */
   max-width: none; /* Prevents the image from being constrained */
@@ -4423,7 +4424,7 @@ ul.nav-links li a {
     width: 135px;
     height: 33px;
     margin-top: -5%;
-    margin-left: -2%;
+    margin-left: -12%;
   }
 }
 /*generic + sign para*/
